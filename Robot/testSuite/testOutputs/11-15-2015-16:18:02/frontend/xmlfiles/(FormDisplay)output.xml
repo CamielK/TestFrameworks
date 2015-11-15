@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20151115 16:18:07.973" generator="Robot 2.9.2 (Python 2.7.3 on linux2)">
+<suite source="/home/camiel/Documents/TestFrameworks/Robot/testSuite/testScripts/frontend/FormDisplay.robot" id="s1" name="FormDisplay">
+<test id="s1-t1" name="Suite setup">
+<kw name="Open Browser To Login Page" library="frontendResource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20151115 16:18:08.082" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:8084/forms/authentication/login'</msg>
+<status status="PASS" endtime="20151115 16:18:09.798" starttime="20151115 16:18:08.081"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20151115 16:18:09.978" starttime="20151115 16:18:09.799"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20151115 16:18:09.981" starttime="20151115 16:18:09.979"></status>
+</kw>
+<kw name="Login Page Should Be Open" library="frontendResource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Login</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20151115 16:18:10.144" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20151115 16:18:10.145" starttime="20151115 16:18:09.995"></status>
+</kw>
+<msg timestamp="20151115 16:18:10.147" level="FAIL">Title should have been 'Login' but was 'http://localhost:8084/forms/authentication/login is not available'</msg>
+<status status="FAIL" endtime="20151115 16:18:10.148" starttime="20151115 16:18:09.982"></status>
+</kw>
+<status status="FAIL" endtime="20151115 16:18:10.150" starttime="20151115 16:18:09.981"></status>
+</kw>
+<status status="FAIL" endtime="20151115 16:18:10.151" starttime="20151115 16:18:08.080"></status>
+</kw>
+<status status="FAIL" endtime="20151115 16:18:10.152" critical="yes" starttime="20151115 16:18:08.079">Title should have been 'Login' but was 'http://localhost:8084/forms/authentication/login is not available'</status>
+</test>
+<test id="s1-t2" name="Dynamic element visibility">
+<kw name="Open Ontslag Formulier" library="frontendResource">
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>New</arg>
+</arguments>
+<msg timestamp="20151115 16:18:10.156" level="INFO">Clicking link 'New'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20151115 16:18:10.386" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20151115 16:18:10.387" starttime="20151115 16:18:10.194"></status>
+</kw>
+<msg timestamp="20151115 16:18:10.388" level="FAIL">ValueError: Element locator 'New' did not match any elements.</msg>
+<status status="FAIL" endtime="20151115 16:18:10.389" starttime="20151115 16:18:10.155"></status>
+</kw>
+<status status="FAIL" endtime="20151115 16:18:10.389" starttime="20151115 16:18:10.154"></status>
+</kw>
+<status status="FAIL" endtime="20151115 16:18:10.390" critical="yes" starttime="20151115 16:18:10.153">ValueError: Element locator 'New' did not match any elements.</status>
+</test>
+<test id="s1-t3" name="Suite teardown">
+<kw name="Browser Should Be Open" library="frontendResource">
+<kw name="Location Should Contain" library="Selenium2Library">
+<doc>Verifies that current URL contains `expected`.</doc>
+<arguments>
+<arg>http://${SERVER}/forms/</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20151115 16:18:10.586" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20151115 16:18:10.588" starttime="20151115 16:18:10.399"></status>
+</kw>
+<msg timestamp="20151115 16:18:10.589" level="FAIL">Location should have contained 'http://localhost:8084/forms/' but it was 'data:text/html,chromewebdata'.</msg>
+<status status="FAIL" endtime="20151115 16:18:10.591" starttime="20151115 16:18:10.393"></status>
+</kw>
+<status status="FAIL" endtime="20151115 16:18:10.592" starttime="20151115 16:18:10.392"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20151115 16:18:10.652" starttime="20151115 16:18:10.594"></status>
+</kw>
+<status status="FAIL" endtime="20151115 16:18:10.653" critical="yes" starttime="20151115 16:18:10.391">Location should have contained 'http://localhost:8084/forms/' but it was 'data:text/html,chromewebdata'.</status>
+</test>
+<doc>A test suite to test the ontslagRequest wfp form.</doc>
+<status status="FAIL" endtime="20151115 16:18:10.654" starttime="20151115 16:18:07.974"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="3" pass="0">Critical Tests</stat>
+<stat fail="3" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="3" id="s1" name="FormDisplay" pass="0">FormDisplay</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
