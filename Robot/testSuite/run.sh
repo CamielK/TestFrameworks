@@ -36,7 +36,8 @@ declare -a backendArr=(
 
 #create main output dir for this test run
 now=$(date +"%m-%d-%Y-%T")
-newDir="testOutputs/$now"
+nowString="${now//:}" #parse ':' out of string for windows compatibility
+newDir="testOutputs/$nowString"
 mkdir -p "$newDir"
 
 
@@ -44,7 +45,7 @@ mkdir -p "$newDir"
 combine_outputs () {
    rebot --name $1 "$newDir/$1/xmlfiles/*.xml"
    mv "report.html" "$newDir/$1"
-   mv "log.html" "$newDir/$1"
+   mv "log.html" "$newDir/cd$1"
    echo ""
    echo "complete $1 test suite result can be found at $newDir/$1/report.html"
    echo ""
