@@ -16,12 +16,11 @@ public class SuiteSetup {
 
     // starts driver, opens backend or frontend and logs in. returns webdriver
 
-    private WebDriver driver;
+    private WebDriver driver = new ChromeDriver();
     private BackendLogin backendLogin = new BackendLogin();
     private FrontendLogin frontendLogin = new FrontendLogin();
 
     public WebDriver getBackendDriver () {
-        driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.navigate().to("http://localhost:8082/workflow4people");
         WebDriverWait wait = new WebDriverWait(driver, 12);
@@ -34,7 +33,6 @@ public class SuiteSetup {
     }
 
     public WebDriver getFrontendDriver () {
-        driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.navigate().to("http://localhost:8084/forms");
         WebDriverWait wait = new WebDriverWait(driver, 10);
