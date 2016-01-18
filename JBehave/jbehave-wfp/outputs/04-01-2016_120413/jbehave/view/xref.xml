@@ -1,0 +1,731 @@
+<xref>
+  <stories>
+    <performableStory>
+      <story>
+        <path>com/test/jbehave/stories/frontend/ophalenClientgegevens.story</path>
+        <description>
+          <descriptionAsString></descriptionAsString>
+        </description>
+        <narrative>
+          <inOrderTo></inOrderTo>
+          <asA></asA>
+          <iWantTo></iWantTo>
+          <soThat></soThat>
+        </narrative>
+        <meta>
+          <properties/>
+        </meta>
+        <givenStories>
+          <givenStories/>
+          <givenStoriesAsString></givenStoriesAsString>
+          <examplesTable>
+            <tableAsString></tableAsString>
+            <headerSeparator>|</headerSeparator>
+            <valueSeparator>|</valueSeparator>
+            <ignorableSeparator>|--</ignorableSeparator>
+            <tableTransformers>
+              <transformers>
+                <entry>
+                  <string>FROM_LANDSCAPE</string>
+                  <fromLandscape/>
+                </entry>
+                <entry>
+                  <string>REPLACING</string>
+                  <replacing/>
+                </entry>
+                <entry>
+                  <string>FORMATTING</string>
+                  <formatting/>
+                </entry>
+              </transformers>
+            </tableTransformers>
+            <headers/>
+            <data/>
+            <properties>
+              <property name="headerSeparator" value="|"/>
+              <property name="valueSeparator" value="|"/>
+              <property name="ignorableSeparator" value="|--"/>
+            </properties>
+            <propertiesAsString></propertiesAsString>
+            <namedParameters/>
+            <trim>true</trim>
+          </examplesTable>
+        </givenStories>
+        <lifecycle>
+          <before>
+            <steps class="java.util.Arrays$ArrayList">
+              <a class="string-array"/>
+            </steps>
+          </before>
+          <after/>
+        </lifecycle>
+        <scenarios>
+          <scenario>
+            <title>Checks if client information is correctly searchable</title>
+            <meta>
+              <properties/>
+            </meta>
+            <givenStories>
+              <givenStories/>
+              <givenStoriesAsString></givenStoriesAsString>
+              <examplesTable>
+                <tableAsString></tableAsString>
+                <headerSeparator>|</headerSeparator>
+                <valueSeparator>|</valueSeparator>
+                <ignorableSeparator>|--</ignorableSeparator>
+                <tableTransformers>
+                  <transformers>
+                    <entry>
+                      <string>FROM_LANDSCAPE</string>
+                      <fromLandscape/>
+                    </entry>
+                    <entry>
+                      <string>REPLACING</string>
+                      <replacing/>
+                    </entry>
+                    <entry>
+                      <string>FORMATTING</string>
+                      <formatting/>
+                    </entry>
+                  </transformers>
+                </tableTransformers>
+                <headers/>
+                <data/>
+                <properties>
+                  <property name="headerSeparator" value="|"/>
+                  <property name="valueSeparator" value="|"/>
+                  <property name="ignorableSeparator" value="|--"/>
+                </properties>
+                <propertiesAsString></propertiesAsString>
+                <namedParameters/>
+                <trim>true</trim>
+              </examplesTable>
+            </givenStories>
+            <examplesTable>
+              <tableAsString>|searchtype|
+|Achternaam|
+|BSN|
+|Clientnummer|</tableAsString>
+              <headerSeparator>|</headerSeparator>
+              <valueSeparator>|</valueSeparator>
+              <ignorableSeparator>|--</ignorableSeparator>
+              <tableTransformers>
+                <transformers>
+                  <entry>
+                    <string>FROM_LANDSCAPE</string>
+                    <fromLandscape/>
+                  </entry>
+                  <entry>
+                    <string>REPLACING</string>
+                    <replacing/>
+                  </entry>
+                  <entry>
+                    <string>FORMATTING</string>
+                    <formatting/>
+                  </entry>
+                </transformers>
+              </tableTransformers>
+              <headers>
+                <string>searchtype</string>
+              </headers>
+              <data>
+                <linked-hash-map>
+                  <entry>
+                    <string>searchtype</string>
+                    <string>Achternaam</string>
+                  </entry>
+                </linked-hash-map>
+                <linked-hash-map>
+                  <entry>
+                    <string>searchtype</string>
+                    <string>BSN</string>
+                  </entry>
+                </linked-hash-map>
+                <linked-hash-map>
+                  <entry>
+                    <string>searchtype</string>
+                    <string>Clientnummer</string>
+                  </entry>
+                </linked-hash-map>
+              </data>
+              <properties>
+                <property name="headerSeparator" value="|"/>
+                <property name="valueSeparator" value="|"/>
+                <property name="ignorableSeparator" value="|--"/>
+              </properties>
+              <propertiesAsString></propertiesAsString>
+              <namedParameters/>
+              <trim>true</trim>
+            </examplesTable>
+            <steps>
+              <string>Given the anamnese form is opened</string>
+              <string>When I search for a client based on &lt;searchtype&gt;</string>
+              <string>Then the correct client should be displayed</string>
+            </steps>
+          </scenario>
+        </scenarios>
+        <name>ophalenClientgegevens.story</name>
+      </story>
+      <localizedNarrative>As a 
+I want to 
+So that </localizedNarrative>
+      <allowed>true</allowed>
+      <status>SUCCESSFUL</status>
+      <givenStories/>
+      <scenarios>
+        <performableScenario>
+          <scenario>
+            <title>Checks if client information is correctly searchable</title>
+            <meta>
+              <properties/>
+            </meta>
+            <givenStories>
+              <givenStories/>
+              <givenStoriesAsString></givenStoriesAsString>
+              <examplesTable>
+                <tableAsString></tableAsString>
+                <headerSeparator>|</headerSeparator>
+                <valueSeparator>|</valueSeparator>
+                <ignorableSeparator>|--</ignorableSeparator>
+                <tableTransformers>
+                  <transformers>
+                    <entry>
+                      <string>FROM_LANDSCAPE</string>
+                      <fromLandscape/>
+                    </entry>
+                    <entry>
+                      <string>REPLACING</string>
+                      <replacing/>
+                    </entry>
+                    <entry>
+                      <string>FORMATTING</string>
+                      <formatting/>
+                    </entry>
+                  </transformers>
+                </tableTransformers>
+                <headers/>
+                <data/>
+                <properties>
+                  <property name="headerSeparator" value="|"/>
+                  <property name="valueSeparator" value="|"/>
+                  <property name="ignorableSeparator" value="|--"/>
+                </properties>
+                <propertiesAsString></propertiesAsString>
+                <namedParameters/>
+                <trim>true</trim>
+              </examplesTable>
+            </givenStories>
+            <examplesTable>
+              <tableAsString>|searchtype|
+|Achternaam|
+|BSN|
+|Clientnummer|</tableAsString>
+              <headerSeparator>|</headerSeparator>
+              <valueSeparator>|</valueSeparator>
+              <ignorableSeparator>|--</ignorableSeparator>
+              <tableTransformers>
+                <transformers>
+                  <entry>
+                    <string>FROM_LANDSCAPE</string>
+                    <fromLandscape/>
+                  </entry>
+                  <entry>
+                    <string>REPLACING</string>
+                    <replacing/>
+                  </entry>
+                  <entry>
+                    <string>FORMATTING</string>
+                    <formatting/>
+                  </entry>
+                </transformers>
+              </tableTransformers>
+              <headers>
+                <string>searchtype</string>
+              </headers>
+              <data>
+                <linked-hash-map>
+                  <entry>
+                    <string>searchtype</string>
+                    <string>Achternaam</string>
+                  </entry>
+                </linked-hash-map>
+                <linked-hash-map>
+                  <entry>
+                    <string>searchtype</string>
+                    <string>BSN</string>
+                  </entry>
+                </linked-hash-map>
+                <linked-hash-map>
+                  <entry>
+                    <string>searchtype</string>
+                    <string>Clientnummer</string>
+                  </entry>
+                </linked-hash-map>
+              </data>
+              <properties>
+                <property name="headerSeparator" value="|"/>
+                <property name="valueSeparator" value="|"/>
+                <property name="ignorableSeparator" value="|--"/>
+              </properties>
+              <propertiesAsString></propertiesAsString>
+              <namedParameters/>
+              <trim>true</trim>
+            </examplesTable>
+            <steps>
+              <string>Given the anamnese form is opened</string>
+              <string>When I search for a client based on &lt;searchtype&gt;</string>
+              <string>Then the correct client should be displayed</string>
+            </steps>
+          </scenario>
+          <storyPath>com/test/jbehave/stories/frontend/ophalenClientgegevens.story</storyPath>
+          <allowed>true</allowed>
+          <examplePerformableScenarios>
+            <examplePerformableScenario>
+              <parameters class="linked-hash-map">
+                <entry>
+                  <string>searchtype</string>
+                  <string>Achternaam</string>
+                </entry>
+              </parameters>
+              <givenStories/>
+              <beforeSteps>
+                <matches/>
+              </beforeSteps>
+              <steps>
+                <matches>
+                  <stepMatch>
+                    <type>GIVEN</type>
+                    <annotatedPattern>the anamnese form is opened</annotatedPattern>
+                    <resolvedPattern>the\s+anamnese\s+form\s+is\s+opened</resolvedPattern>
+                  </stepMatch>
+                  <stepMatch>
+                    <type>THEN</type>
+                    <annotatedPattern>the correct client should be displayed</annotatedPattern>
+                    <resolvedPattern>the\s+correct\s+client\s+should\s+be\s+displayed</resolvedPattern>
+                  </stepMatch>
+                  <stepMatch>
+                    <type>WHEN</type>
+                    <annotatedPattern>I search for a client based on &lt;searchtype&gt;</annotatedPattern>
+                    <resolvedPattern>I\s+search\s+for\s+a\s+client\s+based\s+on\s+&lt;searchtype&gt;</resolvedPattern>
+                  </stepMatch>
+                </matches>
+                <results>
+                  <successful>
+                    <step>Given the anamnese form is opened</step>
+                    <type>SUCCESSFUL</type>
+                    <parametrisedStep>Given the anamnese form is opened</parametrisedStep>
+                    <durationInMillis>25803</durationInMillis>
+                  </successful>
+                  <successful>
+                    <step>When I search for a client based on &lt;searchtype&gt;</step>
+                    <type>SUCCESSFUL</type>
+                    <parametrisedStep>When I search for a client based on ｟Achternaam｠</parametrisedStep>
+                    <durationInMillis>388</durationInMillis>
+                  </successful>
+                  <successful>
+                    <step>Then the correct client should be displayed</step>
+                    <type>SUCCESSFUL</type>
+                    <parametrisedStep>Then the correct client should be displayed</parametrisedStep>
+                    <durationInMillis>7879</durationInMillis>
+                  </successful>
+                </results>
+              </steps>
+              <afterSteps>
+                <matches/>
+              </afterSteps>
+            </examplePerformableScenario>
+            <examplePerformableScenario>
+              <parameters class="linked-hash-map">
+                <entry>
+                  <string>searchtype</string>
+                  <string>BSN</string>
+                </entry>
+              </parameters>
+              <givenStories/>
+              <beforeSteps>
+                <matches/>
+              </beforeSteps>
+              <steps>
+                <matches>
+                  <stepMatch>
+                    <type>GIVEN</type>
+                    <annotatedPattern>the anamnese form is opened</annotatedPattern>
+                    <resolvedPattern>the\s+anamnese\s+form\s+is\s+opened</resolvedPattern>
+                  </stepMatch>
+                  <stepMatch>
+                    <type>THEN</type>
+                    <annotatedPattern>the correct client should be displayed</annotatedPattern>
+                    <resolvedPattern>the\s+correct\s+client\s+should\s+be\s+displayed</resolvedPattern>
+                  </stepMatch>
+                  <stepMatch>
+                    <type>WHEN</type>
+                    <annotatedPattern>I search for a client based on &lt;searchtype&gt;</annotatedPattern>
+                    <resolvedPattern>I\s+search\s+for\s+a\s+client\s+based\s+on\s+&lt;searchtype&gt;</resolvedPattern>
+                  </stepMatch>
+                </matches>
+                <results>
+                  <successful>
+                    <step>Given the anamnese form is opened</step>
+                    <type>SUCCESSFUL</type>
+                    <parametrisedStep>Given the anamnese form is opened</parametrisedStep>
+                    <durationInMillis>11701</durationInMillis>
+                  </successful>
+                  <successful>
+                    <step>When I search for a client based on &lt;searchtype&gt;</step>
+                    <type>SUCCESSFUL</type>
+                    <parametrisedStep>When I search for a client based on ｟BSN｠</parametrisedStep>
+                    <durationInMillis>323</durationInMillis>
+                  </successful>
+                  <successful>
+                    <step>Then the correct client should be displayed</step>
+                    <type>SUCCESSFUL</type>
+                    <parametrisedStep>Then the correct client should be displayed</parametrisedStep>
+                    <durationInMillis>6332</durationInMillis>
+                  </successful>
+                </results>
+              </steps>
+              <afterSteps>
+                <matches/>
+              </afterSteps>
+            </examplePerformableScenario>
+            <examplePerformableScenario>
+              <parameters class="linked-hash-map">
+                <entry>
+                  <string>searchtype</string>
+                  <string>Clientnummer</string>
+                </entry>
+              </parameters>
+              <givenStories/>
+              <beforeSteps>
+                <matches/>
+              </beforeSteps>
+              <steps>
+                <matches>
+                  <stepMatch>
+                    <type>GIVEN</type>
+                    <annotatedPattern>the anamnese form is opened</annotatedPattern>
+                    <resolvedPattern>the\s+anamnese\s+form\s+is\s+opened</resolvedPattern>
+                  </stepMatch>
+                  <stepMatch>
+                    <type>THEN</type>
+                    <annotatedPattern>the correct client should be displayed</annotatedPattern>
+                    <resolvedPattern>the\s+correct\s+client\s+should\s+be\s+displayed</resolvedPattern>
+                  </stepMatch>
+                  <stepMatch>
+                    <type>WHEN</type>
+                    <annotatedPattern>I search for a client based on &lt;searchtype&gt;</annotatedPattern>
+                    <resolvedPattern>I\s+search\s+for\s+a\s+client\s+based\s+on\s+&lt;searchtype&gt;</resolvedPattern>
+                  </stepMatch>
+                </matches>
+                <results>
+                  <successful>
+                    <step>Given the anamnese form is opened</step>
+                    <type>SUCCESSFUL</type>
+                    <parametrisedStep>Given the anamnese form is opened</parametrisedStep>
+                    <durationInMillis>11428</durationInMillis>
+                  </successful>
+                  <successful>
+                    <step>When I search for a client based on &lt;searchtype&gt;</step>
+                    <type>SUCCESSFUL</type>
+                    <parametrisedStep>When I search for a client based on ｟Clientnummer｠</parametrisedStep>
+                    <durationInMillis>286</durationInMillis>
+                  </successful>
+                  <successful>
+                    <step>Then the correct client should be displayed</step>
+                    <type>SUCCESSFUL</type>
+                    <parametrisedStep>Then the correct client should be displayed</parametrisedStep>
+                    <durationInMillis>3710</durationInMillis>
+                  </successful>
+                </results>
+              </steps>
+              <afterSteps>
+                <matches/>
+              </afterSteps>
+            </examplePerformableScenario>
+          </examplePerformableScenarios>
+          <status>SUCCESSFUL</status>
+        </performableScenario>
+      </scenarios>
+      <beforeSteps/>
+      <afterSteps/>
+      <timing>
+        <durationInMillis>67864</durationInMillis>
+      </timing>
+      <givenStory>false</givenStory>
+    </performableStory>
+  </stories>
+  <scenarios>
+    <performableScenario>
+      <scenario>
+        <title>Checks if client information is correctly searchable</title>
+        <meta>
+          <properties/>
+        </meta>
+        <givenStories>
+          <givenStories/>
+          <givenStoriesAsString></givenStoriesAsString>
+          <examplesTable>
+            <tableAsString></tableAsString>
+            <headerSeparator>|</headerSeparator>
+            <valueSeparator>|</valueSeparator>
+            <ignorableSeparator>|--</ignorableSeparator>
+            <tableTransformers>
+              <transformers>
+                <entry>
+                  <string>FROM_LANDSCAPE</string>
+                  <fromLandscape/>
+                </entry>
+                <entry>
+                  <string>REPLACING</string>
+                  <replacing/>
+                </entry>
+                <entry>
+                  <string>FORMATTING</string>
+                  <formatting/>
+                </entry>
+              </transformers>
+            </tableTransformers>
+            <headers/>
+            <data/>
+            <properties>
+              <property name="headerSeparator" value="|"/>
+              <property name="valueSeparator" value="|"/>
+              <property name="ignorableSeparator" value="|--"/>
+            </properties>
+            <propertiesAsString></propertiesAsString>
+            <namedParameters/>
+            <trim>true</trim>
+          </examplesTable>
+        </givenStories>
+        <examplesTable>
+          <tableAsString>|searchtype|
+|Achternaam|
+|BSN|
+|Clientnummer|</tableAsString>
+          <headerSeparator>|</headerSeparator>
+          <valueSeparator>|</valueSeparator>
+          <ignorableSeparator>|--</ignorableSeparator>
+          <tableTransformers>
+            <transformers>
+              <entry>
+                <string>FROM_LANDSCAPE</string>
+                <fromLandscape/>
+              </entry>
+              <entry>
+                <string>REPLACING</string>
+                <replacing/>
+              </entry>
+              <entry>
+                <string>FORMATTING</string>
+                <formatting/>
+              </entry>
+            </transformers>
+          </tableTransformers>
+          <headers>
+            <string>searchtype</string>
+          </headers>
+          <data>
+            <linked-hash-map>
+              <entry>
+                <string>searchtype</string>
+                <string>Achternaam</string>
+              </entry>
+            </linked-hash-map>
+            <linked-hash-map>
+              <entry>
+                <string>searchtype</string>
+                <string>BSN</string>
+              </entry>
+            </linked-hash-map>
+            <linked-hash-map>
+              <entry>
+                <string>searchtype</string>
+                <string>Clientnummer</string>
+              </entry>
+            </linked-hash-map>
+          </data>
+          <properties>
+            <property name="headerSeparator" value="|"/>
+            <property name="valueSeparator" value="|"/>
+            <property name="ignorableSeparator" value="|--"/>
+          </properties>
+          <propertiesAsString></propertiesAsString>
+          <namedParameters/>
+          <trim>true</trim>
+        </examplesTable>
+        <steps>
+          <string>Given the anamnese form is opened</string>
+          <string>When I search for a client based on &lt;searchtype&gt;</string>
+          <string>Then the correct client should be displayed</string>
+        </steps>
+      </scenario>
+      <storyPath>com/test/jbehave/stories/frontend/ophalenClientgegevens.story</storyPath>
+      <allowed>true</allowed>
+      <examplePerformableScenarios>
+        <examplePerformableScenario>
+          <parameters class="linked-hash-map">
+            <entry>
+              <string>searchtype</string>
+              <string>Achternaam</string>
+            </entry>
+          </parameters>
+          <givenStories/>
+          <beforeSteps>
+            <matches/>
+          </beforeSteps>
+          <steps>
+            <matches>
+              <stepMatch>
+                <type>GIVEN</type>
+                <annotatedPattern>the anamnese form is opened</annotatedPattern>
+                <resolvedPattern>the\s+anamnese\s+form\s+is\s+opened</resolvedPattern>
+              </stepMatch>
+              <stepMatch>
+                <type>THEN</type>
+                <annotatedPattern>the correct client should be displayed</annotatedPattern>
+                <resolvedPattern>the\s+correct\s+client\s+should\s+be\s+displayed</resolvedPattern>
+              </stepMatch>
+              <stepMatch>
+                <type>WHEN</type>
+                <annotatedPattern>I search for a client based on &lt;searchtype&gt;</annotatedPattern>
+                <resolvedPattern>I\s+search\s+for\s+a\s+client\s+based\s+on\s+&lt;searchtype&gt;</resolvedPattern>
+              </stepMatch>
+            </matches>
+            <results>
+              <successful>
+                <step>Given the anamnese form is opened</step>
+                <type>SUCCESSFUL</type>
+                <parametrisedStep>Given the anamnese form is opened</parametrisedStep>
+                <durationInMillis>25803</durationInMillis>
+              </successful>
+              <successful>
+                <step>When I search for a client based on &lt;searchtype&gt;</step>
+                <type>SUCCESSFUL</type>
+                <parametrisedStep>When I search for a client based on ｟Achternaam｠</parametrisedStep>
+                <durationInMillis>388</durationInMillis>
+              </successful>
+              <successful>
+                <step>Then the correct client should be displayed</step>
+                <type>SUCCESSFUL</type>
+                <parametrisedStep>Then the correct client should be displayed</parametrisedStep>
+                <durationInMillis>7879</durationInMillis>
+              </successful>
+            </results>
+          </steps>
+          <afterSteps>
+            <matches/>
+          </afterSteps>
+        </examplePerformableScenario>
+        <examplePerformableScenario>
+          <parameters class="linked-hash-map">
+            <entry>
+              <string>searchtype</string>
+              <string>BSN</string>
+            </entry>
+          </parameters>
+          <givenStories/>
+          <beforeSteps>
+            <matches/>
+          </beforeSteps>
+          <steps>
+            <matches>
+              <stepMatch>
+                <type>GIVEN</type>
+                <annotatedPattern>the anamnese form is opened</annotatedPattern>
+                <resolvedPattern>the\s+anamnese\s+form\s+is\s+opened</resolvedPattern>
+              </stepMatch>
+              <stepMatch>
+                <type>THEN</type>
+                <annotatedPattern>the correct client should be displayed</annotatedPattern>
+                <resolvedPattern>the\s+correct\s+client\s+should\s+be\s+displayed</resolvedPattern>
+              </stepMatch>
+              <stepMatch>
+                <type>WHEN</type>
+                <annotatedPattern>I search for a client based on &lt;searchtype&gt;</annotatedPattern>
+                <resolvedPattern>I\s+search\s+for\s+a\s+client\s+based\s+on\s+&lt;searchtype&gt;</resolvedPattern>
+              </stepMatch>
+            </matches>
+            <results>
+              <successful>
+                <step>Given the anamnese form is opened</step>
+                <type>SUCCESSFUL</type>
+                <parametrisedStep>Given the anamnese form is opened</parametrisedStep>
+                <durationInMillis>11701</durationInMillis>
+              </successful>
+              <successful>
+                <step>When I search for a client based on &lt;searchtype&gt;</step>
+                <type>SUCCESSFUL</type>
+                <parametrisedStep>When I search for a client based on ｟BSN｠</parametrisedStep>
+                <durationInMillis>323</durationInMillis>
+              </successful>
+              <successful>
+                <step>Then the correct client should be displayed</step>
+                <type>SUCCESSFUL</type>
+                <parametrisedStep>Then the correct client should be displayed</parametrisedStep>
+                <durationInMillis>6332</durationInMillis>
+              </successful>
+            </results>
+          </steps>
+          <afterSteps>
+            <matches/>
+          </afterSteps>
+        </examplePerformableScenario>
+        <examplePerformableScenario>
+          <parameters class="linked-hash-map">
+            <entry>
+              <string>searchtype</string>
+              <string>Clientnummer</string>
+            </entry>
+          </parameters>
+          <givenStories/>
+          <beforeSteps>
+            <matches/>
+          </beforeSteps>
+          <steps>
+            <matches>
+              <stepMatch>
+                <type>GIVEN</type>
+                <annotatedPattern>the anamnese form is opened</annotatedPattern>
+                <resolvedPattern>the\s+anamnese\s+form\s+is\s+opened</resolvedPattern>
+              </stepMatch>
+              <stepMatch>
+                <type>THEN</type>
+                <annotatedPattern>the correct client should be displayed</annotatedPattern>
+                <resolvedPattern>the\s+correct\s+client\s+should\s+be\s+displayed</resolvedPattern>
+              </stepMatch>
+              <stepMatch>
+                <type>WHEN</type>
+                <annotatedPattern>I search for a client based on &lt;searchtype&gt;</annotatedPattern>
+                <resolvedPattern>I\s+search\s+for\s+a\s+client\s+based\s+on\s+&lt;searchtype&gt;</resolvedPattern>
+              </stepMatch>
+            </matches>
+            <results>
+              <successful>
+                <step>Given the anamnese form is opened</step>
+                <type>SUCCESSFUL</type>
+                <parametrisedStep>Given the anamnese form is opened</parametrisedStep>
+                <durationInMillis>11428</durationInMillis>
+              </successful>
+              <successful>
+                <step>When I search for a client based on &lt;searchtype&gt;</step>
+                <type>SUCCESSFUL</type>
+                <parametrisedStep>When I search for a client based on ｟Clientnummer｠</parametrisedStep>
+                <durationInMillis>286</durationInMillis>
+              </successful>
+              <successful>
+                <step>Then the correct client should be displayed</step>
+                <type>SUCCESSFUL</type>
+                <parametrisedStep>Then the correct client should be displayed</parametrisedStep>
+                <durationInMillis>3710</durationInMillis>
+              </successful>
+            </results>
+          </steps>
+          <afterSteps>
+            <matches/>
+          </afterSteps>
+        </examplePerformableScenario>
+      </examplePerformableScenarios>
+      <status>SUCCESSFUL</status>
+    </performableScenario>
+  </scenarios>
+</xref>

@@ -14,7 +14,7 @@ Invalid password
 
 Invalid username
     Input Username    piet
-    Input Password    admin
+    Input Password    dUfKB2yacJ
     Submit Credentials
     Login Page Should Be Open
 
@@ -26,7 +26,7 @@ Invalid password and username
 
 Valid password and username
     Input Username    admin
-    Input Password    admin
+    Input Password    dUfKB2yacJ
     Submit Credentials
     Welcome Page Should Be Open
 

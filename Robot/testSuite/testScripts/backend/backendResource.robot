@@ -46,11 +46,11 @@ Browser Should Be Open
 Open Person List
     Click link    Admin
     Click link    Users
-    Wait Until Element Is Visible    id=newButton_detailTable_person
+    Wait Until Element Is Visible    xpath=//span[@onclick=\"dialog.formDialog(null,'person', { refresh : 'detailTable_person'}, {})\"]
     Title Should Be    Person List
 
 Add New User
-    Click Element    id=newButton_detailTable_person
+    Click Element    xpath=//span[@onclick=\"dialog.formDialog(null,'person', { refresh : 'detailTable_person'}, {})\"]
     Wait Until Element Is Visible    id=username
 
 Enter New User Details
@@ -65,7 +65,7 @@ Enter New User Password
     Input Text    id=newPassword    test123
     Input Text    id=newPassword2    test123
     Click Element    xpath=//span[text()='OK']
-    Wait Until Element Is Visible    id=newButton_detailTable_person
+    Wait Until Element Is Visible    xpath=//span[@onclick=\"dialog.formDialog(null,'person', { refresh : 'detailTable_person'}, {})\"]
 
 User Should Be Added
     #sorts list to Id descending > new user should be first table entry
@@ -83,7 +83,7 @@ Delete New User
     Click Element    xpath=//span[@onclick="dialog.deleteDialog('${userID}','person',{ refresh : 'null'}, null)"]
     Wait Until Element Is Visible    xpath=//span[text()='Delete']
     Click Element    xpath=//span[text()='Delete']
-    Wait Until Element Is Visible    id=newButton_detailTable_person
+    Wait Until Element Is Visible    xpath=//span[@onclick=\"dialog.formDialog(null,'person', { refresh : 'detailTable_person'}, {})\"]
 
 Set Slow Speed
     Set Selenium Speed    0.2

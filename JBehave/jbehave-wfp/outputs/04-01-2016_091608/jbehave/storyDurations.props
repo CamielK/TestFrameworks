@@ -1,0 +1,6 @@
+#org.jbehave.core.embedder.StoryManager
+#Mon Jan 04 09:16:32 CET 2016
+com/test/jbehave/stories/frontend/aanmakenZiektenbeeld.story=23000
+threads=1
+total=23000
+threadAverage=23000

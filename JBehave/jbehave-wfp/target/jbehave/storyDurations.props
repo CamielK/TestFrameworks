@@ -1,6 +1,0 @@
-#org.jbehave.core.embedder.StoryManager
-#Mon Nov 16 19:39:23 CET 2015
-com/test/jbehave/stories/my.story=0
-threads=2
-total=0
-threadAverage=0

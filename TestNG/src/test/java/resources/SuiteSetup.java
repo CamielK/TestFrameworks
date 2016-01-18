@@ -10,11 +10,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.concurrent.TimeUnit;
 
 /**
+ *
+ * this class starts new drivers, opens backend or frontend and logs in. returns webdriver
+ *
  * Created by camiel on 11/15/15.
  */
 public class SuiteSetup {
-
-    // starts driver, opens backend or frontend and logs in. returns webdriver
 
     private WebDriver driver = new ChromeDriver();
     private BackendLogin backendLogin = new BackendLogin();
@@ -27,7 +28,7 @@ public class SuiteSetup {
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.id("j_username")));
         backendLogin.setDriver(driver);
         backendLogin.enterUsername("admin");
-        backendLogin.enterPassword("admin");
+        backendLogin.enterPassword("dUfKB2yacJ");
         backendLogin.submitForm("Workflow Definition List");
         return driver;
     }

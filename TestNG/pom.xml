@@ -15,6 +15,8 @@
         <selenium.version>2.43.0</selenium.version>
         <surefire.version>2.11</surefire.version>
         <maven.compiler.version>2.3.2</maven.compiler.version>
+        <timestamp>${maven.build.timestamp}</timestamp>
+        <maven.build.timestamp.format>yyyyMMdd-HHmm</maven.build.timestamp.format>
     </properties>
 
     <dependencies>
@@ -49,7 +51,8 @@
                 <configuration>
                     <!-- This is to skip tests during normal maven execution
                     (e.g. mvn package) and run them in integration-test -->
-                    <skip>true</skip>
+                    <skip>false</skip>
+                    <reportsDirectory>./test-output/${timestamp}</reportsDirectory>
                 </configuration>
                 <executions>
                     <execution>

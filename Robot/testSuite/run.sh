@@ -26,7 +26,6 @@ fi
 #list of test files >> executed in this order, add new test scripts here
 declare -a frontendArr=(
 "Login"
-"FormDisplay"
 )
 declare -a backendArr=(
 "Login"

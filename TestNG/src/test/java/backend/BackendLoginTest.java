@@ -15,11 +15,12 @@ import org.testng.ITestContext;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
-import resources.BackendLogin;
 
 import java.util.concurrent.TimeUnit;
 
 /**
+ *
+ * This class contains methods to interact with the backend login screen
  *
  * @author camiel
  */
@@ -27,7 +28,8 @@ public class BackendLoginTest {
     	
     private WebDriver driver;
     private resources.BackendLogin login = new resources.BackendLogin();
-	
+
+    //get a new driver at start of test case
     @BeforeSuite(alwaysRun = true)
     public void setupBeforeSuite(ITestContext context) {
   	    driver = new ChromeDriver();
@@ -35,6 +37,7 @@ public class BackendLoginTest {
         login.setDriver(driver);
     }
 
+    //navigate to login page
     @Test(description="wfp backend setup", priority = 1)
     public void frontendSetup() {
         driver.navigate().to("http://localhost:8082/workflow4people");
@@ -45,7 +48,7 @@ public class BackendLoginTest {
     @Test(description="wfp frontend invalid username login", priority = 2)
     public void frontendInvalidUserLogin() {
         login.enterUsername("piet");
-        login.enterPassword("admin");
+        login.enterPassword("dUfKB2yacJ");
         login.submitForm("Login");
     }
 
@@ -66,10 +69,11 @@ public class BackendLoginTest {
     @Test(description="5. wfp frontend valid login", priority = 3)
     public void frontendValidLogin() {
         login.enterUsername("admin");
-        login.enterPassword("admin");
+        login.enterPassword("dUfKB2yacJ");
         login.submitForm("Workflow Definition List");
     }
 
+    //quit driver after test case
     @AfterSuite(alwaysRun = true)
     public void setupAfterSuite() {
   	driver.quit();

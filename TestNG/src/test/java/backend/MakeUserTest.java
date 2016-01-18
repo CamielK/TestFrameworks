@@ -19,30 +19,34 @@ import java.util.List;
 
 /**
  *
+ * This class contains methods to interact with the user screen and new user form
+ *
  * @author camiel
  */
 public class MakeUserTest {
     	
     private WebDriver driver;
-	
+
+    //get a new logged in backend driver at start of test cases
     @BeforeSuite(alwaysRun = true)
     public void setupBeforeSuite(ITestContext context) {
         driver = new resources.SuiteSetup().getBackendDriver();
     }
 
+    //open the user page
     @Test(description="open user panel", priority = 1)
     public void openUserPage() {
-
         driver.findElement(By.partialLinkText("Admin")).click();
         driver.findElement(By.partialLinkText("Users")).click();
         WebDriverWait wait = new WebDriverWait(driver, 10);
-        WebElement elementButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("newButton_detailTable_person")));
+        WebElement elementButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@onclick=\"dialog.formDialog(null,'person', { refresh : 'detailTable_person'}, {})\"]")));
     }
 
+    //make a new user
     @Test(description="create user", priority = 2, dependsOnMethods = { "openUserPage" })
     public void makeUser() {
         WebDriverWait wait = new WebDriverWait(driver, 10);
-        driver.findElement(By.id("newButton_detailTable_person")).click();
+        driver.findElement(By.xpath("//span[@onclick=\"dialog.formDialog(null,'person', { refresh : 'detailTable_person'}, {})\"]")).click();
         WebElement elementUsername = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("username")));
         textInput("username","testUser123");
         textInput("userRealName","test user");
@@ -54,9 +58,10 @@ public class MakeUserTest {
         textInput("newPassword","test123");
         textInput("newPassword2","test123");
         driver.findElement(By.xpath("//span[text()='OK']")).click();
-        WebElement elementButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("newButton_detailTable_person")));
+        WebElement elementButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@onclick=\"dialog.formDialog(null,'person', { refresh : 'detailTable_person'}, {})\"]")));
     }
 
+    //check new user was added by sorting the table by Id. first entry should be highest Id, wich should be the new user
     @Test(description="check if new user was succesfully added", priority = 3, dependsOnMethods = { "makeUser" })
     public void validateNewUser() throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(driver, 10);
@@ -79,23 +84,20 @@ public class MakeUserTest {
             WebElement elementConfirm = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[text()='Delete']")));
             WebElement confirm = table.findElement(By.xpath("//span[text()='Delete']"));
             confirm.click();
-            WebElement elementButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("newButton_detailTable_person")));
+            WebElement elementButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@onclick=\"dialog.formDialog(null,'person', { refresh : 'detailTable_person'}, {})\"]")));
         }
         else {
             org.testng.Assert.fail("Test user was not succesfully created.");
         }
     }
 
-
     @AfterSuite(alwaysRun = true)
     public void setupAfterSuite() {
   	    driver.quit();
     }
 
-
     private void textInput (String elementID, String value) {
         WebElement inputElement = driver.findElement(By.id(elementID));
         inputElement.sendKeys(value);
     }
-
 }

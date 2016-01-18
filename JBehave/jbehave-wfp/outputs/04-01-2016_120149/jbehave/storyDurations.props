@@ -1,0 +1,6 @@
+#org.jbehave.core.embedder.StoryManager
+#Mon Jan 04 12:02:11 CET 2016
+com/test/jbehave/stories/frontend/OverigeTests.story=21000
+threads=1
+total=21000
+threadAverage=21000

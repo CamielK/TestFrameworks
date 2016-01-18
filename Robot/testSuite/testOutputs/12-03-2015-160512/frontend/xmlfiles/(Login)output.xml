@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20151203 16:05:12.275" generator="Robot 2.9.2 (Python 2.7.3 on linux2)">
+<suite source="/home/camiel/Documents/testframeworks/Robot/testSuite/testScripts/frontend/Login.robot" id="s1" name="Login">
+<test id="s1-t1" name="Suite setup">
+<kw name="Open Browser To Login Page" library="frontendResource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20151203 16:05:12.407" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:8084/forms/authentication/login'</msg>
+<status status="PASS" endtime="20151203 16:05:14.585" starttime="20151203 16:05:12.406"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20151203 16:05:14.775" starttime="20151203 16:05:14.586"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20151203 16:05:14.777" starttime="20151203 16:05:14.776"></status>
+</kw>
+<kw name="Login Page Should Be Open" library="frontendResource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Login</arg>
+</arguments>
+<msg timestamp="20151203 16:05:14.789" level="INFO">Page title is 'Login'.</msg>
+<status status="PASS" endtime="20151203 16:05:14.790" starttime="20151203 16:05:14.779"></status>
+</kw>
+<status status="PASS" endtime="20151203 16:05:14.790" starttime="20151203 16:05:14.778"></status>
+</kw>
+<status status="PASS" endtime="20151203 16:05:14.791" starttime="20151203 16:05:12.405"></status>
+</kw>
+<status status="PASS" endtime="20151203 16:05:14.791" critical="yes" starttime="20151203 16:05:12.405"></status>
+</test>
+<test id="s1-t2" name="Invalid password">
+<kw name="Input Username" library="frontendResource">
+<arguments>
+<arg>demo</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>id=username</arg>
+</arguments>
+<status status="PASS" endtime="20151203 16:05:14.855" starttime="20151203 16:05:14.794"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=username</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20151203 16:05:14.856" level="INFO">Typing text 'demo' into text field 'id=username'</msg>
+<status status="PASS" endtime="20151203 16:05:15.008" starttime="20151203 16:05:14.856"></status>
+</kw>
+<status status="PASS" endtime="20151203 16:05:15.008" starttime="20151203 16:05:14.793"></status>
+</kw>
+<kw name="Input Password" library="frontendResource">
+<arguments>
+<arg>123</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20151203 16:05:15.012" level="INFO">Typing text '123' into text field 'id=password'</msg>
+<status status="PASS" endtime="20151203 16:05:15.165" starttime="20151203 16:05:15.011"></status>
+</kw>
+<status status="PASS" endtime="20151203 16:05:15.166" starttime="20151203 16:05:15.009"></status>
+</kw>
+<kw name="Submit Credentials" library="frontendResource">
+<kw name="Submit Form" library="Selenium2Library">
+<doc>Submits a form identified by `locator`.</doc>
+<msg timestamp="20151203 16:05:15.170" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" endtime="20151203 16:05:15.708" starttime="20151203 16:05:15.169"></status>
+</kw>
+<status status="PASS" endtime="20151203 16:05:15.709" starttime="20151203 16:05:15.167"></status>
+</kw>
+<kw name="Login Page Should Be Open" library="frontendResource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Login</arg>
+</arguments>
+<msg timestamp="20151203 16:05:15.727" level="INFO">Page title is 'Login'.</msg>
+<status status="PASS" endtime="20151203 16:05:15.728" starttime="20151203 16:05:15.712"></status>
+</kw>
+<status status="PASS" endtime="20151203 16:05:15.728" starttime="20151203 16:05:15.710"></status>
+</kw>
+<status status="PASS" endtime="20151203 16:05:15.729" critical="yes" starttime="20151203 16:05:14.792"></status>
+</test>
+<test id="s1-t3" name="Invalid username">
+<kw name="Input Username" library="frontendResource">
+<arguments>
+<arg>piet</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>id=username</arg>
+</arguments>
+<status status="PASS" endtime="20151203 16:05:15.999" starttime="20151203 16:05:15.733"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=username</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20151203 16:05:16.002" level="INFO">Typing text 'piet' into text field 'id=username'</msg>
+<status status="PASS" endtime="20151203 16:05:16.120" starttime="20151203 16:05:16.000"></status>
+</kw>
+<status status="PASS" endtime="20151203 16:05:16.121" starttime="20151203 16:05:15.731"></status>
+</kw>
+<kw name="Input Password" library="frontendResource">
+<arguments>
+<arg>demo</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20151203 16:05:16.128" level="INFO">Typing text 'demo' into text field 'id=password'</msg>
+<status status="PASS" endtime="20151203 16:05:16.303" starttime="20151203 16:05:16.125"></status>
+</kw>
+<status status="PASS" endtime="20151203 16:05:16.305" starttime="20151203 16:05:16.123"></status>
+</kw>
+<kw name="Submit Credentials" library="frontendResource">
+<kw name="Submit Form" library="Selenium2Library">
+<doc>Submits a form identified by `locator`.</doc>
+<msg timestamp="20151203 16:05:16.310" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" endtime="20151203 16:05:16.659" starttime="20151203 16:05:16.309"></status>
+</kw>
+<status status="PASS" endtime="20151203 16:05:16.659" starttime="20151203 16:05:16.306"></status>
+</kw>
+<kw name="Login Page Should Be Open" library="frontendResource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Login</arg>
+</arguments>
+<msg timestamp="20151203 16:05:16.677" level="INFO">Page title is 'Login'.</msg>
+<status status="PASS" endtime="20151203 16:05:16.677" starttime="20151203 16:05:16.661"></status>
+</kw>
+<status status="PASS" endtime="20151203 16:05:16.678" starttime="20151203 16:05:16.660"></status>
+</kw>
+<status status="PASS" endtime="20151203 16:05:16.679" critical="yes" starttime="20151203 16:05:15.730"></status>
+</test>
+<test id="s1-t4" name="Invalid password and username">
+<kw name="Input Username" library="frontendResource">
+<arguments>
+<arg>piet</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>id=username</arg>
+</arguments>
+<status status="PASS" endtime="20151203 16:05:16.965" starttime="20151203 16:05:16.682"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=username</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20151203 16:05:16.968" level="INFO">Typing text 'piet' into text field 'id=username'</msg>
+<status status="PASS" endtime="20151203 16:05:17.096" starttime="20151203 16:05:16.966"></status>
+</kw>
+<status status="PASS" endtime="20151203 16:05:17.097" starttime="20151203 16:05:16.681"></status>
+</kw>
+<kw name="Input Password" library="frontendResource">
+<arguments>
+<arg>123</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20151203 16:05:17.101" level="INFO">Typing text '123' into text field 'id=password'</msg>
+<status status="PASS" endtime="20151203 16:05:17.245" starttime="20151203 16:05:17.099"></status>
+</kw>
+<status status="PASS" endtime="20151203 16:05:17.246" starttime="20151203 16:05:17.098"></status>
+</kw>
+<kw name="Submit Credentials" library="frontendResource">
+<kw name="Submit Form" library="Selenium2Library">
+<doc>Submits a form identified by `locator`.</doc>
+<msg timestamp="20151203 16:05:17.247" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" endtime="20151203 16:05:17.563" starttime="20151203 16:05:17.247"></status>
+</kw>
+<status status="PASS" endtime="20151203 16:05:17.564" starttime="20151203 16:05:17.246"></status>
+</kw>
+<kw name="Login Page Should Be Open" library="frontendResource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Login</arg>
+</arguments>
+<msg timestamp="20151203 16:05:17.582" level="INFO">Page title is 'Login'.</msg>
+<status status="PASS" endtime="20151203 16:05:17.583" starttime="20151203 16:05:17.566"></status>
+</kw>
+<status status="PASS" endtime="20151203 16:05:17.583" starttime="20151203 16:05:17.564"></status>
+</kw>
+<status status="PASS" endtime="20151203 16:05:17.584" critical="yes" starttime="20151203 16:05:16.680"></status>
+</test>
+<test id="s1-t5" name="Valid password and username">
+<kw name="Input Username" library="frontendResource">
+<arguments>
+<arg>demo</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>id=username</arg>
+</arguments>
+<status status="PASS" endtime="20151203 16:05:17.871" starttime="20151203 16:05:17.587"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=username</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20151203 16:05:17.873" level="INFO">Typing text 'demo' into text field 'id=username'</msg>
+<status status="PASS" endtime="20151203 16:05:17.982" starttime="20151203 16:05:17.872"></status>
+</kw>
+<status status="PASS" endtime="20151203 16:05:17.983" starttime="20151203 16:05:17.586"></status>
+</kw>
+<kw name="Input Password" library="frontendResource">
+<arguments>
+<arg>demo</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20151203 16:05:17.987" level="INFO">Typing text 'demo' into text field 'id=password'</msg>
+<status status="PASS" endtime="20151203 16:05:18.134" starttime="20151203 16:05:17.985"></status>
+</kw>
+<status status="PASS" endtime="20151203 16:05:18.135" starttime="20151203 16:05:17.984"></status>
+</kw>
+<kw name="Submit Credentials" library="frontendResource">
+<kw name="Submit Form" library="Selenium2Library">
+<doc>Submits a form identified by `locator`.</doc>
+<msg timestamp="20151203 16:05:18.138" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" endtime="20151203 16:05:19.324" starttime="20151203 16:05:18.137"></status>
+</kw>
+<status status="PASS" endtime="20151203 16:05:19.325" starttime="20151203 16:05:18.136"></status>
+</kw>
+<kw name="Welcome Page Should Be Open" library="frontendResource">
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>${WELCOME URL}</arg>
+</arguments>
+<msg timestamp="20151203 16:05:19.347" level="INFO">Current location is 'http://localhost:8084/forms/list/tasklist/group'.</msg>
+<status status="PASS" endtime="20151203 16:05:19.349" starttime="20151203 16:05:19.328"></status>
+</kw>
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Our tasks</arg>
+</arguments>
+<msg timestamp="20151203 16:05:19.361" level="INFO">Page title is 'Our tasks'.</msg>
+<status status="PASS" endtime="20151203 16:05:19.362" starttime="20151203 16:05:19.350"></status>
+</kw>
+<status status="PASS" endtime="20151203 16:05:19.363" starttime="20151203 16:05:19.327"></status>
+</kw>
+<status status="PASS" endtime="20151203 16:05:19.363" critical="yes" starttime="20151203 16:05:17.585"></status>
+</test>
+<test id="s1-t6" name="Suite teardown">
+<kw name="Browser Should Be Open" library="frontendResource">
+<kw name="Location Should Contain" library="Selenium2Library">
+<doc>Verifies that current URL contains `expected`.</doc>
+<arguments>
+<arg>http://${SERVER}/forms/</arg>
+</arguments>
+<msg timestamp="20151203 16:05:19.376" level="INFO">Current location contains 'http://localhost:8084/forms/'.</msg>
+<status status="PASS" endtime="20151203 16:05:19.377" starttime="20151203 16:05:19.368"></status>
+</kw>
+<status status="PASS" endtime="20151203 16:05:19.378" starttime="20151203 16:05:19.366"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20151203 16:05:19.438" starttime="20151203 16:05:19.379"></status>
+</kw>
+<status status="PASS" endtime="20151203 16:05:19.438" critical="yes" starttime="20151203 16:05:19.365"></status>
+</test>
+<doc>A test suite to test the wfp frontend login.</doc>
+<status status="PASS" endtime="20151203 16:05:19.440" starttime="20151203 16:05:12.276"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="6">Critical Tests</stat>
+<stat fail="0" pass="6">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Login" pass="6">Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

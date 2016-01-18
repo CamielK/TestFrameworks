@@ -5,21 +5,22 @@
  */
 package frontend;
 
-import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import org.testng.ITestContext;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
-import resources.FrontendLogin;
+
+import java.util.concurrent.TimeUnit;
 
 /**
+ *
+ * This class contains methods to interact with the frontend login screen
  *
  * @author camiel
  */
@@ -46,28 +47,28 @@ public class FrontendLoginTest {
     public void frontendInvalidUserLogin() {
         login.enterUsername("piet");
         login.enterPassword("demo");
-        login.submitForm("Login");
+        login.submitForm("Inloggen");
     }
 
     @Test(description="wfp frontend invalid password login", priority = 2)
     public void frontendInvalidPassLogin() {
         login.enterUsername("demo");
         login.enterPassword("123");
-        login.submitForm("Login");
+        login.submitForm("Inloggen");
     }
 
     @Test(description="wfp frontend invalid credentials login", priority = 2)
     public void frontendInvalidLogin() {
         login.enterUsername("piet");
         login.enterPassword("123");
-        login.submitForm("Login");
+        login.submitForm("Inloggen");
     }
 
     @Test(description="5. wfp frontend valid login", priority = 3)
     public void frontendValidLogin() {
         login.enterUsername("demo");
         login.enterPassword("demo");
-        login.submitForm("Welcome to Workflow4people Forms");
+        login.submitForm("Welkom bij Opleiding wijkverpleging");
     }
 
     @AfterSuite(alwaysRun = true)

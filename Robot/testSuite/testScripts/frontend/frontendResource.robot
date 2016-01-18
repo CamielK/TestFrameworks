@@ -23,7 +23,7 @@ Open Browser To Login Page
     Login Page Should Be Open
 
 Login Page Should Be Open
-    Title Should Be    Login
+    Title Should Be    Inloggen
 
 Input Username
     [Arguments]    ${username}
@@ -39,7 +39,7 @@ Submit Credentials
 
 Welcome Page Should Be Open
     Location Should Be    ${WELCOME URL}
-    Title Should Be    Our tasks
+    Title Should Be    Taken
 
 Open Ontslag Formulier
     Click link    New

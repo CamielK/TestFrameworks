@@ -6,7 +6,7 @@ Resource          backendResource.robot
 Backend setup
     Open Browser To Login Page
     Input Username    admin
-    Input Password    admin
+    Input Password    dUfKB2yacJ
     Submit Credentials
     Welcome Page Should Be Open
 

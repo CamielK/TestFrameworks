@@ -1,6 +1,5 @@
 package resources;
 
-import org.omg.CORBA.Object;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -18,7 +17,7 @@ public class FrontendLogin {
     }
 
     public void enterUsername(String username) {
-        WebElement userElement = driver.findElement(By.name("username"));
+        WebElement userElement = driver.findElement(By.id("username"));
         userElement.sendKeys(username);
     }
 

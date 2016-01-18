@@ -1,0 +1,783 @@
+{"xref": {
+  "stories": [
+    {
+      "story": {
+        "path": "com/test/jbehave/stories/frontend/ophalenClientgegevens.story",
+        "description": {
+          "descriptionAsString": ""
+        },
+        "narrative": {
+          "inOrderTo": "",
+          "asA": "",
+          "iWantTo": "",
+          "soThat": ""
+        },
+        "meta": {
+          "properties": []
+        },
+        "givenStories": {
+          "givenStories": [],
+          "givenStoriesAsString": "",
+          "examplesTable": {
+            "tableAsString": "",
+            "headerSeparator": "|",
+            "valueSeparator": "|",
+            "ignorableSeparator": "|--",
+            "tableTransformers": {
+              "transformers": [
+                [
+                  "FROM_LANDSCAPE",
+                  {}
+                ],
+                [
+                  "REPLACING",
+                  {}
+                ],
+                [
+                  "FORMATTING",
+                  {}
+                ]
+              ]
+            },
+            "headers": [],
+            "data": [],
+            "properties": [
+              {
+                "@name": "headerSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "valueSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "ignorableSeparator",
+                "@value": "|--"
+              }
+            ],
+            "propertiesAsString": "",
+            "namedParameters": [],
+            "trim": true
+          }
+        },
+        "lifecycle": {
+          "before": {
+            "steps": [
+              []
+            ]
+          },
+          "after": []
+        },
+        "scenarios": [
+          {
+            "title": "Checks if client information is correctly searchable",
+            "meta": {
+              "properties": []
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "headerSeparator": "|",
+                "valueSeparator": "|",
+                "ignorableSeparator": "|--",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FORMATTING",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ],
+                "propertiesAsString": "",
+                "namedParameters": [],
+                "trim": true
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "|searchtype|\n|Achternaam|\n|BSN|\n|Clientnummer|",
+              "headerSeparator": "|",
+              "valueSeparator": "|",
+              "ignorableSeparator": "|--",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FORMATTING",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [
+                "searchtype"
+              ],
+              "data": [
+                [
+                  [
+                    "searchtype",
+                    "Achternaam"
+                  ]
+                ],
+                [
+                  [
+                    "searchtype",
+                    "BSN"
+                  ]
+                ],
+                [
+                  [
+                    "searchtype",
+                    "Clientnummer"
+                  ]
+                ]
+              ],
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ],
+              "propertiesAsString": "",
+              "namedParameters": [],
+              "trim": true
+            },
+            "steps": [
+              "Given the anamnese form is opened",
+              "When I search for a client based on <searchtype>",
+              "Then the correct client should be displayed"
+            ]
+          }
+        ],
+        "name": "ophalenClientgegevens.story"
+      },
+      "localizedNarrative": "As a \nI want to \nSo that ",
+      "allowed": true,
+      "status": "SUCCESSFUL",
+      "givenStories": [],
+      "scenarios": [
+        {
+          "scenario": {
+            "title": "Checks if client information is correctly searchable",
+            "meta": {
+              "properties": []
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "headerSeparator": "|",
+                "valueSeparator": "|",
+                "ignorableSeparator": "|--",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FORMATTING",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ],
+                "propertiesAsString": "",
+                "namedParameters": [],
+                "trim": true
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "|searchtype|\n|Achternaam|\n|BSN|\n|Clientnummer|",
+              "headerSeparator": "|",
+              "valueSeparator": "|",
+              "ignorableSeparator": "|--",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FORMATTING",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [
+                "searchtype"
+              ],
+              "data": [
+                [
+                  [
+                    "searchtype",
+                    "Achternaam"
+                  ]
+                ],
+                [
+                  [
+                    "searchtype",
+                    "BSN"
+                  ]
+                ],
+                [
+                  [
+                    "searchtype",
+                    "Clientnummer"
+                  ]
+                ]
+              ],
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ],
+              "propertiesAsString": "",
+              "namedParameters": [],
+              "trim": true
+            },
+            "steps": [
+              "Given the anamnese form is opened",
+              "When I search for a client based on <searchtype>",
+              "Then the correct client should be displayed"
+            ]
+          },
+          "storyPath": "com/test/jbehave/stories/frontend/ophalenClientgegevens.story",
+          "allowed": true,
+          "examplePerformableScenarios": [
+            {
+              "parameters": [
+                [
+                  "searchtype",
+                  "Achternaam"
+                ]
+              ],
+              "givenStories": [],
+              "beforeSteps": {
+                "matches": []
+              },
+              "steps": {
+                "matches": [
+                  {
+                    "type": "GIVEN",
+                    "annotatedPattern": "the anamnese form is opened",
+                    "resolvedPattern": "the\\s+anamnese\\s+form\\s+is\\s+opened"
+                  },
+                  {
+                    "type": "THEN",
+                    "annotatedPattern": "the correct client should be displayed",
+                    "resolvedPattern": "the\\s+correct\\s+client\\s+should\\s+be\\s+displayed"
+                  },
+                  {
+                    "type": "WHEN",
+                    "annotatedPattern": "I search for a client based on <searchtype>",
+                    "resolvedPattern": "I\\s+search\\s+for\\s+a\\s+client\\s+based\\s+on\\s+<searchtype>"
+                  }
+                ],
+                "results": [
+                  {
+                    "step": "Given the anamnese form is opened",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "Given the anamnese form is opened",
+                    "durationInMillis": 25803
+                  },
+                  {
+                    "step": "When I search for a client based on <searchtype>",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "When I search for a client based on ｟Achternaam｠",
+                    "durationInMillis": 388
+                  },
+                  {
+                    "step": "Then the correct client should be displayed",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "Then the correct client should be displayed",
+                    "durationInMillis": 7879
+                  }
+                ]
+              },
+              "afterSteps": {
+                "matches": []
+              }
+            },
+            {
+              "parameters": [
+                [
+                  "searchtype",
+                  "BSN"
+                ]
+              ],
+              "givenStories": [],
+              "beforeSteps": {
+                "matches": []
+              },
+              "steps": {
+                "matches": [
+                  {
+                    "type": "GIVEN",
+                    "annotatedPattern": "the anamnese form is opened",
+                    "resolvedPattern": "the\\s+anamnese\\s+form\\s+is\\s+opened"
+                  },
+                  {
+                    "type": "THEN",
+                    "annotatedPattern": "the correct client should be displayed",
+                    "resolvedPattern": "the\\s+correct\\s+client\\s+should\\s+be\\s+displayed"
+                  },
+                  {
+                    "type": "WHEN",
+                    "annotatedPattern": "I search for a client based on <searchtype>",
+                    "resolvedPattern": "I\\s+search\\s+for\\s+a\\s+client\\s+based\\s+on\\s+<searchtype>"
+                  }
+                ],
+                "results": [
+                  {
+                    "step": "Given the anamnese form is opened",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "Given the anamnese form is opened",
+                    "durationInMillis": 11701
+                  },
+                  {
+                    "step": "When I search for a client based on <searchtype>",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "When I search for a client based on ｟BSN｠",
+                    "durationInMillis": 323
+                  },
+                  {
+                    "step": "Then the correct client should be displayed",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "Then the correct client should be displayed",
+                    "durationInMillis": 6332
+                  }
+                ]
+              },
+              "afterSteps": {
+                "matches": []
+              }
+            },
+            {
+              "parameters": [
+                [
+                  "searchtype",
+                  "Clientnummer"
+                ]
+              ],
+              "givenStories": [],
+              "beforeSteps": {
+                "matches": []
+              },
+              "steps": {
+                "matches": [
+                  {
+                    "type": "GIVEN",
+                    "annotatedPattern": "the anamnese form is opened",
+                    "resolvedPattern": "the\\s+anamnese\\s+form\\s+is\\s+opened"
+                  },
+                  {
+                    "type": "THEN",
+                    "annotatedPattern": "the correct client should be displayed",
+                    "resolvedPattern": "the\\s+correct\\s+client\\s+should\\s+be\\s+displayed"
+                  },
+                  {
+                    "type": "WHEN",
+                    "annotatedPattern": "I search for a client based on <searchtype>",
+                    "resolvedPattern": "I\\s+search\\s+for\\s+a\\s+client\\s+based\\s+on\\s+<searchtype>"
+                  }
+                ],
+                "results": [
+                  {
+                    "step": "Given the anamnese form is opened",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "Given the anamnese form is opened",
+                    "durationInMillis": 11428
+                  },
+                  {
+                    "step": "When I search for a client based on <searchtype>",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "When I search for a client based on ｟Clientnummer｠",
+                    "durationInMillis": 286
+                  },
+                  {
+                    "step": "Then the correct client should be displayed",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "Then the correct client should be displayed",
+                    "durationInMillis": 3710
+                  }
+                ]
+              },
+              "afterSteps": {
+                "matches": []
+              }
+            }
+          ],
+          "status": "SUCCESSFUL"
+        }
+      ],
+      "beforeSteps": {},
+      "afterSteps": {},
+      "timing": {
+        "durationInMillis": 67864
+      },
+      "givenStory": false
+    }
+  ],
+  "scenarios": [
+    {
+      "scenario": {
+        "title": "Checks if client information is correctly searchable",
+        "meta": {
+          "properties": []
+        },
+        "givenStories": {
+          "givenStories": [],
+          "givenStoriesAsString": "",
+          "examplesTable": {
+            "tableAsString": "",
+            "headerSeparator": "|",
+            "valueSeparator": "|",
+            "ignorableSeparator": "|--",
+            "tableTransformers": {
+              "transformers": [
+                [
+                  "FROM_LANDSCAPE",
+                  {}
+                ],
+                [
+                  "REPLACING",
+                  {}
+                ],
+                [
+                  "FORMATTING",
+                  {}
+                ]
+              ]
+            },
+            "headers": [],
+            "data": [],
+            "properties": [
+              {
+                "@name": "headerSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "valueSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "ignorableSeparator",
+                "@value": "|--"
+              }
+            ],
+            "propertiesAsString": "",
+            "namedParameters": [],
+            "trim": true
+          }
+        },
+        "examplesTable": {
+          "tableAsString": "|searchtype|\n|Achternaam|\n|BSN|\n|Clientnummer|",
+          "headerSeparator": "|",
+          "valueSeparator": "|",
+          "ignorableSeparator": "|--",
+          "tableTransformers": {
+            "transformers": [
+              [
+                "FROM_LANDSCAPE",
+                {}
+              ],
+              [
+                "REPLACING",
+                {}
+              ],
+              [
+                "FORMATTING",
+                {}
+              ]
+            ]
+          },
+          "headers": [
+            "searchtype"
+          ],
+          "data": [
+            [
+              [
+                "searchtype",
+                "Achternaam"
+              ]
+            ],
+            [
+              [
+                "searchtype",
+                "BSN"
+              ]
+            ],
+            [
+              [
+                "searchtype",
+                "Clientnummer"
+              ]
+            ]
+          ],
+          "properties": [
+            {
+              "@name": "headerSeparator",
+              "@value": "|"
+            },
+            {
+              "@name": "valueSeparator",
+              "@value": "|"
+            },
+            {
+              "@name": "ignorableSeparator",
+              "@value": "|--"
+            }
+          ],
+          "propertiesAsString": "",
+          "namedParameters": [],
+          "trim": true
+        },
+        "steps": [
+          "Given the anamnese form is opened",
+          "When I search for a client based on <searchtype>",
+          "Then the correct client should be displayed"
+        ]
+      },
+      "storyPath": "com/test/jbehave/stories/frontend/ophalenClientgegevens.story",
+      "allowed": true,
+      "examplePerformableScenarios": [
+        {
+          "parameters": [
+            [
+              "searchtype",
+              "Achternaam"
+            ]
+          ],
+          "givenStories": [],
+          "beforeSteps": {
+            "matches": []
+          },
+          "steps": {
+            "matches": [
+              {
+                "type": "GIVEN",
+                "annotatedPattern": "the anamnese form is opened",
+                "resolvedPattern": "the\\s+anamnese\\s+form\\s+is\\s+opened"
+              },
+              {
+                "type": "THEN",
+                "annotatedPattern": "the correct client should be displayed",
+                "resolvedPattern": "the\\s+correct\\s+client\\s+should\\s+be\\s+displayed"
+              },
+              {
+                "type": "WHEN",
+                "annotatedPattern": "I search for a client based on <searchtype>",
+                "resolvedPattern": "I\\s+search\\s+for\\s+a\\s+client\\s+based\\s+on\\s+<searchtype>"
+              }
+            ],
+            "results": [
+              {
+                "step": "Given the anamnese form is opened",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "Given the anamnese form is opened",
+                "durationInMillis": 25803
+              },
+              {
+                "step": "When I search for a client based on <searchtype>",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "When I search for a client based on ｟Achternaam｠",
+                "durationInMillis": 388
+              },
+              {
+                "step": "Then the correct client should be displayed",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "Then the correct client should be displayed",
+                "durationInMillis": 7879
+              }
+            ]
+          },
+          "afterSteps": {
+            "matches": []
+          }
+        },
+        {
+          "parameters": [
+            [
+              "searchtype",
+              "BSN"
+            ]
+          ],
+          "givenStories": [],
+          "beforeSteps": {
+            "matches": []
+          },
+          "steps": {
+            "matches": [
+              {
+                "type": "GIVEN",
+                "annotatedPattern": "the anamnese form is opened",
+                "resolvedPattern": "the\\s+anamnese\\s+form\\s+is\\s+opened"
+              },
+              {
+                "type": "THEN",
+                "annotatedPattern": "the correct client should be displayed",
+                "resolvedPattern": "the\\s+correct\\s+client\\s+should\\s+be\\s+displayed"
+              },
+              {
+                "type": "WHEN",
+                "annotatedPattern": "I search for a client based on <searchtype>",
+                "resolvedPattern": "I\\s+search\\s+for\\s+a\\s+client\\s+based\\s+on\\s+<searchtype>"
+              }
+            ],
+            "results": [
+              {
+                "step": "Given the anamnese form is opened",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "Given the anamnese form is opened",
+                "durationInMillis": 11701
+              },
+              {
+                "step": "When I search for a client based on <searchtype>",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "When I search for a client based on ｟BSN｠",
+                "durationInMillis": 323
+              },
+              {
+                "step": "Then the correct client should be displayed",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "Then the correct client should be displayed",
+                "durationInMillis": 6332
+              }
+            ]
+          },
+          "afterSteps": {
+            "matches": []
+          }
+        },
+        {
+          "parameters": [
+            [
+              "searchtype",
+              "Clientnummer"
+            ]
+          ],
+          "givenStories": [],
+          "beforeSteps": {
+            "matches": []
+          },
+          "steps": {
+            "matches": [
+              {
+                "type": "GIVEN",
+                "annotatedPattern": "the anamnese form is opened",
+                "resolvedPattern": "the\\s+anamnese\\s+form\\s+is\\s+opened"
+              },
+              {
+                "type": "THEN",
+                "annotatedPattern": "the correct client should be displayed",
+                "resolvedPattern": "the\\s+correct\\s+client\\s+should\\s+be\\s+displayed"
+              },
+              {
+                "type": "WHEN",
+                "annotatedPattern": "I search for a client based on <searchtype>",
+                "resolvedPattern": "I\\s+search\\s+for\\s+a\\s+client\\s+based\\s+on\\s+<searchtype>"
+              }
+            ],
+            "results": [
+              {
+                "step": "Given the anamnese form is opened",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "Given the anamnese form is opened",
+                "durationInMillis": 11428
+              },
+              {
+                "step": "When I search for a client based on <searchtype>",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "When I search for a client based on ｟Clientnummer｠",
+                "durationInMillis": 286
+              },
+              {
+                "step": "Then the correct client should be displayed",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "Then the correct client should be displayed",
+                "durationInMillis": 3710
+              }
+            ]
+          },
+          "afterSteps": {
+            "matches": []
+          }
+        }
+      ],
+      "status": "SUCCESSFUL"
+    }
+  ]
+}}

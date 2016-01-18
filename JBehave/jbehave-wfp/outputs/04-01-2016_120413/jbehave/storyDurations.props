@@ -1,0 +1,6 @@
+#org.jbehave.core.embedder.StoryManager
+#Mon Jan 04 12:05:22 CET 2016
+com/test/jbehave/stories/frontend/ophalenClientgegevens.story=67000
+threads=1
+total=67000
+threadAverage=67000

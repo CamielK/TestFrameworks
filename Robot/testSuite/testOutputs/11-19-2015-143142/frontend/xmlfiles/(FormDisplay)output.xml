@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20151119 14:31:50.924" generator="Robot 2.9.2 (Python 2.7.3 on linux2)">
+<suite source="/home/camiel/Documents/testframeworks/Robot/testSuite/testScripts/frontend/FormDisplay.robot" id="s1" name="FormDisplay">
+<test id="s1-t1" name="Suite setup">
+<kw name="Open Browser To Login Page" library="frontendResource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20151119 14:31:51.052" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:8084/forms/authentication/login'</msg>
+<status status="PASS" endtime="20151119 14:31:53.227" starttime="20151119 14:31:51.051"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20151119 14:31:53.427" starttime="20151119 14:31:53.228"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20151119 14:31:53.430" starttime="20151119 14:31:53.428"></status>
+</kw>
+<kw name="Login Page Should Be Open" library="frontendResource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Login</arg>
+</arguments>
+<msg timestamp="20151119 14:31:53.451" level="INFO">Page title is 'Login'.</msg>
+<status status="PASS" endtime="20151119 14:31:53.453" starttime="20151119 14:31:53.433"></status>
+</kw>
+<status status="PASS" endtime="20151119 14:31:53.454" starttime="20151119 14:31:53.431"></status>
+</kw>
+<status status="PASS" endtime="20151119 14:31:53.455" starttime="20151119 14:31:51.051"></status>
+</kw>
+<kw name="Input Username" library="frontendResource">
+<arguments>
+<arg>demo</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>id=username</arg>
+</arguments>
+<status status="PASS" endtime="20151119 14:31:53.526" starttime="20151119 14:31:53.457"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=username</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20151119 14:31:53.528" level="INFO">Typing text 'demo' into text field 'id=username'</msg>
+<status status="PASS" endtime="20151119 14:31:53.697" starttime="20151119 14:31:53.527"></status>
+</kw>
+<status status="PASS" endtime="20151119 14:31:53.699" starttime="20151119 14:31:53.456"></status>
+</kw>
+<kw name="Input Password" library="frontendResource">
+<arguments>
+<arg>demo</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20151119 14:31:53.703" level="INFO">Typing text 'demo' into text field 'id=password'</msg>
+<status status="PASS" endtime="20151119 14:31:53.865" starttime="20151119 14:31:53.701"></status>
+</kw>
+<status status="PASS" endtime="20151119 14:31:53.866" starttime="20151119 14:31:53.699"></status>
+</kw>
+<kw name="Submit Credentials" library="frontendResource">
+<kw name="Submit Form" library="Selenium2Library">
+<doc>Submits a form identified by `locator`.</doc>
+<msg timestamp="20151119 14:31:53.869" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" endtime="20151119 14:31:54.813" starttime="20151119 14:31:53.868"></status>
+</kw>
+<status status="PASS" endtime="20151119 14:31:54.815" starttime="20151119 14:31:53.866"></status>
+</kw>
+<kw name="Welcome Page Should Be Open" library="frontendResource">
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>${WELCOME URL}</arg>
+</arguments>
+<msg timestamp="20151119 14:31:54.838" level="INFO">Current location is 'http://localhost:8084/forms/list/tasklist/group'.</msg>
+<status status="PASS" endtime="20151119 14:31:54.839" starttime="20151119 14:31:54.817"></status>
+</kw>
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Our tasks</arg>
+</arguments>
+<msg timestamp="20151119 14:31:54.855" level="INFO">Page title is 'Our tasks'.</msg>
+<status status="PASS" endtime="20151119 14:31:54.855" starttime="20151119 14:31:54.840"></status>
+</kw>
+<status status="PASS" endtime="20151119 14:31:54.856" starttime="20151119 14:31:54.816"></status>
+</kw>
+<status status="PASS" endtime="20151119 14:31:54.857" critical="yes" starttime="20151119 14:31:51.050"></status>
+</test>
+<test id="s1-t2" name="Dynamic element visibility">
+<kw name="Open Ontslag Formulier" library="frontendResource">
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>New</arg>
+</arguments>
+<msg timestamp="20151119 14:31:54.861" level="INFO">Clicking link 'New'.</msg>
+<status status="PASS" endtime="20151119 14:31:55.008" starttime="20151119 14:31:54.860"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>Ontslag Procedure</arg>
+</arguments>
+<msg timestamp="20151119 14:31:55.009" level="INFO">Clicking link 'Ontslag Procedure'.</msg>
+<status status="PASS" endtime="20151119 14:31:55.124" starttime="20151119 14:31:55.008"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>id=update-document.persoonsgegevens.naam</arg>
+</arguments>
+<status status="PASS" endtime="20151119 14:31:55.403" starttime="20151119 14:31:55.125"></status>
+</kw>
+<status status="PASS" endtime="20151119 14:31:55.403" starttime="20151119 14:31:54.859"></status>
+</kw>
+<kw name="Function Should Not Be Visible" library="frontendResource">
+<kw name="Element Should Not Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by `locator` is NOT visible.</doc>
+<arguments>
+<arg>id=update-document.persoonsgegevens.functie</arg>
+</arguments>
+<msg timestamp="20151119 14:31:55.406" level="INFO">Verifying element 'id=update-document.persoonsgegevens.functie' is not visible.</msg>
+<status status="PASS" endtime="20151119 14:31:55.453" starttime="20151119 14:31:55.405"></status>
+</kw>
+<status status="PASS" endtime="20151119 14:31:55.454" starttime="20151119 14:31:55.404"></status>
+</kw>
+<kw name="Input Naam" library="frontendResource">
+<arguments>
+<arg>Piet</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=update-document.persoonsgegevens.naam</arg>
+<arg>${naamInput}</arg>
+</arguments>
+<msg timestamp="20151119 14:31:55.459" level="INFO">Typing text 'Piet' into text field 'id=update-document.persoonsgegevens.naam'</msg>
+<status status="PASS" endtime="20151119 14:31:55.581" starttime="20151119 14:31:55.457"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>id=update-document.persoonsgegevens.geslacht</arg>
+</arguments>
+<msg timestamp="20151119 14:31:55.585" level="INFO">Clicking element 'id=update-document.persoonsgegevens.geslacht'.</msg>
+<status status="PASS" endtime="20151119 14:31:55.726" starttime="20151119 14:31:55.583"></status>
+</kw>
+<status status="PASS" endtime="20151119 14:31:55.727" starttime="20151119 14:31:55.455"></status>
+</kw>
+<kw name="Function Should Be Visible" library="frontendResource">
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by `locator` is visible.</doc>
+<arguments>
+<arg>id=update-document.persoonsgegevens.functie</arg>
+</arguments>
+<msg timestamp="20151119 14:31:55.731" level="INFO">Verifying element 'id=update-document.persoonsgegevens.functie' is visible.</msg>
+<status status="PASS" endtime="20151119 14:31:55.794" starttime="20151119 14:31:55.729"></status>
+</kw>
+<status status="PASS" endtime="20151119 14:31:55.795" starttime="20151119 14:31:55.728"></status>
+</kw>
+<kw name="Input Naam" library="frontendResource">
+<arguments>
+<arg>${EMPTY}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=update-document.persoonsgegevens.naam</arg>
+<arg>${naamInput}</arg>
+</arguments>
+<msg timestamp="20151119 14:31:55.798" level="INFO">Typing text '' into text field 'id=update-document.persoonsgegevens.naam'</msg>
+<status status="PASS" endtime="20151119 14:31:55.912" starttime="20151119 14:31:55.797"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>id=update-document.persoonsgegevens.geslacht</arg>
+</arguments>
+<msg timestamp="20151119 14:31:55.914" level="INFO">Clicking element 'id=update-document.persoonsgegevens.geslacht'.</msg>
+<status status="PASS" endtime="20151119 14:31:56.001" starttime="20151119 14:31:55.913"></status>
+</kw>
+<status status="PASS" endtime="20151119 14:31:56.003" starttime="20151119 14:31:55.796"></status>
+</kw>
+<kw name="Function Should Not Be Visible" library="frontendResource">
+<kw name="Element Should Not Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by `locator` is NOT visible.</doc>
+<arguments>
+<arg>id=update-document.persoonsgegevens.functie</arg>
+</arguments>
+<msg timestamp="20151119 14:31:56.006" level="INFO">Verifying element 'id=update-document.persoonsgegevens.functie' is not visible.</msg>
+<status status="PASS" endtime="20151119 14:31:56.037" starttime="20151119 14:31:56.005"></status>
+</kw>
+<status status="PASS" endtime="20151119 14:31:56.041" starttime="20151119 14:31:56.003"></status>
+</kw>
+<status status="PASS" endtime="20151119 14:31:56.042" critical="yes" starttime="20151119 14:31:54.858"></status>
+</test>
+<test id="s1-t3" name="Suite teardown">
+<kw name="Browser Should Be Open" library="frontendResource">
+<kw name="Location Should Contain" library="Selenium2Library">
+<doc>Verifies that current URL contains `expected`.</doc>
+<arguments>
+<arg>http://${SERVER}/forms/</arg>
+</arguments>
+<msg timestamp="20151119 14:31:56.054" level="INFO">Current location contains 'http://localhost:8084/forms/'.</msg>
+<status status="PASS" endtime="20151119 14:31:56.055" starttime="20151119 14:31:56.044"></status>
+</kw>
+<status status="PASS" endtime="20151119 14:31:56.056" starttime="20151119 14:31:56.043"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20151119 14:31:56.118" starttime="20151119 14:31:56.057"></status>
+</kw>
+<status status="PASS" endtime="20151119 14:31:56.119" critical="yes" starttime="20151119 14:31:56.043"></status>
+</test>
+<doc>A test suite to test the ontslagRequest wfp form.</doc>
+<status status="PASS" endtime="20151119 14:31:56.121" starttime="20151119 14:31:50.925"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="3">Critical Tests</stat>
+<stat fail="0" pass="3">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="FormDisplay" pass="3">FormDisplay</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

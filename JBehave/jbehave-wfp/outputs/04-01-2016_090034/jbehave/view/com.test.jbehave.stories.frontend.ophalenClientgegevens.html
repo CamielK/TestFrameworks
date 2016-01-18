@@ -1,0 +1,119 @@
+<html>
+<head>
+<title>com.test.jbehave.stories.frontend.ophalenClientgegevens</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+<div class="story">
+<h1></h1>
+<div class="path">com/test/jbehave/stories/frontend/ophalenClientgegevens.story</div>
+<div class="scenario">
+<h2>Scenario: Checks if client information is correctly searchable</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given the anamnese form is opened</div>
+<div class="step">When I search for a client based on &lt;searchtype&gt;</div>
+<div class="step">Then the correct client should be displayed</div>
+<table>
+<thead>
+<tr>
+<th>searchtype</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>Achternaam</td></tr>
+<tr>
+<td>BSN</td></tr>
+<tr>
+<td>Clientnummer</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {searchtype=Achternaam}</h3>
+<div class="step successful">Given the anamnese form is opened</div>
+<div class="step successful">When I search for a client based on <span class="step parameter">Achternaam</span></div>
+<div class="step failed">Then the correct client should be displayed <span class="keyword failed">(FAILED)</span><br/><span class="message failed">org.openqa.selenium.UnhandledAlertException: unexpected alert open
+  (Session info: chrome=46.0.2490.80)
+  (Driver info: chromedriver=2.20.353141 (da3cb4b52d3a04ce079546eac4dc96182f58602b),platform=Linux 3.13.0-66-generic x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5 milliseconds: null
+Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
+System info: host: 'camiel-linuxLaptop', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'i386', os.version: '3.13.0-66-generic', java.version: '1.7.0_79'
+Session ID: 347770d0342e58356779ff022c814798
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/tmp/.com.google.Chrome.j05RjL}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=46.0.2490.80, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, hasTouchScreen=false, applicationCacheEnabled=false, takesScreenshot=true}]</span></div>
+
+<h3 class="example">Example: {searchtype=BSN}</h3>
+<div class="step failed">Given the anamnese form is opened <span class="keyword failed">(FAILED)</span><br/><span class="message failed">org.openqa.selenium.UnhandledAlertException: unexpected alert open
+  (Session info: chrome=46.0.2490.80)
+  (Driver info: chromedriver=2.20.353141 (da3cb4b52d3a04ce079546eac4dc96182f58602b),platform=Linux 3.13.0-66-generic x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4 milliseconds: null
+Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
+System info: host: 'camiel-linuxLaptop', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'i386', os.version: '3.13.0-66-generic', java.version: '1.7.0_79'
+Session ID: 347770d0342e58356779ff022c814798
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/tmp/.com.google.Chrome.j05RjL}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=46.0.2490.80, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, hasTouchScreen=false, applicationCacheEnabled=false, takesScreenshot=true}]</span></div>
+<div class="step notPerformed">When I search for a client based on <span class="step parameter">BSN</span> <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then the correct client should be displayed <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+
+<h3 class="example">Example: {searchtype=Clientnummer}</h3>
+<div class="step failed">Given the anamnese form is opened <span class="keyword failed">(FAILED)</span><br/><span class="message failed">org.openqa.selenium.UnhandledAlertException: unexpected alert open
+  (Session info: chrome=46.0.2490.80)
+  (Driver info: chromedriver=2.20.353141 (da3cb4b52d3a04ce079546eac4dc96182f58602b),platform=Linux 3.13.0-66-generic x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 3 milliseconds: null
+Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
+System info: host: 'camiel-linuxLaptop', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'i386', os.version: '3.13.0-66-generic', java.version: '1.7.0_79'
+Session ID: 347770d0342e58356779ff022c814798
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/tmp/.com.google.Chrome.j05RjL}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=46.0.2490.80, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, hasTouchScreen=false, applicationCacheEnabled=false, takesScreenshot=true}]</span></div>
+<div class="step notPerformed">When I search for a client based on <span class="step parameter">Clientnummer</span> <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then the correct client should be displayed <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+</div>
+<pre class="failure">org.openqa.selenium.UnhandledAlertException: unexpected alert open
+  (Session info: chrome=46.0.2490.80)
+  (Driver info: chromedriver=2.20.353141 (da3cb4b52d3a04ce079546eac4dc96182f58602b),platform=Linux 3.13.0-66-generic x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 3 milliseconds: null
+Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
+System info: host: 'camiel-linuxLaptop', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'i386', os.version: '3.13.0-66-generic', java.version: '1.7.0_79'
+Session ID: 347770d0342e58356779ff022c814798
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/tmp/.com.google.Chrome.j05RjL}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=46.0.2490.80, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, hasTouchScreen=false, applicationCacheEnabled=false, takesScreenshot=true}]
+	(reflection-construct)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:164)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:311)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:927)
+	at com.test.jbehave.pages.AnamnesePage.closeForm(AnamnesePage.java:70)
+	at com.test.jbehave.steps.frontend.AnamneseFormSteps.openForm(AnamneseFormSteps.java:33)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:333)
+...</pre>
+</div>
+</div>
+
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>
