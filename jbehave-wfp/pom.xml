@@ -11,10 +11,6 @@
     <jbehave.core.version>4.0.4</jbehave.core.version>
     <jbehave.site.version>3.3</jbehave.site.version>
     <embeddables>**/*Stories.java</embeddables>
-    <surefire.version>2.11</surefire.version>
-    <maven.compiler.version>2.3.2</maven.compiler.version>
-    <timestamp>${maven.build.timestamp}</timestamp>
-    <maven.build.timestamp.format>yyyyMMdd-HHmm</maven.build.timestamp.format>
   </properties>
 
   <dependencies>
@@ -77,59 +73,36 @@
       </plugins>
     </pluginManagement>
     <plugins>
-      <!--<plugin>-->
-        <!--<groupId>org.jbehave</groupId>-->
-        <!--<artifactId>jbehave-maven-plugin</artifactId>-->
-        <!--<version>${jbehave.core.version}</version>-->
-        <!--<executions>-->
-          <!--<execution>-->
-            <!--<id>unpack-view-resources</id>-->
-            <!--<phase>process-resources</phase>-->
-            <!--<goals>-->
-              <!--<goal>unpack-view-resources</goal>-->
-            <!--</goals>-->
-          <!--</execution>-->
-          <!--<execution>-->
-            <!--<id>embeddable-stories</id>-->
-            <!--<phase>integration-test</phase>-->
-            <!--<configuration>-->
-              <!--<includes>-->
-                <!--<include>${embeddables}</include>-->
-              <!--</includes>-->
-              <!--<excludes />-->
-              <!--<ignoreFailureInStories>true</ignoreFailureInStories>-->
-              <!--<ignoreFailureInView>false</ignoreFailureInView>-->
-              <!--<threads>1</threads>-->
-              <!--<metaFilters>-->
-                <!--<metaFilter></metaFilter>-->
-              <!--</metaFilters>-->
-            <!--</configuration>-->
-            <!--<goals>-->
-              <!--<goal>run-stories-as-embeddables</goal>-->
-            <!--</goals>-->
-          <!--</execution>-->
-        <!--</executions>-->
-      <!--</plugin>-->
       <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>${surefire.version}</version>
-        <configuration>
-          <!-- This is to skip tests during normal maven execution
-          (e.g. mvn package) and run them in integration-test -->
-          <skip>false</skip>
-          <reportsDirectory>./test-output/${timestamp}</reportsDirectory>
-          <testFailureIgnore>true</testFailureIgnore>
-        </configuration>
+        <groupId>org.jbehave</groupId>
+        <artifactId>jbehave-maven-plugin</artifactId>
+        <version>${jbehave.core.version}</version>
         <executions>
           <execution>
-            <phase>integration-test</phase>
+            <id>unpack-view-resources</id>
+            <phase>process-resources</phase>
             <goals>
-              <goal>test</goal>
+              <goal>unpack-view-resources</goal>
             </goals>
+          </execution>
+          <execution>
+            <id>embeddable-stories</id>
+            <phase>integration-test</phase>
             <configuration>
-              <skip>false</skip>
+              <includes>
+                <include>${embeddables}</include>
+              </includes>
+              <excludes />
+              <ignoreFailureInStories>true</ignoreFailureInStories>
+              <ignoreFailureInView>false</ignoreFailureInView>
+              <threads>1</threads>
+              <metaFilters>
+                <metaFilter></metaFilter>
+              </metaFilters>
             </configuration>
+            <goals>
+              <goal>run-stories-as-embeddables</goal>
+            </goals>
           </execution>
         </executions>
       </plugin>
