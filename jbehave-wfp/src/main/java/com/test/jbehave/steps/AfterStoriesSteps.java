@@ -8,7 +8,7 @@ import com.test.jbehave.resources.Driver;
  *
  * Created by camiel on 12/12/15.
  */
-public class AfterStories {
+public class AfterStoriesSteps {
 
     private Driver driver = new Driver();
 

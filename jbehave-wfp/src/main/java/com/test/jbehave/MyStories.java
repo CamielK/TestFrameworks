@@ -1,6 +1,6 @@
 package com.test.jbehave;
 
-import com.test.jbehave.steps.AfterStories;
+import com.test.jbehave.steps.AfterStoriesSteps;
 import com.test.jbehave.steps.backend.BackendLoginSteps;
 import com.test.jbehave.steps.backend.MakeUserSteps;
 import com.test.jbehave.steps.frontend.AanmeldingClientSteps;
@@ -98,7 +98,7 @@ public class MyStories extends JUnitStories {
     //if a class is not added here the tests will return 'Pending()' when executed
     @Override
     public InjectableStepsFactory stepsFactory() {
-        return new InstanceStepsFactory(configuration(), new BackendLoginSteps(), new FrontendLoginSteps(), new MakeUserSteps(), new AanmeldingClientSteps(), new AfterStories(), new AnamneseFormSteps());
+        return new InstanceStepsFactory(configuration(), new BackendLoginSteps(), new FrontendLoginSteps(), new MakeUserSteps(), new AanmeldingClientSteps(), new AfterStoriesSteps(), new AnamneseFormSteps());
     }
 
     //point to the story or story's you want to execute
