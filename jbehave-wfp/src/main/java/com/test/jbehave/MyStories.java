@@ -38,6 +38,8 @@ import java.util.Properties;
 import static org.jbehave.core.io.CodeLocations.codeLocationFromClass;
 import static org.jbehave.core.reporters.Format.CONSOLE;
 import static org.jbehave.core.reporters.Format.HTML;
+import static org.jbehave.core.reporters.Format.TXT;
+import static org.jbehave.core.reporters.Format.XML;
 
 /**
  * This class contains configuration elements to setup the JBehave test suite
@@ -51,7 +53,7 @@ public class MyStories extends JUnitStories {
     
     public MyStories() {
         EmbedderControls embedderControls = configuredEmbedder().embedderControls().doGenerateViewAfterStories(true).doIgnoreFailureInStories(true)
-                .doIgnoreFailureInView(true).useThreads(1).useStoryTimeoutInSecs(240); //set ammount of concurrent threads and general timeout time
+                .doIgnoreFailureInView(true).useThreads(5).useStoryTimeoutInSecs(240); //set ammount of concurrent threads and general timeout time
 
         //move output files to new directory
         date = new Date();
@@ -83,8 +85,8 @@ public class MyStories extends JUnitStories {
                                 //.withCodeLocation(CodeLocations.codeLocationFromClass(embeddableClass))
                                 .withCodeLocation(CodeLocations.codeLocationFromPath("outputs/"+ new SimpleDateFormat("dd-MM-yyyy_HHmmss").format(new Date()) + "/testDir"))
                                 .withDefaultFormats().withPathResolver(new FilePrintStreamFactory.ResolveToPackagedName())
-                                .withViewResources(viewResources).withFormats(CONSOLE, HTML)
-                                //.withViewResources(viewResources).withFormats(CONSOLE, TXT, HTML, XML)
+                                //.withViewResources(viewResources).withFormats(CONSOLE, HTML)
+                                .withViewResources(viewResources).withFormats(CONSOLE, TXT, HTML, XML)
                                 .withFailureTrace(true).withFailureTraceCompression(true).withCrossReference(xref))
                 .useParameterConverters(parameterConverters)
                 // use '%' instead of '$' to identify parameters
