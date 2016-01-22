@@ -1,6 +1,0 @@
-#org.jbehave.core.embedder.StoryManager
-#Mon Jan 04 09:15:38 CET 2016
-threads=1
-total=36000
-com/test/jbehave/stories/backend/makeUser.story=36000
-threadAverage=36000
