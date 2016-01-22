@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="1" time="30.394" errors="0" skipped="0" tests="13" name="TestSuite">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/home/camiel/Documents/jdk1.7.0_79/jre/lib/i386"/>
+    <property name="java.vm.version" value="24.79-b02"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/camiel/Documents/GitHub/TestFrameworks/TestNG"/>
+    <property name="java.runtime.version" value="1.7.0_79-b15"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/home/camiel/Documents/jdk1.7.0_79/jre/lib/endorsed"/>
+    <property name="os.arch" value="i386"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/i386:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="sun.management.compiler" value="HotSpot Tiered Compilers"/>
+    <property name="os.version" value="3.13.0-66-generic"/>
+    <property name="user.home" value="/home/camiel"/>
+    <property name="user.timezone" value="Europe/Amsterdam"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="user.name" value="camiel"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.arch.data.model" value="32"/>
+    <property name="java.home" value="/home/camiel/Documents/jdk1.7.0_79/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.7.0_79"/>
+    <property name="java.ext.dirs" value="/home/camiel/Documents/jdk1.7.0_79/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/home/camiel/Documents/jdk1.7.0_79/jre/lib/resources.jar:/home/camiel/Documents/jdk1.7.0_79/jre/lib/rt.jar:/home/camiel/Documents/jdk1.7.0_79/jre/lib/sunrsasign.jar:/home/camiel/Documents/jdk1.7.0_79/jre/lib/jsse.jar:/home/camiel/Documents/jdk1.7.0_79/jre/lib/jce.jar:/home/camiel/Documents/jdk1.7.0_79/jre/lib/charsets.jar:/home/camiel/Documents/jdk1.7.0_79/jre/lib/jfr.jar:/home/camiel/Documents/jdk1.7.0_79/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase time="1.056" classname="backend.MakeUserTest" name="openUserPage"/>
+  <testcase time="1.251" classname="backend.BackendLoginTest" name="frontendSetup"/>
+  <testcase time="1.379" classname="frontend.FrontendLoginTest" name="frontendSetup"/>
+  <testcase time="0.685" classname="backend.BackendLoginTest" name="frontendInvalidUserLogin"/>
+  <testcase time="0.779" classname="backend.BackendLoginTest" name="frontendInvalidPassLogin"/>
+  <testcase time="0.756" classname="backend.BackendLoginTest" name="frontendInvalidLogin"/>
+  <testcase time="0.884" classname="frontend.FrontendLoginTest" name="frontendInvalidLogin"/>
+  <testcase time="0.839" classname="frontend.FrontendLoginTest" name="frontendInvalidPassLogin"/>
+  <testcase time="0.824" classname="frontend.FrontendLoginTest" name="frontendInvalidUserLogin"/>
+  <testcase time="0.907" classname="backend.BackendLoginTest" name="frontendValidLogin"/>
+  <testcase time="5.8" classname="frontend.FrontendLoginTest" name="frontendValidLogin"/>
+  <testcase time="2.09" classname="backend.MakeUserTest" name="makeUser"/>
+  <testcase time="0.119" classname="backend.MakeUserTest" name="validateNewUser">
+    <failure message="unknown error: Element is not clickable at point (44, 189). Other element would receive the click: &lt;div class=&quot;ui-widget-overlay&quot; style=&quot;width: 1025px; height: 744px; z-index: 1001;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=46.0.2490.80)
+  (Driver info: chromedriver=2.20.353141 (da3cb4b52d3a04ce079546eac4dc96182f58602b),platform=Linux 3.13.0-66-generic x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 54 milliseconds
+Build info: version: &apos;2.43.0&apos;, revision: &apos;accb3003b9fb8f7cae30f9669b4c594a065396a6&apos;, time: &apos;2014-09-09 22:22:51&apos;
+System info: host: &apos;camiel-linuxLaptop&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;i386&apos;, os.version: &apos;3.13.0-66-generic&apos;, java.version: &apos;1.7.0_79&apos;
+Session ID: 839236c0eb96850268853a5b31021736
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/tmp/.com.google.Chrome.oBh8G6}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=46.0.2490.80, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, hasTouchScreen=false, applicationCacheEnabled=false, takesScreenshot=true}]" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (44, 189). Other element would receive the click: &lt;div class=&quot;ui-widget-overlay&quot; style=&quot;width: 1025px; height: 744px; z-index: 1001;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=46.0.2490.80)
+  (Driver info: chromedriver=2.20.353141 (da3cb4b52d3a04ce079546eac4dc96182f58602b),platform=Linux 3.13.0-66-generic x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 54 milliseconds
+Build info: version: &apos;2.43.0&apos;, revision: &apos;accb3003b9fb8f7cae30f9669b4c594a065396a6&apos;, time: &apos;2014-09-09 22:22:51&apos;
+System info: host: &apos;camiel-linuxLaptop&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;i386&apos;, os.version: &apos;3.13.0-66-generic&apos;, java.version: &apos;1.7.0_79&apos;
+Session ID: 839236c0eb96850268853a5b31021736
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/tmp/.com.google.Chrome.oBh8G6}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=46.0.2490.80, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, hasTouchScreen=false, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at backend.MakeUserTest.validateNewUser(MakeUserTest.java:71)
+</failure>
+  </testcase>
+</testsuite>

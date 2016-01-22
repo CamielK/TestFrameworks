@@ -1,0 +1,1385 @@
+{"xref": {
+  "stories": [
+    {
+      "story": {
+        "path": "com/test/jbehave/stories/backend/backendLogin.story",
+        "description": {
+          "descriptionAsString": "Story: backend Login"
+        },
+        "narrative": {
+          "inOrderTo": "access the workflow4people backend",
+          "asA": "demo user",
+          "iWantTo": "login into the application",
+          "soThat": ""
+        },
+        "meta": {
+          "properties": []
+        },
+        "givenStories": {
+          "givenStories": [],
+          "givenStoriesAsString": "",
+          "examplesTable": {
+            "tableAsString": "",
+            "headerSeparator": "|",
+            "valueSeparator": "|",
+            "ignorableSeparator": "|--",
+            "tableTransformers": {
+              "transformers": [
+                [
+                  "FROM_LANDSCAPE",
+                  {}
+                ],
+                [
+                  "REPLACING",
+                  {}
+                ],
+                [
+                  "FORMATTING",
+                  {}
+                ]
+              ]
+            },
+            "headers": [],
+            "data": [],
+            "properties": [
+              {
+                "@name": "headerSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "valueSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "ignorableSeparator",
+                "@value": "|--"
+              }
+            ],
+            "propertiesAsString": "",
+            "namedParameters": [],
+            "trim": true
+          }
+        },
+        "lifecycle": {
+          "before": {
+            "steps": [
+              []
+            ]
+          },
+          "after": []
+        },
+        "scenarios": [
+          {
+            "title": "A workflo4people backend login attempt with invalid credentials",
+            "meta": {
+              "properties": [
+                {
+                  "@name": "id1",
+                  "@value": "scenario1"
+                }
+              ]
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "headerSeparator": "|",
+                "valueSeparator": "|",
+                "ignorableSeparator": "|--",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FORMATTING",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ],
+                "propertiesAsString": "",
+                "namedParameters": [],
+                "trim": true
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "",
+              "headerSeparator": "|",
+              "valueSeparator": "|",
+              "ignorableSeparator": "|--",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FORMATTING",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [],
+              "data": [],
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ],
+              "propertiesAsString": "",
+              "namedParameters": [],
+              "trim": true
+            },
+            "steps": [
+              "Given The workflow4people backend is started",
+              "When I enter invalid backend credentials",
+              "And I log in to the backend",
+              "Then I should not be logged in to the backend"
+            ]
+          },
+          {
+            "title": "A workflo4people backend login attempt with valid credentials",
+            "meta": {
+              "properties": [
+                {
+                  "@name": "id2",
+                  "@value": "scenario2"
+                }
+              ]
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "headerSeparator": "|",
+                "valueSeparator": "|",
+                "ignorableSeparator": "|--",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FORMATTING",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ],
+                "propertiesAsString": "",
+                "namedParameters": [],
+                "trim": true
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "",
+              "headerSeparator": "|",
+              "valueSeparator": "|",
+              "ignorableSeparator": "|--",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FORMATTING",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [],
+              "data": [],
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ],
+              "propertiesAsString": "",
+              "namedParameters": [],
+              "trim": true
+            },
+            "steps": [
+              "Given The workflow4people backend is started",
+              "When I enter valid backend credentials",
+              "And I log in to the backend",
+              "Then I should be logged in to the backend"
+            ]
+          }
+        ],
+        "name": "backendLogin.story"
+      },
+      "localizedNarrative": "In order to access the workflow4people backend\nAs a demo user\nI want to login into the application",
+      "allowed": true,
+      "status": "SUCCESSFUL",
+      "givenStories": [],
+      "scenarios": [
+        {
+          "scenario": {
+            "title": "A workflo4people backend login attempt with invalid credentials",
+            "meta": {
+              "properties": [
+                {
+                  "@name": "id1",
+                  "@value": "scenario1"
+                }
+              ]
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "headerSeparator": "|",
+                "valueSeparator": "|",
+                "ignorableSeparator": "|--",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FORMATTING",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ],
+                "propertiesAsString": "",
+                "namedParameters": [],
+                "trim": true
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "",
+              "headerSeparator": "|",
+              "valueSeparator": "|",
+              "ignorableSeparator": "|--",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FORMATTING",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [],
+              "data": [],
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ],
+              "propertiesAsString": "",
+              "namedParameters": [],
+              "trim": true
+            },
+            "steps": [
+              "Given The workflow4people backend is started",
+              "When I enter invalid backend credentials",
+              "And I log in to the backend",
+              "Then I should not be logged in to the backend"
+            ]
+          },
+          "storyPath": "com/test/jbehave/stories/backend/backendLogin.story",
+          "allowed": true,
+          "normalPerformableScenario": {
+            "parameters": [],
+            "givenStories": [],
+            "beforeSteps": {
+              "matches": []
+            },
+            "steps": {
+              "matches": [
+                {
+                  "type": "THEN",
+                  "annotatedPattern": "I should not be logged in to the backend",
+                  "resolvedPattern": "I\\s+should\\s+not\\s+be\\s+logged\\s+in\\s+to\\s+the\\s+backend"
+                },
+                {
+                  "type": "GIVEN",
+                  "annotatedPattern": "The workflow4people backend is started",
+                  "resolvedPattern": "The\\s+workflow4people\\s+backend\\s+is\\s+started"
+                },
+                {
+                  "type": "WHEN",
+                  "annotatedPattern": "I enter invalid backend credentials",
+                  "resolvedPattern": "I\\s+enter\\s+invalid\\s+backend\\s+credentials"
+                },
+                {
+                  "type": "WHEN",
+                  "annotatedPattern": "I log in to the backend",
+                  "resolvedPattern": "I\\s+log\\s+in\\s+to\\s+the\\s+backend"
+                }
+              ],
+              "results": [
+                {
+                  "step": "Given The workflow4people backend is started",
+                  "type": "SUCCESSFUL",
+                  "parametrisedStep": "Given The workflow4people backend is started",
+                  "durationInMillis": 2633
+                },
+                {
+                  "step": "When I enter invalid backend credentials",
+                  "type": "SUCCESSFUL",
+                  "parametrisedStep": "When I enter invalid backend credentials",
+                  "durationInMillis": 221
+                },
+                {
+                  "step": "And I log in to the backend",
+                  "type": "SUCCESSFUL",
+                  "parametrisedStep": "And I log in to the backend",
+                  "durationInMillis": 5453
+                },
+                {
+                  "step": "Then I should not be logged in to the backend",
+                  "type": "SUCCESSFUL",
+                  "parametrisedStep": "Then I should not be logged in to the backend",
+                  "durationInMillis": 569
+                }
+              ]
+            },
+            "afterSteps": {
+              "matches": []
+            },
+            "scenario": {
+              "title": "A workflo4people backend login attempt with invalid credentials",
+              "meta": {
+                "properties": [
+                  {
+                    "@name": "id1",
+                    "@value": "scenario1"
+                  }
+                ]
+              },
+              "givenStories": {
+                "givenStories": [],
+                "givenStoriesAsString": "",
+                "examplesTable": {
+                  "tableAsString": "",
+                  "headerSeparator": "|",
+                  "valueSeparator": "|",
+                  "ignorableSeparator": "|--",
+                  "tableTransformers": {
+                    "transformers": [
+                      [
+                        "FROM_LANDSCAPE",
+                        {}
+                      ],
+                      [
+                        "REPLACING",
+                        {}
+                      ],
+                      [
+                        "FORMATTING",
+                        {}
+                      ]
+                    ]
+                  },
+                  "headers": [],
+                  "data": [],
+                  "properties": [
+                    {
+                      "@name": "headerSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "valueSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "ignorableSeparator",
+                      "@value": "|--"
+                    }
+                  ],
+                  "propertiesAsString": "",
+                  "namedParameters": [],
+                  "trim": true
+                }
+              },
+              "examplesTable": {
+                "tableAsString": "",
+                "headerSeparator": "|",
+                "valueSeparator": "|",
+                "ignorableSeparator": "|--",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FORMATTING",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ],
+                "propertiesAsString": "",
+                "namedParameters": [],
+                "trim": true
+              },
+              "steps": [
+                "Given The workflow4people backend is started",
+                "When I enter invalid backend credentials",
+                "And I log in to the backend",
+                "Then I should not be logged in to the backend"
+              ]
+            }
+          },
+          "examplePerformableScenarios": [],
+          "status": "SUCCESSFUL"
+        },
+        {
+          "scenario": {
+            "title": "A workflo4people backend login attempt with valid credentials",
+            "meta": {
+              "properties": [
+                {
+                  "@name": "id2",
+                  "@value": "scenario2"
+                }
+              ]
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "headerSeparator": "|",
+                "valueSeparator": "|",
+                "ignorableSeparator": "|--",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FORMATTING",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ],
+                "propertiesAsString": "",
+                "namedParameters": [],
+                "trim": true
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "",
+              "headerSeparator": "|",
+              "valueSeparator": "|",
+              "ignorableSeparator": "|--",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FORMATTING",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [],
+              "data": [],
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ],
+              "propertiesAsString": "",
+              "namedParameters": [],
+              "trim": true
+            },
+            "steps": [
+              "Given The workflow4people backend is started",
+              "When I enter valid backend credentials",
+              "And I log in to the backend",
+              "Then I should be logged in to the backend"
+            ]
+          },
+          "storyPath": "com/test/jbehave/stories/backend/backendLogin.story",
+          "allowed": true,
+          "normalPerformableScenario": {
+            "parameters": [],
+            "givenStories": [],
+            "beforeSteps": {
+              "matches": []
+            },
+            "steps": {
+              "matches": [
+                {
+                  "type": "WHEN",
+                  "annotatedPattern": "I enter valid backend credentials",
+                  "resolvedPattern": "I\\s+enter\\s+valid\\s+backend\\s+credentials"
+                },
+                {
+                  "type": "GIVEN",
+                  "annotatedPattern": "The workflow4people backend is started",
+                  "resolvedPattern": "The\\s+workflow4people\\s+backend\\s+is\\s+started"
+                },
+                {
+                  "type": "WHEN",
+                  "annotatedPattern": "I log in to the backend",
+                  "resolvedPattern": "I\\s+log\\s+in\\s+to\\s+the\\s+backend"
+                },
+                {
+                  "type": "THEN",
+                  "annotatedPattern": "I should be logged in to the backend",
+                  "resolvedPattern": "I\\s+should\\s+be\\s+logged\\s+in\\s+to\\s+the\\s+backend"
+                }
+              ],
+              "results": [
+                {
+                  "step": "Given The workflow4people backend is started",
+                  "type": "SUCCESSFUL",
+                  "parametrisedStep": "Given The workflow4people backend is started",
+                  "durationInMillis": 2237
+                },
+                {
+                  "step": "When I enter valid backend credentials",
+                  "type": "SUCCESSFUL",
+                  "parametrisedStep": "When I enter valid backend credentials",
+                  "durationInMillis": 259
+                },
+                {
+                  "step": "And I log in to the backend",
+                  "type": "SUCCESSFUL",
+                  "parametrisedStep": "And I log in to the backend",
+                  "durationInMillis": 779
+                },
+                {
+                  "step": "Then I should be logged in to the backend",
+                  "type": "SUCCESSFUL",
+                  "parametrisedStep": "Then I should be logged in to the backend",
+                  "durationInMillis": 559
+                }
+              ]
+            },
+            "afterSteps": {
+              "matches": []
+            },
+            "scenario": {
+              "title": "A workflo4people backend login attempt with valid credentials",
+              "meta": {
+                "properties": [
+                  {
+                    "@name": "id2",
+                    "@value": "scenario2"
+                  }
+                ]
+              },
+              "givenStories": {
+                "givenStories": [],
+                "givenStoriesAsString": "",
+                "examplesTable": {
+                  "tableAsString": "",
+                  "headerSeparator": "|",
+                  "valueSeparator": "|",
+                  "ignorableSeparator": "|--",
+                  "tableTransformers": {
+                    "transformers": [
+                      [
+                        "FROM_LANDSCAPE",
+                        {}
+                      ],
+                      [
+                        "REPLACING",
+                        {}
+                      ],
+                      [
+                        "FORMATTING",
+                        {}
+                      ]
+                    ]
+                  },
+                  "headers": [],
+                  "data": [],
+                  "properties": [
+                    {
+                      "@name": "headerSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "valueSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "ignorableSeparator",
+                      "@value": "|--"
+                    }
+                  ],
+                  "propertiesAsString": "",
+                  "namedParameters": [],
+                  "trim": true
+                }
+              },
+              "examplesTable": {
+                "tableAsString": "",
+                "headerSeparator": "|",
+                "valueSeparator": "|",
+                "ignorableSeparator": "|--",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FORMATTING",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ],
+                "propertiesAsString": "",
+                "namedParameters": [],
+                "trim": true
+              },
+              "steps": [
+                "Given The workflow4people backend is started",
+                "When I enter valid backend credentials",
+                "And I log in to the backend",
+                "Then I should be logged in to the backend"
+              ]
+            }
+          },
+          "examplePerformableScenarios": [],
+          "status": "SUCCESSFUL"
+        }
+      ],
+      "beforeSteps": {},
+      "afterSteps": {},
+      "timing": {
+        "durationInMillis": 12730
+      },
+      "givenStory": false
+    }
+  ],
+  "scenarios": [
+    {
+      "scenario": {
+        "title": "A workflo4people backend login attempt with invalid credentials",
+        "meta": {
+          "properties": [
+            {
+              "@name": "id1",
+              "@value": "scenario1"
+            }
+          ]
+        },
+        "givenStories": {
+          "givenStories": [],
+          "givenStoriesAsString": "",
+          "examplesTable": {
+            "tableAsString": "",
+            "headerSeparator": "|",
+            "valueSeparator": "|",
+            "ignorableSeparator": "|--",
+            "tableTransformers": {
+              "transformers": [
+                [
+                  "FROM_LANDSCAPE",
+                  {}
+                ],
+                [
+                  "REPLACING",
+                  {}
+                ],
+                [
+                  "FORMATTING",
+                  {}
+                ]
+              ]
+            },
+            "headers": [],
+            "data": [],
+            "properties": [
+              {
+                "@name": "headerSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "valueSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "ignorableSeparator",
+                "@value": "|--"
+              }
+            ],
+            "propertiesAsString": "",
+            "namedParameters": [],
+            "trim": true
+          }
+        },
+        "examplesTable": {
+          "tableAsString": "",
+          "headerSeparator": "|",
+          "valueSeparator": "|",
+          "ignorableSeparator": "|--",
+          "tableTransformers": {
+            "transformers": [
+              [
+                "FROM_LANDSCAPE",
+                {}
+              ],
+              [
+                "REPLACING",
+                {}
+              ],
+              [
+                "FORMATTING",
+                {}
+              ]
+            ]
+          },
+          "headers": [],
+          "data": [],
+          "properties": [
+            {
+              "@name": "headerSeparator",
+              "@value": "|"
+            },
+            {
+              "@name": "valueSeparator",
+              "@value": "|"
+            },
+            {
+              "@name": "ignorableSeparator",
+              "@value": "|--"
+            }
+          ],
+          "propertiesAsString": "",
+          "namedParameters": [],
+          "trim": true
+        },
+        "steps": [
+          "Given The workflow4people backend is started",
+          "When I enter invalid backend credentials",
+          "And I log in to the backend",
+          "Then I should not be logged in to the backend"
+        ]
+      },
+      "storyPath": "com/test/jbehave/stories/backend/backendLogin.story",
+      "allowed": true,
+      "normalPerformableScenario": {
+        "parameters": [],
+        "givenStories": [],
+        "beforeSteps": {
+          "matches": []
+        },
+        "steps": {
+          "matches": [
+            {
+              "type": "THEN",
+              "annotatedPattern": "I should not be logged in to the backend",
+              "resolvedPattern": "I\\s+should\\s+not\\s+be\\s+logged\\s+in\\s+to\\s+the\\s+backend"
+            },
+            {
+              "type": "GIVEN",
+              "annotatedPattern": "The workflow4people backend is started",
+              "resolvedPattern": "The\\s+workflow4people\\s+backend\\s+is\\s+started"
+            },
+            {
+              "type": "WHEN",
+              "annotatedPattern": "I enter invalid backend credentials",
+              "resolvedPattern": "I\\s+enter\\s+invalid\\s+backend\\s+credentials"
+            },
+            {
+              "type": "WHEN",
+              "annotatedPattern": "I log in to the backend",
+              "resolvedPattern": "I\\s+log\\s+in\\s+to\\s+the\\s+backend"
+            }
+          ],
+          "results": [
+            {
+              "step": "Given The workflow4people backend is started",
+              "type": "SUCCESSFUL",
+              "parametrisedStep": "Given The workflow4people backend is started",
+              "durationInMillis": 2633
+            },
+            {
+              "step": "When I enter invalid backend credentials",
+              "type": "SUCCESSFUL",
+              "parametrisedStep": "When I enter invalid backend credentials",
+              "durationInMillis": 221
+            },
+            {
+              "step": "And I log in to the backend",
+              "type": "SUCCESSFUL",
+              "parametrisedStep": "And I log in to the backend",
+              "durationInMillis": 5453
+            },
+            {
+              "step": "Then I should not be logged in to the backend",
+              "type": "SUCCESSFUL",
+              "parametrisedStep": "Then I should not be logged in to the backend",
+              "durationInMillis": 569
+            }
+          ]
+        },
+        "afterSteps": {
+          "matches": []
+        },
+        "scenario": {
+          "title": "A workflo4people backend login attempt with invalid credentials",
+          "meta": {
+            "properties": [
+              {
+                "@name": "id1",
+                "@value": "scenario1"
+              }
+            ]
+          },
+          "givenStories": {
+            "givenStories": [],
+            "givenStoriesAsString": "",
+            "examplesTable": {
+              "tableAsString": "",
+              "headerSeparator": "|",
+              "valueSeparator": "|",
+              "ignorableSeparator": "|--",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FORMATTING",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [],
+              "data": [],
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ],
+              "propertiesAsString": "",
+              "namedParameters": [],
+              "trim": true
+            }
+          },
+          "examplesTable": {
+            "tableAsString": "",
+            "headerSeparator": "|",
+            "valueSeparator": "|",
+            "ignorableSeparator": "|--",
+            "tableTransformers": {
+              "transformers": [
+                [
+                  "FROM_LANDSCAPE",
+                  {}
+                ],
+                [
+                  "REPLACING",
+                  {}
+                ],
+                [
+                  "FORMATTING",
+                  {}
+                ]
+              ]
+            },
+            "headers": [],
+            "data": [],
+            "properties": [
+              {
+                "@name": "headerSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "valueSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "ignorableSeparator",
+                "@value": "|--"
+              }
+            ],
+            "propertiesAsString": "",
+            "namedParameters": [],
+            "trim": true
+          },
+          "steps": [
+            "Given The workflow4people backend is started",
+            "When I enter invalid backend credentials",
+            "And I log in to the backend",
+            "Then I should not be logged in to the backend"
+          ]
+        }
+      },
+      "examplePerformableScenarios": [],
+      "status": "SUCCESSFUL"
+    },
+    {
+      "scenario": {
+        "title": "A workflo4people backend login attempt with valid credentials",
+        "meta": {
+          "properties": [
+            {
+              "@name": "id2",
+              "@value": "scenario2"
+            }
+          ]
+        },
+        "givenStories": {
+          "givenStories": [],
+          "givenStoriesAsString": "",
+          "examplesTable": {
+            "tableAsString": "",
+            "headerSeparator": "|",
+            "valueSeparator": "|",
+            "ignorableSeparator": "|--",
+            "tableTransformers": {
+              "transformers": [
+                [
+                  "FROM_LANDSCAPE",
+                  {}
+                ],
+                [
+                  "REPLACING",
+                  {}
+                ],
+                [
+                  "FORMATTING",
+                  {}
+                ]
+              ]
+            },
+            "headers": [],
+            "data": [],
+            "properties": [
+              {
+                "@name": "headerSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "valueSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "ignorableSeparator",
+                "@value": "|--"
+              }
+            ],
+            "propertiesAsString": "",
+            "namedParameters": [],
+            "trim": true
+          }
+        },
+        "examplesTable": {
+          "tableAsString": "",
+          "headerSeparator": "|",
+          "valueSeparator": "|",
+          "ignorableSeparator": "|--",
+          "tableTransformers": {
+            "transformers": [
+              [
+                "FROM_LANDSCAPE",
+                {}
+              ],
+              [
+                "REPLACING",
+                {}
+              ],
+              [
+                "FORMATTING",
+                {}
+              ]
+            ]
+          },
+          "headers": [],
+          "data": [],
+          "properties": [
+            {
+              "@name": "headerSeparator",
+              "@value": "|"
+            },
+            {
+              "@name": "valueSeparator",
+              "@value": "|"
+            },
+            {
+              "@name": "ignorableSeparator",
+              "@value": "|--"
+            }
+          ],
+          "propertiesAsString": "",
+          "namedParameters": [],
+          "trim": true
+        },
+        "steps": [
+          "Given The workflow4people backend is started",
+          "When I enter valid backend credentials",
+          "And I log in to the backend",
+          "Then I should be logged in to the backend"
+        ]
+      },
+      "storyPath": "com/test/jbehave/stories/backend/backendLogin.story",
+      "allowed": true,
+      "normalPerformableScenario": {
+        "parameters": [],
+        "givenStories": [],
+        "beforeSteps": {
+          "matches": []
+        },
+        "steps": {
+          "matches": [
+            {
+              "type": "WHEN",
+              "annotatedPattern": "I enter valid backend credentials",
+              "resolvedPattern": "I\\s+enter\\s+valid\\s+backend\\s+credentials"
+            },
+            {
+              "type": "GIVEN",
+              "annotatedPattern": "The workflow4people backend is started",
+              "resolvedPattern": "The\\s+workflow4people\\s+backend\\s+is\\s+started"
+            },
+            {
+              "type": "WHEN",
+              "annotatedPattern": "I log in to the backend",
+              "resolvedPattern": "I\\s+log\\s+in\\s+to\\s+the\\s+backend"
+            },
+            {
+              "type": "THEN",
+              "annotatedPattern": "I should be logged in to the backend",
+              "resolvedPattern": "I\\s+should\\s+be\\s+logged\\s+in\\s+to\\s+the\\s+backend"
+            }
+          ],
+          "results": [
+            {
+              "step": "Given The workflow4people backend is started",
+              "type": "SUCCESSFUL",
+              "parametrisedStep": "Given The workflow4people backend is started",
+              "durationInMillis": 2237
+            },
+            {
+              "step": "When I enter valid backend credentials",
+              "type": "SUCCESSFUL",
+              "parametrisedStep": "When I enter valid backend credentials",
+              "durationInMillis": 259
+            },
+            {
+              "step": "And I log in to the backend",
+              "type": "SUCCESSFUL",
+              "parametrisedStep": "And I log in to the backend",
+              "durationInMillis": 779
+            },
+            {
+              "step": "Then I should be logged in to the backend",
+              "type": "SUCCESSFUL",
+              "parametrisedStep": "Then I should be logged in to the backend",
+              "durationInMillis": 559
+            }
+          ]
+        },
+        "afterSteps": {
+          "matches": []
+        },
+        "scenario": {
+          "title": "A workflo4people backend login attempt with valid credentials",
+          "meta": {
+            "properties": [
+              {
+                "@name": "id2",
+                "@value": "scenario2"
+              }
+            ]
+          },
+          "givenStories": {
+            "givenStories": [],
+            "givenStoriesAsString": "",
+            "examplesTable": {
+              "tableAsString": "",
+              "headerSeparator": "|",
+              "valueSeparator": "|",
+              "ignorableSeparator": "|--",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FORMATTING",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [],
+              "data": [],
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ],
+              "propertiesAsString": "",
+              "namedParameters": [],
+              "trim": true
+            }
+          },
+          "examplesTable": {
+            "tableAsString": "",
+            "headerSeparator": "|",
+            "valueSeparator": "|",
+            "ignorableSeparator": "|--",
+            "tableTransformers": {
+              "transformers": [
+                [
+                  "FROM_LANDSCAPE",
+                  {}
+                ],
+                [
+                  "REPLACING",
+                  {}
+                ],
+                [
+                  "FORMATTING",
+                  {}
+                ]
+              ]
+            },
+            "headers": [],
+            "data": [],
+            "properties": [
+              {
+                "@name": "headerSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "valueSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "ignorableSeparator",
+                "@value": "|--"
+              }
+            ],
+            "propertiesAsString": "",
+            "namedParameters": [],
+            "trim": true
+          },
+          "steps": [
+            "Given The workflow4people backend is started",
+            "When I enter valid backend credentials",
+            "And I log in to the backend",
+            "Then I should be logged in to the backend"
+          ]
+        }
+      },
+      "examplePerformableScenarios": [],
+      "status": "SUCCESSFUL"
+    }
+  ]
+}}

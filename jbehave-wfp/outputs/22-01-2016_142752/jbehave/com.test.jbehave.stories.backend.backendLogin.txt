@@ -1,0 +1,19 @@
+Story: backend Login
+(com/test/jbehave/stories/backend/backendLogin.story)
+Narrative:
+In order to access the workflow4people backend
+As a demo user
+I want to login into the application
+Scenario: A workflo4people backend login attempt with invalid credentials
+Given The workflow4people backend is started
+When I enter invalid backend credentials
+And I log in to the backend
+Then I should not be logged in to the backend
+
+Scenario: A workflo4people backend login attempt with valid credentials
+Given The workflow4people backend is started
+When I enter valid backend credentials
+And I log in to the backend
+Then I should be logged in to the backend
+
+
