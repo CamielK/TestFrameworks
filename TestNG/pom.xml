@@ -53,6 +53,7 @@
                     (e.g. mvn package) and run them in integration-test -->
                     <skip>false</skip>
                     <reportsDirectory>./test-output/${timestamp}</reportsDirectory>
+                    <testFailureIgnore>true</testFailureIgnore>
                 </configuration>
                 <executions>
                     <execution>
