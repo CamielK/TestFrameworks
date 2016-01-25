@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="0" time="30.118" errors="0" skipped="0" tests="13" name="TestSuite">
+  <properties>
+  </properties>
+  <testcase time="1.027" classname="backend.MakeUserTest" name="openUserPage"/>
+  <testcase time="1.225" classname="backend.BackendLoginTest" name="frontendSetup"/>
+  <testcase time="1.374" classname="frontend.FrontendLoginTest" name="frontendSetup"/>
+  <testcase time="0.667" classname="backend.BackendLoginTest" name="frontendInvalidUserLogin"/>
+  <testcase time="0.782" classname="backend.BackendLoginTest" name="frontendInvalidPassLogin"/>
+  <testcase time="0.725" classname="backend.BackendLoginTest" name="frontendInvalidLogin"/>
+  <testcase time="0.933" classname="frontend.FrontendLoginTest" name="frontendInvalidLogin"/>
+  <testcase time="0.867" classname="frontend.FrontendLoginTest" name="frontendInvalidPassLogin"/>
+  <testcase time="0.76" classname="frontend.FrontendLoginTest" name="frontendInvalidUserLogin"/>
+  <testcase time="0.862" classname="backend.BackendLoginTest" name="frontendValidLogin"/>
+  <testcase time="5.832" classname="frontend.FrontendLoginTest" name="frontendValidLogin"/>
+  <testcase time="1.87" classname="backend.MakeUserTest" name="makeUser"/>
+  <testcase time="0.148" classname="backend.MakeUserTest" name="validateNewUser"/>
+</testsuite>

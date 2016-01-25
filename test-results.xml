@@ -1,116 +1,18 @@
-<testng-results skipped="0" failed="0" total="13" passed="13">
-<reporter-output></reporter-output>
-<suite name="Command line suite" duration-ms="19387" started-at="2016-01-22T14:34:32Z" finished-at="2016-01-22T14:34:51Z">
-<groups></groups>
-<test name="Command line test" duration-ms="19387" started-at="2016-01-22T14:34:32Z" finished-at="2016-01-22T14:34:51Z">
-<class name="backend.MakeUserTest">
-<test-method status="PASS" signature="openUserPage()[pri:0, instance:backend.MakeUserTest@194b34a]" name="openUserPage" duration-ms="1222" started-at="2016-01-22T15:34:32Z" description="open user panel" finished-at="2016-01-22T15:34:33Z">
-<reporter-output></reporter-output>
-</test-method>
-<!--  openUserPage  -->
-<test-method status="PASS" signature="makeUser()[pri:0, instance:backend.MakeUserTest@194b34a]" name="makeUser" duration-ms="1979" started-at="2016-01-22T15:34:48Z" description="create user" depends-on-methods="backend.MakeUserTest.openUserPage" finished-at="2016-01-22T15:34:50Z">
-<reporter-output></reporter-output>
-</test-method>
-<!--  makeUser  -->
-<test-method status="PASS" signature="validateNewUser()[pri:0, instance:backend.MakeUserTest@194b34a]" name="validateNewUser" duration-ms="1205" started-at="2016-01-22T15:34:50Z" description="check if new user was succesfully added" depends-on-methods="backend.MakeUserTest.makeUser" finished-at="2016-01-22T15:34:51Z">
-<reporter-output></reporter-output>
-</test-method>
-<!--  validateNewUser  -->
-</class>
-<!--  backend.MakeUserTest  -->
-<class name="frontend.FrontendLoginTest">
-<test-method status="PASS" signature="frontendSetup()[pri:0, instance:frontend.FrontendLoginTest@1e32cd6]" name="frontendSetup" duration-ms="1524" started-at="2016-01-22T15:34:35Z" description="wfp frontend setup" finished-at="2016-01-22T15:34:36Z">
-<reporter-output></reporter-output>
-</test-method>
-<!--  frontendSetup  -->
-<test-method status="PASS" signature="frontendInvalidLogin()[pri:0, instance:frontend.FrontendLoginTest@1e32cd6]" name="frontendInvalidLogin" duration-ms="1038" started-at="2016-01-22T15:34:39Z" description="wfp frontend invalid credentials login" finished-at="2016-01-22T15:34:40Z">
-<reporter-output></reporter-output>
-</test-method>
-<!--  frontendInvalidLogin  -->
-<test-method status="PASS" signature="frontendInvalidPassLogin()[pri:0, instance:frontend.FrontendLoginTest@1e32cd6]" name="frontendInvalidPassLogin" duration-ms="959" started-at="2016-01-22T15:34:40Z" description="wfp frontend invalid password login" finished-at="2016-01-22T15:34:41Z">
-<reporter-output></reporter-output>
-</test-method>
-<!--  frontendInvalidPassLogin  -->
-<test-method status="PASS" signature="frontendInvalidUserLogin()[pri:0, instance:frontend.FrontendLoginTest@1e32cd6]" name="frontendInvalidUserLogin" duration-ms="899" started-at="2016-01-22T15:34:41Z" description="wfp frontend invalid username login" finished-at="2016-01-22T15:34:41Z">
-<reporter-output></reporter-output>
-</test-method>
-<!--  frontendInvalidUserLogin  -->
-<test-method status="PASS" signature="frontendValidLogin()[pri:0, instance:frontend.FrontendLoginTest@1e32cd6]" name="frontendValidLogin" duration-ms="838" started-at="2016-01-22T15:34:47Z" description="5. wfp frontend valid login" finished-at="2016-01-22T15:34:48Z">
-<reporter-output></reporter-output>
-</test-method>
-<!--  frontendValidLogin  -->
-</class>
-<!--  frontend.FrontendLoginTest  -->
-<class name="backend.BackendLoginTest">
-<test-method status="PASS" signature="setupBeforeSuite(org.testng.ITestContext)[pri:0, instance:backend.BackendLoginTest@dee1b4]" name="setupBeforeSuite" is-config="true" duration-ms="1412" started-at="2016-01-22T15:34:21Z" finished-at="2016-01-22T15:34:22Z">
-<params>
-<param index="0">
-<value>
-<![CDATA[ org.testng.TestRunner@11d84f0 ]]>
-</value>
-</param>
-</params>
-<reporter-output></reporter-output>
-</test-method>
-<!--  setupBeforeSuite  -->
-<test-method status="PASS" signature="setupBeforeSuite(org.testng.ITestContext)[pri:0, instance:frontend.FrontendLoginTest@1e32cd6]" name="setupBeforeSuite" is-config="true" duration-ms="1173" started-at="2016-01-22T15:34:22Z" finished-at="2016-01-22T15:34:23Z">
-<params>
-<param index="0">
-<value>
-<![CDATA[ org.testng.TestRunner@11d84f0 ]]>
-</value>
-</param>
-</params>
-<reporter-output></reporter-output>
-</test-method>
-<!--  setupBeforeSuite  -->
-<test-method status="PASS" signature="setupBeforeSuite(org.testng.ITestContext)[pri:0, instance:backend.MakeUserTest@194b34a]" name="setupBeforeSuite" is-config="true" duration-ms="8740" started-at="2016-01-22T15:34:23Z" finished-at="2016-01-22T15:34:32Z">
-<params>
-<param index="0">
-<value>
-<![CDATA[ org.testng.TestRunner@11d84f0 ]]>
-</value>
-</param>
-</params>
-<reporter-output></reporter-output>
-</test-method>
-<!--  setupBeforeSuite  -->
-<test-method status="PASS" signature="frontendSetup()[pri:0, instance:backend.BackendLoginTest@dee1b4]" name="frontendSetup" duration-ms="1360" started-at="2016-01-22T15:34:33Z" description="wfp backend setup" finished-at="2016-01-22T15:34:35Z">
-<reporter-output></reporter-output>
-</test-method>
-<!--  frontendSetup  -->
-<test-method status="PASS" signature="frontendInvalidUserLogin()[pri:0, instance:backend.BackendLoginTest@dee1b4]" name="frontendInvalidUserLogin" duration-ms="774" started-at="2016-01-22T15:34:36Z" description="wfp frontend invalid username login" finished-at="2016-01-22T15:34:37Z">
-<reporter-output></reporter-output>
-</test-method>
-<!--  frontendInvalidUserLogin  -->
-<test-method status="PASS" signature="frontendInvalidPassLogin()[pri:0, instance:backend.BackendLoginTest@dee1b4]" name="frontendInvalidPassLogin" duration-ms="781" started-at="2016-01-22T15:34:37Z" description="wfp frontend invalid password login" finished-at="2016-01-22T15:34:38Z">
-<reporter-output></reporter-output>
-</test-method>
-<!--  frontendInvalidPassLogin  -->
-<test-method status="PASS" signature="frontendInvalidLogin()[pri:0, instance:backend.BackendLoginTest@dee1b4]" name="frontendInvalidLogin" duration-ms="833" started-at="2016-01-22T15:34:38Z" description="wfp frontend invalid credentials login" finished-at="2016-01-22T15:34:39Z">
-<reporter-output></reporter-output>
-</test-method>
-<!--  frontendInvalidLogin  -->
-<test-method status="PASS" signature="frontendValidLogin()[pri:0, instance:backend.BackendLoginTest@dee1b4]" name="frontendValidLogin" duration-ms="5942" started-at="2016-01-22T15:34:42Z" description="5. wfp frontend valid login" finished-at="2016-01-22T15:34:47Z">
-<reporter-output></reporter-output>
-</test-method>
-<!--  frontendValidLogin  -->
-<test-method status="PASS" signature="setupAfterSuite()[pri:0, instance:backend.BackendLoginTest@dee1b4]" name="setupAfterSuite" is-config="true" duration-ms="564" started-at="2016-01-22T15:34:52Z" finished-at="2016-01-22T15:34:52Z">
-<reporter-output></reporter-output>
-</test-method>
-<!--  setupAfterSuite  -->
-<test-method status="PASS" signature="setupAfterSuite()[pri:0, instance:frontend.FrontendLoginTest@1e32cd6]" name="setupAfterSuite" is-config="true" duration-ms="559" started-at="2016-01-22T15:34:52Z" finished-at="2016-01-22T15:34:53Z">
-<reporter-output></reporter-output>
-</test-method>
-<!--  setupAfterSuite  -->
-<test-method status="PASS" signature="setupAfterSuite()[pri:0, instance:backend.MakeUserTest@194b34a]" name="setupAfterSuite" is-config="true" duration-ms="563" started-at="2016-01-22T15:34:53Z" finished-at="2016-01-22T15:34:53Z">
-<reporter-output></reporter-output>
-</test-method>
-<!--  setupAfterSuite  -->
-</class>
-<!--  backend.BackendLoginTest  -->
-</test>
-<!--  Command line test  -->
-</suite>
-<!--  Command line suite  -->
-</testng-results>
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="0" time="30.118" errors="0" skipped="0" tests="13" name="TestSuite">
+  <properties>
+  </properties>
+  <testcase time="1.027" classname="backend.MakeUserTest" name="openUserPage"/>
+  <testcase time="1.225" classname="backend.BackendLoginTest" name="frontendSetup"/>
+  <testcase time="1.374" classname="frontend.FrontendLoginTest" name="frontendSetup"/>
+  <testcase time="0.667" classname="backend.BackendLoginTest" name="frontendInvalidUserLogin"/>
+  <testcase time="0.782" classname="backend.BackendLoginTest" name="frontendInvalidPassLogin"/>
+  <testcase time="0.725" classname="backend.BackendLoginTest" name="frontendInvalidLogin"/>
+  <testcase time="0.933" classname="frontend.FrontendLoginTest" name="frontendInvalidLogin"/>
+  <testcase time="0.867" classname="frontend.FrontendLoginTest" name="frontendInvalidPassLogin"/>
+  <testcase time="0.76" classname="frontend.FrontendLoginTest" name="frontendInvalidUserLogin"/>
+  <testcase time="0.862" classname="backend.BackendLoginTest" name="frontendValidLogin"/>
+  <testcase time="5.832" classname="frontend.FrontendLoginTest" name="frontendValidLogin"/>
+  <testcase time="1.87" classname="backend.MakeUserTest" name="makeUser"/>
+  <testcase time="0.148" classname="backend.MakeUserTest" name="validateNewUser"/>
+</testsuite>
