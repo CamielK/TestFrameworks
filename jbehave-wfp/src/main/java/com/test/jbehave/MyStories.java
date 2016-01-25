@@ -87,7 +87,7 @@ public class MyStories extends JUnitStories {
                                 .withCodeLocation(CodeLocations.codeLocationFromPath("outputs/"+ new SimpleDateFormat("dd-MM-yyyy_HHmmss").format(new Date()) + "/testDir"))
                                 .withDefaultFormats().withPathResolver(new FilePrintStreamFactory.ResolveToPackagedName())
                                 //.withViewResources(viewResources).withFormats(CONSOLE, HTML)
-                                .withViewResources(viewResources).withFormats(CONSOLE, TXT, HTML, XML)
+                                .withViewResources(viewResources).withFormats(CONSOLE, STATS, HTML)
                                 .withFailureTrace(true).withFailureTraceCompression(true).withCrossReference(xref))
                 .useParameterConverters(parameterConverters)
                 // use '%' instead of '$' to identify parameters

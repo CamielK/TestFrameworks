@@ -12,17 +12,20 @@ import javax.xml.transform.TransformerException;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
-import java.io.File;
+import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
- * This class generates a JUnit compatible XML output of the test results
+ * This class generates a JUnit compatible XML output based on the JBehave test results
  *
  * Created by camiel on 1/25/16.
  */
 public class JUnitParser {
 
     private static String outputDirectory = "test123.xml";
+    private static List<Testcase> testcaseNodeList = new ArrayList<Testcase>();
 
     public void generateXML() {
 
@@ -41,18 +44,23 @@ public class JUnitParser {
             rootElement.appendChild(properties);
 
             //add testcases
-            //TODO get testcase data
-            rootElement.appendChild(getTestcase(doc, "0.512","test1","test"));
+            try { readHtmlSource(doc, new File(outputDirectory + "jbehave/storyDurations.props")); }
+            catch (IOException e) { e.printStackTrace(); }
+
+            for (int i = 0; i < testcaseNodeList.size(); i++) {
+                Testcase testcase = testcaseNodeList.get(i);
+                rootElement.appendChild(getTestcaseNode(doc, testcase.storyTime, testcase.storyClassname, testcase.storyName));
+            }
 
             //write to xml
             TransformerFactory transformerFactory = TransformerFactory.newInstance();
             Transformer transformer = transformerFactory.newTransformer();
             DOMSource source = new DOMSource(doc);
-            StreamResult result = new StreamResult(new File(outputDirectory));
+            StreamResult result = new StreamResult(new File(outputDirectory + "test-results.xml"));
 
             //result
             transformer.transform(source, result);
-            System.out.println("XML output file saved in " + outputDirectory);
+            System.out.println("XML output file saved in " + outputDirectory + "test-results.xml");
 
         }
         catch (ParserConfigurationException pce) {
@@ -64,10 +72,10 @@ public class JUnitParser {
     }
 
     public void setOutputDirectory(String outputDirectory) {
-        this.outputDirectory = outputDirectory + "/test-results.xml";
+        this.outputDirectory = outputDirectory;
     }
 
-    private static Node getTestcase(Document doc, String time, String classname, String name) {
+    private static Node getTestcaseNode(Document doc, String time, String classname, String name) {
         Element testcase = doc.createElement("testcase");
         testcase.setAttribute("time", time);
         testcase.setAttribute("classname", classname);
@@ -75,4 +83,44 @@ public class JUnitParser {
         return testcase;
     }
 
+    private void readHtmlSource(Document doc, File fin) throws IOException {
+        FileInputStream fis = new FileInputStream(fin);
+
+        //Construct BufferedReader from InputStreamReader
+        BufferedReader br = new BufferedReader(new InputStreamReader(fis));
+
+        String line = null;
+        while ((line = br.readLine()) != null) {
+            //System.out.println(line);
+
+            String storyName;
+            String storyTime;
+            String storyClassname;
+            if (line.contains("com/test/jbehave/stories/")) {
+                int seperatorIndex = line.indexOf("=");
+                int lineLength = line.length();
+                storyTime = line.substring(seperatorIndex+1);
+                storyName = line.substring(33, seperatorIndex);
+                storyClassname = line.substring(0, seperatorIndex);
+
+                testcaseNodeList.add(new Testcase(storyTime, storyName, storyClassname));
+                //System.out.println(storyName + " " + storyTime + " " + storyClassname);
+            }
+
+
+        }
+        br.close();
+    }
+
+    private class Testcase {
+        public String storyName;
+        public String storyClassname;
+        public String storyTime;
+
+        public Testcase(String storyTime, String storyName, String storyClassname) {
+            this.storyName = storyName;
+            this.storyTime = storyTime;
+            this.storyClassname = storyClassname;
+        }
+    }
 }
