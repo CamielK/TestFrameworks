@@ -1,5 +1,6 @@
 package com.test.jbehave;
 
+import com.test.jbehave.resources.JUnitParser;
 import com.test.jbehave.steps.AfterStoriesSteps;
 import com.test.jbehave.steps.backend.BackendLoginSteps;
 import com.test.jbehave.steps.backend.MakeUserSteps;
@@ -47,6 +48,7 @@ public class MyStories extends JUnitStories {
     private String executionTime, outputPath;
     private DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy_HHmmss");
     private Date date;
+    private JUnitParser jUnitParser = new JUnitParser();
     
     public MyStories() {
         EmbedderControls embedderControls = configuredEmbedder().embedderControls().doGenerateViewAfterStories(true).doIgnoreFailureInStories(true)
@@ -57,6 +59,8 @@ public class MyStories extends JUnitStories {
         executionTime = dateFormat.format(date);
         outputPath = "outputs/"+ new SimpleDateFormat("dd-MM-yyyy_HHmmss").format(new Date())+"/";
         System.out.println("output files can be found in: "+outputPath); System.out.println("");
+
+        jUnitParser.setOutputDirectory(outputPath);
     }
 
     //various configurations, including output
