@@ -52,7 +52,7 @@ public class MyStories extends JUnitStories {
     
     public MyStories() {
         EmbedderControls embedderControls = configuredEmbedder().embedderControls().doGenerateViewAfterStories(true).doIgnoreFailureInStories(true)
-                .doIgnoreFailureInView(true).useThreads(5).useStoryTimeoutInSecs(240); //set ammount of concurrent threads and general timeout time
+                .doIgnoreFailureInView(true).useThreads(1).useStoryTimeoutInSecs(240); //set ammount of concurrent threads and general timeout time
 
         //move output files to new directory
         date = new Date();
@@ -106,7 +106,7 @@ public class MyStories extends JUnitStories {
     @Override
     protected List<String> storyPaths() {
         //switch comments to run a single story only
-        return new StoryFinder().findPaths(codeLocationFromClass(this.getClass()), "**/backendLogin.story", "");
+        return new StoryFinder().findPaths(codeLocationFromClass(this.getClass()), "**/inladenKeuzemogelijkheden.story", "");
         //return new StoryFinder().findPaths(codeLocationFromClass(this.getClass()), "**/*.story", "**/excluded*.story");
 
     }

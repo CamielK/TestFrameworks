@@ -21,7 +21,7 @@ public class AfterStoriesSteps {
         driver.closeAllDrivers(); //call to Driver to close all drivers
 
 //        try {
-//            Thread.sleep(50000);
+//            Thread.sleep(100000);
 //        }
 //        catch (Exception e) {
 //            e.printStackTrace();

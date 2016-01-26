@@ -98,8 +98,7 @@ public class JUnitParser {
             String storyClassname;
             if (line.contains("com/test/jbehave/stories/")) {
                 int seperatorIndex = line.indexOf("=");
-                int lineLength = line.length();
-                storyTime = line.substring(seperatorIndex+1);
+                storyTime = Integer.toString((Integer.parseInt(line.substring(seperatorIndex+1))) / 1000);
                 storyName = line.substring(33, seperatorIndex);
                 storyClassname = line.substring(0, seperatorIndex);
 
@@ -110,6 +109,19 @@ public class JUnitParser {
 
         }
         br.close();
+
+
+        //check for failures
+        File folder = new File(outputDirectory + "/jbehave");
+        File[] listOfFiles = folder.listFiles();
+
+        for (int i = 0; i < listOfFiles.length; i++) {
+            if (listOfFiles[i].isFile()) {
+                System.out.println("File " + listOfFiles[i].getName());
+            } else if (listOfFiles[i].isDirectory()) {
+                System.out.println("Directory " + listOfFiles[i].getName());
+            }
+        }
     }
 
     private class Testcase {

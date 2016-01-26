@@ -26,7 +26,7 @@ public class UserPage {
         driver = usedDriver;
 
         //click menu items
-        clickMobileDropdown();
+        //clickMobileDropdown();
         driver.findElement(By.partialLinkText("Admin")).click();
         driver.findElement(By.partialLinkText("Users")).click();
 
@@ -146,15 +146,28 @@ public class UserPage {
     }
 
     //click hamburger icon to display menu items
+    //TODO decrease time spend checking for hamburger
     private void clickMobileDropdown() {
-        //try { Thread.sleep(500); } catch (InterruptedException e) { e.printStackTrace(); }
-        List<WebElement> menuItem = driver.findElements(By.partialLinkText("Nieuw"));
-        if (menuItem.size() == 0) {
-            List<WebElement> hamburger = driver.findElements(By.xpath("//*[contains(@class, 'btn btn-navbar')]"));
-            if (hamburger.size() == 1) {
-                hamburger.get(0).click();
-            }
+        try { Thread.sleep(500); } catch (InterruptedException e) { e.printStackTrace(); }
+//        System.out.println("searching menu items");
+//        List<WebElement> menuItem = driver.findElements(By.partialLinkText("Nieuw"));
+//        System.out.println("finished searching menu items");
+//        if (menuItem.size() == 0) {
+//            System.out.println("searching hamburger items");
+//            List<WebElement> hamburger = driver.findElements(By.xpath("//*[contains(@class, 'btn btn-navbar')]"));
+//            System.out.println("finished searching hamburger items");
+//            if (hamburger.size() == 1) {
+//                hamburger.get(0).click();
+//            }
+//        }
+
+        try {
+            driver.findElement(By.xpath("//*[contains(@class, 'btn btn-navbar')]")).click();
         }
+        catch (Exception e) {
+
+        }
+
     }
 
 }
