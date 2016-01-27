@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>com.test.jbehave.stories.frontend.ophalenClientgegevens</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+<div class="story">
+<h1></h1>
+<div class="path">com/test/jbehave/stories/frontend/ophalenClientgegevens.story</div>
+<div class="scenario">
+<h2>Scenario: Checks if client information is correctly searchable</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given the anamnese form is opened</div>
+<div class="step">When I search for a client based on &lt;searchtype&gt;</div>
+<div class="step">Then the correct client should be displayed</div>
+<table>
+<thead>
+<tr>
+<th>searchtype</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>Achternaam</td></tr>
+<tr>
+<td>BSN</td></tr>
+<tr>
+<td>Clientnummer</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {searchtype=Achternaam}</h3>
+<div class="step successful">Given the anamnese form is opened</div>
+<div class="step successful">When I search for a client based on <span class="step parameter">Achternaam</span></div>
+<div class="step successful">Then the correct client should be displayed</div>
+
+<h3 class="example">Example: {searchtype=BSN}</h3>
+<div class="step successful">Given the anamnese form is opened</div>
+<div class="step successful">When I search for a client based on <span class="step parameter">BSN</span></div>
+<div class="step successful">Then the correct client should be displayed</div>
+
+<h3 class="example">Example: {searchtype=Clientnummer}</h3>
+<div class="step successful">Given the anamnese form is opened</div>
+<div class="step successful">When I search for a client based on <span class="step parameter">Clientnummer</span></div>
+<div class="step successful">Then the correct client should be displayed</div>
+</div>
+</div>
+</div>
+
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

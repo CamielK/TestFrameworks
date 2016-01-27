@@ -106,8 +106,8 @@ public class MyStories extends JUnitStories {
     @Override
     protected List<String> storyPaths() {
         //switch comments to run a single story only
-        return new StoryFinder().findPaths(codeLocationFromClass(this.getClass()), "**/inladenKeuzemogelijkheden.story", "");
-        //return new StoryFinder().findPaths(codeLocationFromClass(this.getClass()), "**/*.story", "**/excluded*.story");
+        //return new StoryFinder().findPaths(codeLocationFromClass(this.getClass()), "**/inladenKeuzemogelijkheden.story", "");
+        return new StoryFinder().findPaths(codeLocationFromClass(this.getClass()), "**/*.story", "**/excluded*.story");
 
     }
         
