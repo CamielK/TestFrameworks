@@ -1,0 +1,59 @@
+<div class="story">
+<h1></h1>
+<div class="path">com/test/jbehave/stories/frontend/inladenKeuzemogelijkheden.story</div>
+<div class="scenario">
+<h2>Scenario: form test aanmelding client, expand aanhef list</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given the aanmelding client form is opened</div>
+<div class="step">When I expand the &lt;list&gt; list</div>
+<div class="step">Then the list should be filled with at least &lt;value1&gt; and &lt;value2&gt;</div>
+<table>
+<thead>
+<tr>
+<th>list</th><th>value1</th><th>value2</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>aanhef</td><td>Heer</td><td>Mevrouw</td></tr>
+<tr>
+<td>geslacht</td><td>Mannelijk</td><td>Vrouwelijk</td></tr>
+<tr>
+<td>burgerlijke staat</td><td>Gehuwd</td><td>Gescheiden</td></tr>
+<tr>
+<td>type relatie</td><td>Zoon</td><td>Dochter</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {list=aanhef, value1=Heer, value2=Mevrouw, id1=scenario1}</h3>
+<div class="step successful">Given the aanmelding client form is opened</div>
+<div class="step successful">When I expand the <span class="step parameter">aanhef</span> list</div>
+<div class="step failed">Then the list should be filled with at least <span class="step parameter">Heer</span> and <span class="step parameter">Mevrouw</span> <span class="keyword failed">(FAILED)</span><br/><span class="message failed">java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;</span></div>
+
+<h3 class="example">Example: {list=geslacht, value1=Mannelijk, value2=Vrouwelijk, id1=scenario1}</h3>
+<div class="step successful">Given the aanmelding client form is opened</div>
+<div class="step successful">When I expand the <span class="step parameter">geslacht</span> list</div>
+<div class="step successful">Then the list should be filled with at least <span class="step parameter">Mannelijk</span> and <span class="step parameter">Vrouwelijk</span></div>
+
+<h3 class="example">Example: {list=burgerlijke staat, value1=Gehuwd, value2=Gescheiden, id1=scenario1}</h3>
+<div class="step successful">Given the aanmelding client form is opened</div>
+<div class="step successful">When I expand the <span class="step parameter">burgerlijke staat</span> list</div>
+<div class="step successful">Then the list should be filled with at least <span class="step parameter">Gehuwd</span> and <span class="step parameter">Gescheiden</span></div>
+
+<h3 class="example">Example: {list=type relatie, value1=Zoon, value2=Dochter, id1=scenario1}</h3>
+<div class="step successful">Given the aanmelding client form is opened</div>
+<div class="step successful">When I expand the <span class="step parameter">type relatie</span> list</div>
+<div class="step failed">Then the list should be filled with at least <span class="step parameter">Zoon</span> and <span class="step parameter">Dochter</span> <span class="keyword failed">(FAILED)</span><br/><span class="message failed">java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;</span></div>
+</div>
+<pre class="failure">java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.test.jbehave.steps.frontend.AanmeldingClientSteps.checkListItems(AanmeldingClientSteps.java:88)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:333)
+...</pre>
+</div>
+</div>

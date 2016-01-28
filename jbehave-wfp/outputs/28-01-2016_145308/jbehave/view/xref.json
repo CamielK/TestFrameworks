@@ -1,0 +1,1658 @@
+{"xref": {
+  "stories": [
+    {
+      "story": {
+        "path": "com/test/jbehave/stories/frontend/inladenKeuzemogelijkheden.story",
+        "description": {
+          "descriptionAsString": ""
+        },
+        "narrative": {
+          "inOrderTo": "",
+          "asA": "",
+          "iWantTo": "",
+          "soThat": ""
+        },
+        "meta": {
+          "properties": []
+        },
+        "givenStories": {
+          "givenStories": [],
+          "givenStoriesAsString": "",
+          "examplesTable": {
+            "tableAsString": "",
+            "headerSeparator": "|",
+            "valueSeparator": "|",
+            "ignorableSeparator": "|--",
+            "tableTransformers": {
+              "transformers": [
+                [
+                  "FROM_LANDSCAPE",
+                  {}
+                ],
+                [
+                  "REPLACING",
+                  {}
+                ],
+                [
+                  "FORMATTING",
+                  {}
+                ]
+              ]
+            },
+            "headers": [],
+            "data": [],
+            "properties": [
+              {
+                "@name": "headerSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "valueSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "ignorableSeparator",
+                "@value": "|--"
+              }
+            ],
+            "propertiesAsString": "",
+            "namedParameters": [],
+            "trim": true
+          }
+        },
+        "lifecycle": {
+          "before": {
+            "steps": [
+              []
+            ]
+          },
+          "after": []
+        },
+        "scenarios": [
+          {
+            "title": "form test aanmelding client, expand aanhef list",
+            "meta": {
+              "properties": [
+                {
+                  "@name": "id1",
+                  "@value": "scenario1"
+                }
+              ]
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "headerSeparator": "|",
+                "valueSeparator": "|",
+                "ignorableSeparator": "|--",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FORMATTING",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ],
+                "propertiesAsString": "",
+                "namedParameters": [],
+                "trim": true
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "|list|value1|value2|\n|aanhef|Heer|Mevrouw|\n|geslacht|Mannelijk|Vrouwelijk|\n|burgerlijke staat|Gehuwd|Gescheiden|\n|type relatie|Zoon|Dochter|",
+              "headerSeparator": "|",
+              "valueSeparator": "|",
+              "ignorableSeparator": "|--",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FORMATTING",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [
+                "list",
+                "value1",
+                "value2"
+              ],
+              "data": [
+                [
+                  [
+                    "list",
+                    "aanhef"
+                  ],
+                  [
+                    "value1",
+                    "Heer"
+                  ],
+                  [
+                    "value2",
+                    "Mevrouw"
+                  ],
+                  [
+                    "id1",
+                    "scenario1"
+                  ]
+                ],
+                [
+                  [
+                    "list",
+                    "geslacht"
+                  ],
+                  [
+                    "value1",
+                    "Mannelijk"
+                  ],
+                  [
+                    "value2",
+                    "Vrouwelijk"
+                  ],
+                  [
+                    "id1",
+                    "scenario1"
+                  ]
+                ],
+                [
+                  [
+                    "list",
+                    "burgerlijke staat"
+                  ],
+                  [
+                    "value1",
+                    "Gehuwd"
+                  ],
+                  [
+                    "value2",
+                    "Gescheiden"
+                  ],
+                  [
+                    "id1",
+                    "scenario1"
+                  ]
+                ],
+                [
+                  [
+                    "list",
+                    "type relatie"
+                  ],
+                  [
+                    "value1",
+                    "Zoon"
+                  ],
+                  [
+                    "value2",
+                    "Dochter"
+                  ],
+                  [
+                    "id1",
+                    "scenario1"
+                  ]
+                ]
+              ],
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ],
+              "propertiesAsString": "",
+              "namedParameters": [],
+              "trim": true
+            },
+            "steps": [
+              "Given the aanmelding client form is opened",
+              "When I expand the <list> list",
+              "Then the list should be filled with at least <value1> and <value2>"
+            ]
+          }
+        ],
+        "name": "inladenKeuzemogelijkheden.story"
+      },
+      "localizedNarrative": "As a \nI want to \nSo that ",
+      "allowed": true,
+      "status": "FAILED",
+      "givenStories": [],
+      "scenarios": [
+        {
+          "scenario": {
+            "title": "form test aanmelding client, expand aanhef list",
+            "meta": {
+              "properties": [
+                {
+                  "@name": "id1",
+                  "@value": "scenario1"
+                }
+              ]
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "headerSeparator": "|",
+                "valueSeparator": "|",
+                "ignorableSeparator": "|--",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FORMATTING",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ],
+                "propertiesAsString": "",
+                "namedParameters": [],
+                "trim": true
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "|list|value1|value2|\n|aanhef|Heer|Mevrouw|\n|geslacht|Mannelijk|Vrouwelijk|\n|burgerlijke staat|Gehuwd|Gescheiden|\n|type relatie|Zoon|Dochter|",
+              "headerSeparator": "|",
+              "valueSeparator": "|",
+              "ignorableSeparator": "|--",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FORMATTING",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [
+                "list",
+                "value1",
+                "value2"
+              ],
+              "data": [
+                [
+                  [
+                    "list",
+                    "aanhef"
+                  ],
+                  [
+                    "value1",
+                    "Heer"
+                  ],
+                  [
+                    "value2",
+                    "Mevrouw"
+                  ],
+                  [
+                    "id1",
+                    "scenario1"
+                  ]
+                ],
+                [
+                  [
+                    "list",
+                    "geslacht"
+                  ],
+                  [
+                    "value1",
+                    "Mannelijk"
+                  ],
+                  [
+                    "value2",
+                    "Vrouwelijk"
+                  ],
+                  [
+                    "id1",
+                    "scenario1"
+                  ]
+                ],
+                [
+                  [
+                    "list",
+                    "burgerlijke staat"
+                  ],
+                  [
+                    "value1",
+                    "Gehuwd"
+                  ],
+                  [
+                    "value2",
+                    "Gescheiden"
+                  ],
+                  [
+                    "id1",
+                    "scenario1"
+                  ]
+                ],
+                [
+                  [
+                    "list",
+                    "type relatie"
+                  ],
+                  [
+                    "value1",
+                    "Zoon"
+                  ],
+                  [
+                    "value2",
+                    "Dochter"
+                  ],
+                  [
+                    "id1",
+                    "scenario1"
+                  ]
+                ]
+              ],
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ],
+              "propertiesAsString": "",
+              "namedParameters": [],
+              "trim": true
+            },
+            "steps": [
+              "Given the aanmelding client form is opened",
+              "When I expand the <list> list",
+              "Then the list should be filled with at least <value1> and <value2>"
+            ]
+          },
+          "storyPath": "com/test/jbehave/stories/frontend/inladenKeuzemogelijkheden.story",
+          "allowed": true,
+          "examplePerformableScenarios": [
+            {
+              "parameters": [
+                [
+                  "list",
+                  "aanhef"
+                ],
+                [
+                  "value1",
+                  "Heer"
+                ],
+                [
+                  "value2",
+                  "Mevrouw"
+                ],
+                [
+                  "id1",
+                  "scenario1"
+                ]
+              ],
+              "givenStories": [],
+              "beforeSteps": {
+                "matches": []
+              },
+              "steps": {
+                "matches": [
+                  {
+                    "type": "THEN",
+                    "annotatedPattern": "the list should be filled with at least <value1> and <value2>",
+                    "resolvedPattern": "the\\s+list\\s+should\\s+be\\s+filled\\s+with\\s+at\\s+least\\s+<value1>\\s+and\\s+<value2>"
+                  },
+                  {
+                    "type": "WHEN",
+                    "annotatedPattern": "I expand the <list> list",
+                    "resolvedPattern": "I\\s+expand\\s+the\\s+<list>\\s+list"
+                  },
+                  {
+                    "type": "GIVEN",
+                    "annotatedPattern": "the aanmelding client form is opened",
+                    "resolvedPattern": "the\\s+aanmelding\\s+client\\s+form\\s+is\\s+opened"
+                  }
+                ],
+                "results": [
+                  {
+                    "step": "Given the aanmelding client form is opened",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "Given the aanmelding client form is opened",
+                    "durationInMillis": 11125
+                  },
+                  {
+                    "step": "When I expand the <list> list",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "When I expand the ｟aanhef｠ list",
+                    "durationInMillis": 9992
+                  },
+                  {
+                    "step": "Then the list should be filled with at least <value1> and <value2>",
+                    "type": "FAILED",
+                    "throwable": {
+                      "detailMessage": "Then the list should be filled with at least <value1> and <value2>",
+                      "cause": {
+                        "@class": "java.lang.AssertionError",
+                        "detailMessage": "expected:<true> but was:<false>",
+                        "stackTrace": [
+                          "org.junit.Assert.fail(Assert.java:88)",
+                          "org.junit.Assert.failNotEquals(Assert.java:743)",
+                          "org.junit.Assert.assertEquals(Assert.java:118)",
+                          "org.junit.Assert.assertEquals(Assert.java:144)",
+                          "com.test.jbehave.steps.frontend.AanmeldingClientSteps.checkListItems(AanmeldingClientSteps.java:88)",
+                          "sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)",
+                          "sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)",
+                          "sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)",
+                          "java.lang.reflect.Method.invoke(Method.java:606)",
+                          "org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)",
+                          "org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:333)",
+                          "org.jbehave.core.embedder.PerformableTree$PerformableSteps.perform(PerformableTree.java:1042)",
+                          "org.jbehave.core.embedder.PerformableTree$AbstractPerformableScenario.performRestartableSteps(PerformableTree.java:926)",
+                          "org.jbehave.core.embedder.PerformableTree$ExamplePerformableScenario.perform(PerformableTree.java:981)",
+                          "org.jbehave.core.embedder.PerformableTree$PerformableScenario.perform(PerformableTree.java:872)",
+                          "org.jbehave.core.embedder.PerformableTree$PerformableStory.performScenarios(PerformableTree.java:804)",
+                          "org.jbehave.core.embedder.PerformableTree$PerformableStory.perform(PerformableTree.java:777)",
+                          "org.jbehave.core.embedder.PerformableTree.performCancellable(PerformableTree.java:409)",
+                          "org.jbehave.core.embedder.PerformableTree.perform(PerformableTree.java:380)",
+                          "org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:291)",
+                          "org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:265)",
+                          "java.util.concurrent.FutureTask.run(FutureTask.java:262)",
+                          "java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)",
+                          "java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)",
+                          "java.lang.Thread.run(Thread.java:745)"
+                        ],
+                        "suppressedExceptions": [
+                          [],
+                          []
+                        ]
+                      },
+                      "stackTrace": [
+                        "org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:617)",
+                        "org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:333)",
+                        "org.jbehave.core.embedder.PerformableTree$PerformableSteps.perform(PerformableTree.java:1042)",
+                        "org.jbehave.core.embedder.PerformableTree$AbstractPerformableScenario.performRestartableSteps(PerformableTree.java:926)",
+                        "org.jbehave.core.embedder.PerformableTree$ExamplePerformableScenario.perform(PerformableTree.java:981)",
+                        "org.jbehave.core.embedder.PerformableTree$PerformableScenario.perform(PerformableTree.java:872)",
+                        "org.jbehave.core.embedder.PerformableTree$PerformableStory.performScenarios(PerformableTree.java:804)",
+                        "org.jbehave.core.embedder.PerformableTree$PerformableStory.perform(PerformableTree.java:777)",
+                        "org.jbehave.core.embedder.PerformableTree.performCancellable(PerformableTree.java:409)",
+                        "org.jbehave.core.embedder.PerformableTree.perform(PerformableTree.java:380)",
+                        "org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:291)",
+                        "org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:265)",
+                        "java.util.concurrent.FutureTask.run(FutureTask.java:262)",
+                        "java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)",
+                        "java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)",
+                        "java.lang.Thread.run(Thread.java:745)"
+                      ],
+                      "suppressedExceptions": [
+                        [],
+                        []
+                      ],
+                      "uuid": "cbf92223-c1e5-44ea-8153-e9adbc92ac84"
+                    },
+                    "parametrisedStep": "Then the list should be filled with at least ｟Heer｠ and ｟Mevrouw｠",
+                    "durationInMillis": 306
+                  }
+                ]
+              },
+              "afterSteps": {
+                "matches": []
+              }
+            },
+            {
+              "parameters": [
+                [
+                  "list",
+                  "geslacht"
+                ],
+                [
+                  "value1",
+                  "Mannelijk"
+                ],
+                [
+                  "value2",
+                  "Vrouwelijk"
+                ],
+                [
+                  "id1",
+                  "scenario1"
+                ]
+              ],
+              "givenStories": [],
+              "beforeSteps": {
+                "matches": []
+              },
+              "steps": {
+                "matches": [
+                  {
+                    "type": "THEN",
+                    "annotatedPattern": "the list should be filled with at least <value1> and <value2>",
+                    "resolvedPattern": "the\\s+list\\s+should\\s+be\\s+filled\\s+with\\s+at\\s+least\\s+<value1>\\s+and\\s+<value2>"
+                  },
+                  {
+                    "type": "WHEN",
+                    "annotatedPattern": "I expand the <list> list",
+                    "resolvedPattern": "I\\s+expand\\s+the\\s+<list>\\s+list"
+                  },
+                  {
+                    "type": "GIVEN",
+                    "annotatedPattern": "the aanmelding client form is opened",
+                    "resolvedPattern": "the\\s+aanmelding\\s+client\\s+form\\s+is\\s+opened"
+                  }
+                ],
+                "results": [
+                  {
+                    "step": "Given the aanmelding client form is opened",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "Given the aanmelding client form is opened",
+                    "durationInMillis": 0
+                  },
+                  {
+                    "step": "When I expand the <list> list",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "When I expand the ｟geslacht｠ list",
+                    "durationInMillis": 173
+                  },
+                  {
+                    "step": "Then the list should be filled with at least <value1> and <value2>",
+                    "type": "FAILED",
+                    "throwable": {
+                      "detailMessage": "Then the list should be filled with at least <value1> and <value2>",
+                      "cause": {
+                        "@class": "java.lang.AssertionError",
+                        "detailMessage": "expected:<true> but was:<false>",
+                        "stackTrace": [
+                          "org.junit.Assert.fail(Assert.java:88)",
+                          "org.junit.Assert.failNotEquals(Assert.java:743)",
+                          "org.junit.Assert.assertEquals(Assert.java:118)",
+                          "org.junit.Assert.assertEquals(Assert.java:144)",
+                          "com.test.jbehave.steps.frontend.AanmeldingClientSteps.checkListItems(AanmeldingClientSteps.java:88)",
+                          "sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)",
+                          "sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)",
+                          "sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)",
+                          "java.lang.reflect.Method.invoke(Method.java:606)",
+                          "org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)",
+                          "org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:333)",
+                          "org.jbehave.core.embedder.PerformableTree$PerformableSteps.perform(PerformableTree.java:1042)",
+                          "org.jbehave.core.embedder.PerformableTree$AbstractPerformableScenario.performRestartableSteps(PerformableTree.java:926)",
+                          "org.jbehave.core.embedder.PerformableTree$ExamplePerformableScenario.perform(PerformableTree.java:981)",
+                          "org.jbehave.core.embedder.PerformableTree$PerformableScenario.perform(PerformableTree.java:872)",
+                          "org.jbehave.core.embedder.PerformableTree$PerformableStory.performScenarios(PerformableTree.java:804)",
+                          "org.jbehave.core.embedder.PerformableTree$PerformableStory.perform(PerformableTree.java:777)",
+                          "org.jbehave.core.embedder.PerformableTree.performCancellable(PerformableTree.java:409)",
+                          "org.jbehave.core.embedder.PerformableTree.perform(PerformableTree.java:380)",
+                          "org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:291)",
+                          "org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:265)",
+                          "java.util.concurrent.FutureTask.run(FutureTask.java:262)",
+                          "java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)",
+                          "java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)",
+                          "java.lang.Thread.run(Thread.java:745)"
+                        ],
+                        "suppressedExceptions": [
+                          [],
+                          []
+                        ]
+                      },
+                      "stackTrace": [
+                        "org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:617)",
+                        "org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:333)",
+                        "org.jbehave.core.embedder.PerformableTree$PerformableSteps.perform(PerformableTree.java:1042)",
+                        "org.jbehave.core.embedder.PerformableTree$AbstractPerformableScenario.performRestartableSteps(PerformableTree.java:926)",
+                        "org.jbehave.core.embedder.PerformableTree$ExamplePerformableScenario.perform(PerformableTree.java:981)",
+                        "org.jbehave.core.embedder.PerformableTree$PerformableScenario.perform(PerformableTree.java:872)",
+                        "org.jbehave.core.embedder.PerformableTree$PerformableStory.performScenarios(PerformableTree.java:804)",
+                        "org.jbehave.core.embedder.PerformableTree$PerformableStory.perform(PerformableTree.java:777)",
+                        "org.jbehave.core.embedder.PerformableTree.performCancellable(PerformableTree.java:409)",
+                        "org.jbehave.core.embedder.PerformableTree.perform(PerformableTree.java:380)",
+                        "org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:291)",
+                        "org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:265)",
+                        "java.util.concurrent.FutureTask.run(FutureTask.java:262)",
+                        "java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)",
+                        "java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)",
+                        "java.lang.Thread.run(Thread.java:745)"
+                      ],
+                      "suppressedExceptions": [
+                        [],
+                        []
+                      ],
+                      "uuid": "6e36eb3a-5ec8-47b1-bf40-723aead8af61"
+                    },
+                    "parametrisedStep": "Then the list should be filled with at least ｟Mannelijk｠ and ｟Vrouwelijk｠",
+                    "durationInMillis": 298
+                  }
+                ]
+              },
+              "afterSteps": {
+                "matches": []
+              }
+            },
+            {
+              "parameters": [
+                [
+                  "list",
+                  "burgerlijke staat"
+                ],
+                [
+                  "value1",
+                  "Gehuwd"
+                ],
+                [
+                  "value2",
+                  "Gescheiden"
+                ],
+                [
+                  "id1",
+                  "scenario1"
+                ]
+              ],
+              "givenStories": [],
+              "beforeSteps": {
+                "matches": []
+              },
+              "steps": {
+                "matches": [
+                  {
+                    "type": "THEN",
+                    "annotatedPattern": "the list should be filled with at least <value1> and <value2>",
+                    "resolvedPattern": "the\\s+list\\s+should\\s+be\\s+filled\\s+with\\s+at\\s+least\\s+<value1>\\s+and\\s+<value2>"
+                  },
+                  {
+                    "type": "WHEN",
+                    "annotatedPattern": "I expand the <list> list",
+                    "resolvedPattern": "I\\s+expand\\s+the\\s+<list>\\s+list"
+                  },
+                  {
+                    "type": "GIVEN",
+                    "annotatedPattern": "the aanmelding client form is opened",
+                    "resolvedPattern": "the\\s+aanmelding\\s+client\\s+form\\s+is\\s+opened"
+                  }
+                ],
+                "results": [
+                  {
+                    "step": "Given the aanmelding client form is opened",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "Given the aanmelding client form is opened",
+                    "durationInMillis": 0
+                  },
+                  {
+                    "step": "When I expand the <list> list",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "When I expand the ｟burgerlijke staat｠ list",
+                    "durationInMillis": 195
+                  },
+                  {
+                    "step": "Then the list should be filled with at least <value1> and <value2>",
+                    "type": "FAILED",
+                    "throwable": {
+                      "detailMessage": "Then the list should be filled with at least <value1> and <value2>",
+                      "cause": {
+                        "@class": "java.lang.AssertionError",
+                        "detailMessage": "expected:<true> but was:<false>",
+                        "stackTrace": [
+                          "org.junit.Assert.fail(Assert.java:88)",
+                          "org.junit.Assert.failNotEquals(Assert.java:743)",
+                          "org.junit.Assert.assertEquals(Assert.java:118)",
+                          "org.junit.Assert.assertEquals(Assert.java:144)",
+                          "com.test.jbehave.steps.frontend.AanmeldingClientSteps.checkListItems(AanmeldingClientSteps.java:88)",
+                          "sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)",
+                          "sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)",
+                          "sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)",
+                          "java.lang.reflect.Method.invoke(Method.java:606)",
+                          "org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)",
+                          "org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:333)",
+                          "org.jbehave.core.embedder.PerformableTree$PerformableSteps.perform(PerformableTree.java:1042)",
+                          "org.jbehave.core.embedder.PerformableTree$AbstractPerformableScenario.performRestartableSteps(PerformableTree.java:926)",
+                          "org.jbehave.core.embedder.PerformableTree$ExamplePerformableScenario.perform(PerformableTree.java:981)",
+                          "org.jbehave.core.embedder.PerformableTree$PerformableScenario.perform(PerformableTree.java:872)",
+                          "org.jbehave.core.embedder.PerformableTree$PerformableStory.performScenarios(PerformableTree.java:804)",
+                          "org.jbehave.core.embedder.PerformableTree$PerformableStory.perform(PerformableTree.java:777)",
+                          "org.jbehave.core.embedder.PerformableTree.performCancellable(PerformableTree.java:409)",
+                          "org.jbehave.core.embedder.PerformableTree.perform(PerformableTree.java:380)",
+                          "org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:291)",
+                          "org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:265)",
+                          "java.util.concurrent.FutureTask.run(FutureTask.java:262)",
+                          "java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)",
+                          "java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)",
+                          "java.lang.Thread.run(Thread.java:745)"
+                        ],
+                        "suppressedExceptions": [
+                          [],
+                          []
+                        ]
+                      },
+                      "stackTrace": [
+                        "org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:617)",
+                        "org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:333)",
+                        "org.jbehave.core.embedder.PerformableTree$PerformableSteps.perform(PerformableTree.java:1042)",
+                        "org.jbehave.core.embedder.PerformableTree$AbstractPerformableScenario.performRestartableSteps(PerformableTree.java:926)",
+                        "org.jbehave.core.embedder.PerformableTree$ExamplePerformableScenario.perform(PerformableTree.java:981)",
+                        "org.jbehave.core.embedder.PerformableTree$PerformableScenario.perform(PerformableTree.java:872)",
+                        "org.jbehave.core.embedder.PerformableTree$PerformableStory.performScenarios(PerformableTree.java:804)",
+                        "org.jbehave.core.embedder.PerformableTree$PerformableStory.perform(PerformableTree.java:777)",
+                        "org.jbehave.core.embedder.PerformableTree.performCancellable(PerformableTree.java:409)",
+                        "org.jbehave.core.embedder.PerformableTree.perform(PerformableTree.java:380)",
+                        "org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:291)",
+                        "org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:265)",
+                        "java.util.concurrent.FutureTask.run(FutureTask.java:262)",
+                        "java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)",
+                        "java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)",
+                        "java.lang.Thread.run(Thread.java:745)"
+                      ],
+                      "suppressedExceptions": [
+                        [],
+                        []
+                      ],
+                      "uuid": "f682bb8b-fc02-4c2c-a852-eb72ba066901"
+                    },
+                    "parametrisedStep": "Then the list should be filled with at least ｟Gehuwd｠ and ｟Gescheiden｠",
+                    "durationInMillis": 281
+                  }
+                ]
+              },
+              "afterSteps": {
+                "matches": []
+              }
+            },
+            {
+              "parameters": [
+                [
+                  "list",
+                  "type relatie"
+                ],
+                [
+                  "value1",
+                  "Zoon"
+                ],
+                [
+                  "value2",
+                  "Dochter"
+                ],
+                [
+                  "id1",
+                  "scenario1"
+                ]
+              ],
+              "givenStories": [],
+              "beforeSteps": {
+                "matches": []
+              },
+              "steps": {
+                "matches": [
+                  {
+                    "type": "THEN",
+                    "annotatedPattern": "the list should be filled with at least <value1> and <value2>",
+                    "resolvedPattern": "the\\s+list\\s+should\\s+be\\s+filled\\s+with\\s+at\\s+least\\s+<value1>\\s+and\\s+<value2>"
+                  },
+                  {
+                    "type": "WHEN",
+                    "annotatedPattern": "I expand the <list> list",
+                    "resolvedPattern": "I\\s+expand\\s+the\\s+<list>\\s+list"
+                  },
+                  {
+                    "type": "GIVEN",
+                    "annotatedPattern": "the aanmelding client form is opened",
+                    "resolvedPattern": "the\\s+aanmelding\\s+client\\s+form\\s+is\\s+opened"
+                  }
+                ],
+                "results": [
+                  {
+                    "step": "Given the aanmelding client form is opened",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "Given the aanmelding client form is opened",
+                    "durationInMillis": 0
+                  },
+                  {
+                    "step": "When I expand the <list> list",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "When I expand the ｟type relatie｠ list",
+                    "durationInMillis": 202
+                  },
+                  {
+                    "step": "Then the list should be filled with at least <value1> and <value2>",
+                    "type": "FAILED",
+                    "throwable": {
+                      "detailMessage": "Then the list should be filled with at least <value1> and <value2>",
+                      "cause": {
+                        "@class": "java.lang.AssertionError",
+                        "detailMessage": "expected:<true> but was:<false>",
+                        "stackTrace": [
+                          "org.junit.Assert.fail(Assert.java:88)",
+                          "org.junit.Assert.failNotEquals(Assert.java:743)",
+                          "org.junit.Assert.assertEquals(Assert.java:118)",
+                          "org.junit.Assert.assertEquals(Assert.java:144)",
+                          "com.test.jbehave.steps.frontend.AanmeldingClientSteps.checkListItems(AanmeldingClientSteps.java:88)",
+                          "sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)",
+                          "sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)",
+                          "sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)",
+                          "java.lang.reflect.Method.invoke(Method.java:606)",
+                          "org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)",
+                          "org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:333)",
+                          "org.jbehave.core.embedder.PerformableTree$PerformableSteps.perform(PerformableTree.java:1042)",
+                          "org.jbehave.core.embedder.PerformableTree$AbstractPerformableScenario.performRestartableSteps(PerformableTree.java:926)",
+                          "org.jbehave.core.embedder.PerformableTree$ExamplePerformableScenario.perform(PerformableTree.java:981)",
+                          "org.jbehave.core.embedder.PerformableTree$PerformableScenario.perform(PerformableTree.java:872)",
+                          "org.jbehave.core.embedder.PerformableTree$PerformableStory.performScenarios(PerformableTree.java:804)",
+                          "org.jbehave.core.embedder.PerformableTree$PerformableStory.perform(PerformableTree.java:777)",
+                          "org.jbehave.core.embedder.PerformableTree.performCancellable(PerformableTree.java:409)",
+                          "org.jbehave.core.embedder.PerformableTree.perform(PerformableTree.java:380)",
+                          "org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:291)",
+                          "org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:265)",
+                          "java.util.concurrent.FutureTask.run(FutureTask.java:262)",
+                          "java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)",
+                          "java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)",
+                          "java.lang.Thread.run(Thread.java:745)"
+                        ],
+                        "suppressedExceptions": [
+                          [],
+                          []
+                        ]
+                      },
+                      "stackTrace": [
+                        "org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:617)",
+                        "org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:333)",
+                        "org.jbehave.core.embedder.PerformableTree$PerformableSteps.perform(PerformableTree.java:1042)",
+                        "org.jbehave.core.embedder.PerformableTree$AbstractPerformableScenario.performRestartableSteps(PerformableTree.java:926)",
+                        "org.jbehave.core.embedder.PerformableTree$ExamplePerformableScenario.perform(PerformableTree.java:981)",
+                        "org.jbehave.core.embedder.PerformableTree$PerformableScenario.perform(PerformableTree.java:872)",
+                        "org.jbehave.core.embedder.PerformableTree$PerformableStory.performScenarios(PerformableTree.java:804)",
+                        "org.jbehave.core.embedder.PerformableTree$PerformableStory.perform(PerformableTree.java:777)",
+                        "org.jbehave.core.embedder.PerformableTree.performCancellable(PerformableTree.java:409)",
+                        "org.jbehave.core.embedder.PerformableTree.perform(PerformableTree.java:380)",
+                        "org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:291)",
+                        "org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:265)",
+                        "java.util.concurrent.FutureTask.run(FutureTask.java:262)",
+                        "java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)",
+                        "java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)",
+                        "java.lang.Thread.run(Thread.java:745)"
+                      ],
+                      "suppressedExceptions": [
+                        [],
+                        []
+                      ],
+                      "uuid": "9259c9f6-b9cf-40f1-a071-cf56be71328e"
+                    },
+                    "parametrisedStep": "Then the list should be filled with at least ｟Zoon｠ and ｟Dochter｠",
+                    "durationInMillis": 1267
+                  }
+                ]
+              },
+              "afterSteps": {
+                "matches": []
+              }
+            }
+          ],
+          "status": "FAILED"
+        }
+      ],
+      "beforeSteps": {},
+      "afterSteps": {},
+      "timing": {
+        "durationInMillis": 23880
+      },
+      "givenStory": false
+    }
+  ],
+  "scenarios": [
+    {
+      "scenario": {
+        "title": "form test aanmelding client, expand aanhef list",
+        "meta": {
+          "properties": [
+            {
+              "@name": "id1",
+              "@value": "scenario1"
+            }
+          ]
+        },
+        "givenStories": {
+          "givenStories": [],
+          "givenStoriesAsString": "",
+          "examplesTable": {
+            "tableAsString": "",
+            "headerSeparator": "|",
+            "valueSeparator": "|",
+            "ignorableSeparator": "|--",
+            "tableTransformers": {
+              "transformers": [
+                [
+                  "FROM_LANDSCAPE",
+                  {}
+                ],
+                [
+                  "REPLACING",
+                  {}
+                ],
+                [
+                  "FORMATTING",
+                  {}
+                ]
+              ]
+            },
+            "headers": [],
+            "data": [],
+            "properties": [
+              {
+                "@name": "headerSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "valueSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "ignorableSeparator",
+                "@value": "|--"
+              }
+            ],
+            "propertiesAsString": "",
+            "namedParameters": [],
+            "trim": true
+          }
+        },
+        "examplesTable": {
+          "tableAsString": "|list|value1|value2|\n|aanhef|Heer|Mevrouw|\n|geslacht|Mannelijk|Vrouwelijk|\n|burgerlijke staat|Gehuwd|Gescheiden|\n|type relatie|Zoon|Dochter|",
+          "headerSeparator": "|",
+          "valueSeparator": "|",
+          "ignorableSeparator": "|--",
+          "tableTransformers": {
+            "transformers": [
+              [
+                "FROM_LANDSCAPE",
+                {}
+              ],
+              [
+                "REPLACING",
+                {}
+              ],
+              [
+                "FORMATTING",
+                {}
+              ]
+            ]
+          },
+          "headers": [
+            "list",
+            "value1",
+            "value2"
+          ],
+          "data": [
+            [
+              [
+                "list",
+                "aanhef"
+              ],
+              [
+                "value1",
+                "Heer"
+              ],
+              [
+                "value2",
+                "Mevrouw"
+              ],
+              [
+                "id1",
+                "scenario1"
+              ]
+            ],
+            [
+              [
+                "list",
+                "geslacht"
+              ],
+              [
+                "value1",
+                "Mannelijk"
+              ],
+              [
+                "value2",
+                "Vrouwelijk"
+              ],
+              [
+                "id1",
+                "scenario1"
+              ]
+            ],
+            [
+              [
+                "list",
+                "burgerlijke staat"
+              ],
+              [
+                "value1",
+                "Gehuwd"
+              ],
+              [
+                "value2",
+                "Gescheiden"
+              ],
+              [
+                "id1",
+                "scenario1"
+              ]
+            ],
+            [
+              [
+                "list",
+                "type relatie"
+              ],
+              [
+                "value1",
+                "Zoon"
+              ],
+              [
+                "value2",
+                "Dochter"
+              ],
+              [
+                "id1",
+                "scenario1"
+              ]
+            ]
+          ],
+          "properties": [
+            {
+              "@name": "headerSeparator",
+              "@value": "|"
+            },
+            {
+              "@name": "valueSeparator",
+              "@value": "|"
+            },
+            {
+              "@name": "ignorableSeparator",
+              "@value": "|--"
+            }
+          ],
+          "propertiesAsString": "",
+          "namedParameters": [],
+          "trim": true
+        },
+        "steps": [
+          "Given the aanmelding client form is opened",
+          "When I expand the <list> list",
+          "Then the list should be filled with at least <value1> and <value2>"
+        ]
+      },
+      "storyPath": "com/test/jbehave/stories/frontend/inladenKeuzemogelijkheden.story",
+      "allowed": true,
+      "examplePerformableScenarios": [
+        {
+          "parameters": [
+            [
+              "list",
+              "aanhef"
+            ],
+            [
+              "value1",
+              "Heer"
+            ],
+            [
+              "value2",
+              "Mevrouw"
+            ],
+            [
+              "id1",
+              "scenario1"
+            ]
+          ],
+          "givenStories": [],
+          "beforeSteps": {
+            "matches": []
+          },
+          "steps": {
+            "matches": [
+              {
+                "type": "THEN",
+                "annotatedPattern": "the list should be filled with at least <value1> and <value2>",
+                "resolvedPattern": "the\\s+list\\s+should\\s+be\\s+filled\\s+with\\s+at\\s+least\\s+<value1>\\s+and\\s+<value2>"
+              },
+              {
+                "type": "WHEN",
+                "annotatedPattern": "I expand the <list> list",
+                "resolvedPattern": "I\\s+expand\\s+the\\s+<list>\\s+list"
+              },
+              {
+                "type": "GIVEN",
+                "annotatedPattern": "the aanmelding client form is opened",
+                "resolvedPattern": "the\\s+aanmelding\\s+client\\s+form\\s+is\\s+opened"
+              }
+            ],
+            "results": [
+              {
+                "step": "Given the aanmelding client form is opened",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "Given the aanmelding client form is opened",
+                "durationInMillis": 11125
+              },
+              {
+                "step": "When I expand the <list> list",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "When I expand the ｟aanhef｠ list",
+                "durationInMillis": 9992
+              },
+              {
+                "step": "Then the list should be filled with at least <value1> and <value2>",
+                "type": "FAILED",
+                "throwable": {
+                  "detailMessage": "Then the list should be filled with at least <value1> and <value2>",
+                  "cause": {
+                    "@class": "java.lang.AssertionError",
+                    "detailMessage": "expected:<true> but was:<false>",
+                    "stackTrace": [
+                      "org.junit.Assert.fail(Assert.java:88)",
+                      "org.junit.Assert.failNotEquals(Assert.java:743)",
+                      "org.junit.Assert.assertEquals(Assert.java:118)",
+                      "org.junit.Assert.assertEquals(Assert.java:144)",
+                      "com.test.jbehave.steps.frontend.AanmeldingClientSteps.checkListItems(AanmeldingClientSteps.java:88)",
+                      "sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)",
+                      "sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)",
+                      "sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)",
+                      "java.lang.reflect.Method.invoke(Method.java:606)",
+                      "org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)",
+                      "org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:333)",
+                      "org.jbehave.core.embedder.PerformableTree$PerformableSteps.perform(PerformableTree.java:1042)",
+                      "org.jbehave.core.embedder.PerformableTree$AbstractPerformableScenario.performRestartableSteps(PerformableTree.java:926)",
+                      "org.jbehave.core.embedder.PerformableTree$ExamplePerformableScenario.perform(PerformableTree.java:981)",
+                      "org.jbehave.core.embedder.PerformableTree$PerformableScenario.perform(PerformableTree.java:872)",
+                      "org.jbehave.core.embedder.PerformableTree$PerformableStory.performScenarios(PerformableTree.java:804)",
+                      "org.jbehave.core.embedder.PerformableTree$PerformableStory.perform(PerformableTree.java:777)",
+                      "org.jbehave.core.embedder.PerformableTree.performCancellable(PerformableTree.java:409)",
+                      "org.jbehave.core.embedder.PerformableTree.perform(PerformableTree.java:380)",
+                      "org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:291)",
+                      "org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:265)",
+                      "java.util.concurrent.FutureTask.run(FutureTask.java:262)",
+                      "java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)",
+                      "java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)",
+                      "java.lang.Thread.run(Thread.java:745)"
+                    ],
+                    "suppressedExceptions": [
+                      [],
+                      []
+                    ]
+                  },
+                  "stackTrace": [
+                    "org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:617)",
+                    "org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:333)",
+                    "org.jbehave.core.embedder.PerformableTree$PerformableSteps.perform(PerformableTree.java:1042)",
+                    "org.jbehave.core.embedder.PerformableTree$AbstractPerformableScenario.performRestartableSteps(PerformableTree.java:926)",
+                    "org.jbehave.core.embedder.PerformableTree$ExamplePerformableScenario.perform(PerformableTree.java:981)",
+                    "org.jbehave.core.embedder.PerformableTree$PerformableScenario.perform(PerformableTree.java:872)",
+                    "org.jbehave.core.embedder.PerformableTree$PerformableStory.performScenarios(PerformableTree.java:804)",
+                    "org.jbehave.core.embedder.PerformableTree$PerformableStory.perform(PerformableTree.java:777)",
+                    "org.jbehave.core.embedder.PerformableTree.performCancellable(PerformableTree.java:409)",
+                    "org.jbehave.core.embedder.PerformableTree.perform(PerformableTree.java:380)",
+                    "org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:291)",
+                    "org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:265)",
+                    "java.util.concurrent.FutureTask.run(FutureTask.java:262)",
+                    "java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)",
+                    "java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)",
+                    "java.lang.Thread.run(Thread.java:745)"
+                  ],
+                  "suppressedExceptions": [
+                    [],
+                    []
+                  ],
+                  "uuid": "cbf92223-c1e5-44ea-8153-e9adbc92ac84"
+                },
+                "parametrisedStep": "Then the list should be filled with at least ｟Heer｠ and ｟Mevrouw｠",
+                "durationInMillis": 306
+              }
+            ]
+          },
+          "afterSteps": {
+            "matches": []
+          }
+        },
+        {
+          "parameters": [
+            [
+              "list",
+              "geslacht"
+            ],
+            [
+              "value1",
+              "Mannelijk"
+            ],
+            [
+              "value2",
+              "Vrouwelijk"
+            ],
+            [
+              "id1",
+              "scenario1"
+            ]
+          ],
+          "givenStories": [],
+          "beforeSteps": {
+            "matches": []
+          },
+          "steps": {
+            "matches": [
+              {
+                "type": "THEN",
+                "annotatedPattern": "the list should be filled with at least <value1> and <value2>",
+                "resolvedPattern": "the\\s+list\\s+should\\s+be\\s+filled\\s+with\\s+at\\s+least\\s+<value1>\\s+and\\s+<value2>"
+              },
+              {
+                "type": "WHEN",
+                "annotatedPattern": "I expand the <list> list",
+                "resolvedPattern": "I\\s+expand\\s+the\\s+<list>\\s+list"
+              },
+              {
+                "type": "GIVEN",
+                "annotatedPattern": "the aanmelding client form is opened",
+                "resolvedPattern": "the\\s+aanmelding\\s+client\\s+form\\s+is\\s+opened"
+              }
+            ],
+            "results": [
+              {
+                "step": "Given the aanmelding client form is opened",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "Given the aanmelding client form is opened",
+                "durationInMillis": 0
+              },
+              {
+                "step": "When I expand the <list> list",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "When I expand the ｟geslacht｠ list",
+                "durationInMillis": 173
+              },
+              {
+                "step": "Then the list should be filled with at least <value1> and <value2>",
+                "type": "FAILED",
+                "throwable": {
+                  "detailMessage": "Then the list should be filled with at least <value1> and <value2>",
+                  "cause": {
+                    "@class": "java.lang.AssertionError",
+                    "detailMessage": "expected:<true> but was:<false>",
+                    "stackTrace": [
+                      "org.junit.Assert.fail(Assert.java:88)",
+                      "org.junit.Assert.failNotEquals(Assert.java:743)",
+                      "org.junit.Assert.assertEquals(Assert.java:118)",
+                      "org.junit.Assert.assertEquals(Assert.java:144)",
+                      "com.test.jbehave.steps.frontend.AanmeldingClientSteps.checkListItems(AanmeldingClientSteps.java:88)",
+                      "sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)",
+                      "sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)",
+                      "sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)",
+                      "java.lang.reflect.Method.invoke(Method.java:606)",
+                      "org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)",
+                      "org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:333)",
+                      "org.jbehave.core.embedder.PerformableTree$PerformableSteps.perform(PerformableTree.java:1042)",
+                      "org.jbehave.core.embedder.PerformableTree$AbstractPerformableScenario.performRestartableSteps(PerformableTree.java:926)",
+                      "org.jbehave.core.embedder.PerformableTree$ExamplePerformableScenario.perform(PerformableTree.java:981)",
+                      "org.jbehave.core.embedder.PerformableTree$PerformableScenario.perform(PerformableTree.java:872)",
+                      "org.jbehave.core.embedder.PerformableTree$PerformableStory.performScenarios(PerformableTree.java:804)",
+                      "org.jbehave.core.embedder.PerformableTree$PerformableStory.perform(PerformableTree.java:777)",
+                      "org.jbehave.core.embedder.PerformableTree.performCancellable(PerformableTree.java:409)",
+                      "org.jbehave.core.embedder.PerformableTree.perform(PerformableTree.java:380)",
+                      "org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:291)",
+                      "org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:265)",
+                      "java.util.concurrent.FutureTask.run(FutureTask.java:262)",
+                      "java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)",
+                      "java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)",
+                      "java.lang.Thread.run(Thread.java:745)"
+                    ],
+                    "suppressedExceptions": [
+                      [],
+                      []
+                    ]
+                  },
+                  "stackTrace": [
+                    "org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:617)",
+                    "org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:333)",
+                    "org.jbehave.core.embedder.PerformableTree$PerformableSteps.perform(PerformableTree.java:1042)",
+                    "org.jbehave.core.embedder.PerformableTree$AbstractPerformableScenario.performRestartableSteps(PerformableTree.java:926)",
+                    "org.jbehave.core.embedder.PerformableTree$ExamplePerformableScenario.perform(PerformableTree.java:981)",
+                    "org.jbehave.core.embedder.PerformableTree$PerformableScenario.perform(PerformableTree.java:872)",
+                    "org.jbehave.core.embedder.PerformableTree$PerformableStory.performScenarios(PerformableTree.java:804)",
+                    "org.jbehave.core.embedder.PerformableTree$PerformableStory.perform(PerformableTree.java:777)",
+                    "org.jbehave.core.embedder.PerformableTree.performCancellable(PerformableTree.java:409)",
+                    "org.jbehave.core.embedder.PerformableTree.perform(PerformableTree.java:380)",
+                    "org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:291)",
+                    "org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:265)",
+                    "java.util.concurrent.FutureTask.run(FutureTask.java:262)",
+                    "java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)",
+                    "java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)",
+                    "java.lang.Thread.run(Thread.java:745)"
+                  ],
+                  "suppressedExceptions": [
+                    [],
+                    []
+                  ],
+                  "uuid": "6e36eb3a-5ec8-47b1-bf40-723aead8af61"
+                },
+                "parametrisedStep": "Then the list should be filled with at least ｟Mannelijk｠ and ｟Vrouwelijk｠",
+                "durationInMillis": 298
+              }
+            ]
+          },
+          "afterSteps": {
+            "matches": []
+          }
+        },
+        {
+          "parameters": [
+            [
+              "list",
+              "burgerlijke staat"
+            ],
+            [
+              "value1",
+              "Gehuwd"
+            ],
+            [
+              "value2",
+              "Gescheiden"
+            ],
+            [
+              "id1",
+              "scenario1"
+            ]
+          ],
+          "givenStories": [],
+          "beforeSteps": {
+            "matches": []
+          },
+          "steps": {
+            "matches": [
+              {
+                "type": "THEN",
+                "annotatedPattern": "the list should be filled with at least <value1> and <value2>",
+                "resolvedPattern": "the\\s+list\\s+should\\s+be\\s+filled\\s+with\\s+at\\s+least\\s+<value1>\\s+and\\s+<value2>"
+              },
+              {
+                "type": "WHEN",
+                "annotatedPattern": "I expand the <list> list",
+                "resolvedPattern": "I\\s+expand\\s+the\\s+<list>\\s+list"
+              },
+              {
+                "type": "GIVEN",
+                "annotatedPattern": "the aanmelding client form is opened",
+                "resolvedPattern": "the\\s+aanmelding\\s+client\\s+form\\s+is\\s+opened"
+              }
+            ],
+            "results": [
+              {
+                "step": "Given the aanmelding client form is opened",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "Given the aanmelding client form is opened",
+                "durationInMillis": 0
+              },
+              {
+                "step": "When I expand the <list> list",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "When I expand the ｟burgerlijke staat｠ list",
+                "durationInMillis": 195
+              },
+              {
+                "step": "Then the list should be filled with at least <value1> and <value2>",
+                "type": "FAILED",
+                "throwable": {
+                  "detailMessage": "Then the list should be filled with at least <value1> and <value2>",
+                  "cause": {
+                    "@class": "java.lang.AssertionError",
+                    "detailMessage": "expected:<true> but was:<false>",
+                    "stackTrace": [
+                      "org.junit.Assert.fail(Assert.java:88)",
+                      "org.junit.Assert.failNotEquals(Assert.java:743)",
+                      "org.junit.Assert.assertEquals(Assert.java:118)",
+                      "org.junit.Assert.assertEquals(Assert.java:144)",
+                      "com.test.jbehave.steps.frontend.AanmeldingClientSteps.checkListItems(AanmeldingClientSteps.java:88)",
+                      "sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)",
+                      "sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)",
+                      "sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)",
+                      "java.lang.reflect.Method.invoke(Method.java:606)",
+                      "org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)",
+                      "org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:333)",
+                      "org.jbehave.core.embedder.PerformableTree$PerformableSteps.perform(PerformableTree.java:1042)",
+                      "org.jbehave.core.embedder.PerformableTree$AbstractPerformableScenario.performRestartableSteps(PerformableTree.java:926)",
+                      "org.jbehave.core.embedder.PerformableTree$ExamplePerformableScenario.perform(PerformableTree.java:981)",
+                      "org.jbehave.core.embedder.PerformableTree$PerformableScenario.perform(PerformableTree.java:872)",
+                      "org.jbehave.core.embedder.PerformableTree$PerformableStory.performScenarios(PerformableTree.java:804)",
+                      "org.jbehave.core.embedder.PerformableTree$PerformableStory.perform(PerformableTree.java:777)",
+                      "org.jbehave.core.embedder.PerformableTree.performCancellable(PerformableTree.java:409)",
+                      "org.jbehave.core.embedder.PerformableTree.perform(PerformableTree.java:380)",
+                      "org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:291)",
+                      "org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:265)",
+                      "java.util.concurrent.FutureTask.run(FutureTask.java:262)",
+                      "java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)",
+                      "java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)",
+                      "java.lang.Thread.run(Thread.java:745)"
+                    ],
+                    "suppressedExceptions": [
+                      [],
+                      []
+                    ]
+                  },
+                  "stackTrace": [
+                    "org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:617)",
+                    "org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:333)",
+                    "org.jbehave.core.embedder.PerformableTree$PerformableSteps.perform(PerformableTree.java:1042)",
+                    "org.jbehave.core.embedder.PerformableTree$AbstractPerformableScenario.performRestartableSteps(PerformableTree.java:926)",
+                    "org.jbehave.core.embedder.PerformableTree$ExamplePerformableScenario.perform(PerformableTree.java:981)",
+                    "org.jbehave.core.embedder.PerformableTree$PerformableScenario.perform(PerformableTree.java:872)",
+                    "org.jbehave.core.embedder.PerformableTree$PerformableStory.performScenarios(PerformableTree.java:804)",
+                    "org.jbehave.core.embedder.PerformableTree$PerformableStory.perform(PerformableTree.java:777)",
+                    "org.jbehave.core.embedder.PerformableTree.performCancellable(PerformableTree.java:409)",
+                    "org.jbehave.core.embedder.PerformableTree.perform(PerformableTree.java:380)",
+                    "org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:291)",
+                    "org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:265)",
+                    "java.util.concurrent.FutureTask.run(FutureTask.java:262)",
+                    "java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)",
+                    "java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)",
+                    "java.lang.Thread.run(Thread.java:745)"
+                  ],
+                  "suppressedExceptions": [
+                    [],
+                    []
+                  ],
+                  "uuid": "f682bb8b-fc02-4c2c-a852-eb72ba066901"
+                },
+                "parametrisedStep": "Then the list should be filled with at least ｟Gehuwd｠ and ｟Gescheiden｠",
+                "durationInMillis": 281
+              }
+            ]
+          },
+          "afterSteps": {
+            "matches": []
+          }
+        },
+        {
+          "parameters": [
+            [
+              "list",
+              "type relatie"
+            ],
+            [
+              "value1",
+              "Zoon"
+            ],
+            [
+              "value2",
+              "Dochter"
+            ],
+            [
+              "id1",
+              "scenario1"
+            ]
+          ],
+          "givenStories": [],
+          "beforeSteps": {
+            "matches": []
+          },
+          "steps": {
+            "matches": [
+              {
+                "type": "THEN",
+                "annotatedPattern": "the list should be filled with at least <value1> and <value2>",
+                "resolvedPattern": "the\\s+list\\s+should\\s+be\\s+filled\\s+with\\s+at\\s+least\\s+<value1>\\s+and\\s+<value2>"
+              },
+              {
+                "type": "WHEN",
+                "annotatedPattern": "I expand the <list> list",
+                "resolvedPattern": "I\\s+expand\\s+the\\s+<list>\\s+list"
+              },
+              {
+                "type": "GIVEN",
+                "annotatedPattern": "the aanmelding client form is opened",
+                "resolvedPattern": "the\\s+aanmelding\\s+client\\s+form\\s+is\\s+opened"
+              }
+            ],
+            "results": [
+              {
+                "step": "Given the aanmelding client form is opened",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "Given the aanmelding client form is opened",
+                "durationInMillis": 0
+              },
+              {
+                "step": "When I expand the <list> list",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "When I expand the ｟type relatie｠ list",
+                "durationInMillis": 202
+              },
+              {
+                "step": "Then the list should be filled with at least <value1> and <value2>",
+                "type": "FAILED",
+                "throwable": {
+                  "detailMessage": "Then the list should be filled with at least <value1> and <value2>",
+                  "cause": {
+                    "@class": "java.lang.AssertionError",
+                    "detailMessage": "expected:<true> but was:<false>",
+                    "stackTrace": [
+                      "org.junit.Assert.fail(Assert.java:88)",
+                      "org.junit.Assert.failNotEquals(Assert.java:743)",
+                      "org.junit.Assert.assertEquals(Assert.java:118)",
+                      "org.junit.Assert.assertEquals(Assert.java:144)",
+                      "com.test.jbehave.steps.frontend.AanmeldingClientSteps.checkListItems(AanmeldingClientSteps.java:88)",
+                      "sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)",
+                      "sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)",
+                      "sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)",
+                      "java.lang.reflect.Method.invoke(Method.java:606)",
+                      "org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)",
+                      "org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:333)",
+                      "org.jbehave.core.embedder.PerformableTree$PerformableSteps.perform(PerformableTree.java:1042)",
+                      "org.jbehave.core.embedder.PerformableTree$AbstractPerformableScenario.performRestartableSteps(PerformableTree.java:926)",
+                      "org.jbehave.core.embedder.PerformableTree$ExamplePerformableScenario.perform(PerformableTree.java:981)",
+                      "org.jbehave.core.embedder.PerformableTree$PerformableScenario.perform(PerformableTree.java:872)",
+                      "org.jbehave.core.embedder.PerformableTree$PerformableStory.performScenarios(PerformableTree.java:804)",
+                      "org.jbehave.core.embedder.PerformableTree$PerformableStory.perform(PerformableTree.java:777)",
+                      "org.jbehave.core.embedder.PerformableTree.performCancellable(PerformableTree.java:409)",
+                      "org.jbehave.core.embedder.PerformableTree.perform(PerformableTree.java:380)",
+                      "org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:291)",
+                      "org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:265)",
+                      "java.util.concurrent.FutureTask.run(FutureTask.java:262)",
+                      "java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)",
+                      "java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)",
+                      "java.lang.Thread.run(Thread.java:745)"
+                    ],
+                    "suppressedExceptions": [
+                      [],
+                      []
+                    ]
+                  },
+                  "stackTrace": [
+                    "org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:617)",
+                    "org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:333)",
+                    "org.jbehave.core.embedder.PerformableTree$PerformableSteps.perform(PerformableTree.java:1042)",
+                    "org.jbehave.core.embedder.PerformableTree$AbstractPerformableScenario.performRestartableSteps(PerformableTree.java:926)",
+                    "org.jbehave.core.embedder.PerformableTree$ExamplePerformableScenario.perform(PerformableTree.java:981)",
+                    "org.jbehave.core.embedder.PerformableTree$PerformableScenario.perform(PerformableTree.java:872)",
+                    "org.jbehave.core.embedder.PerformableTree$PerformableStory.performScenarios(PerformableTree.java:804)",
+                    "org.jbehave.core.embedder.PerformableTree$PerformableStory.perform(PerformableTree.java:777)",
+                    "org.jbehave.core.embedder.PerformableTree.performCancellable(PerformableTree.java:409)",
+                    "org.jbehave.core.embedder.PerformableTree.perform(PerformableTree.java:380)",
+                    "org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:291)",
+                    "org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:265)",
+                    "java.util.concurrent.FutureTask.run(FutureTask.java:262)",
+                    "java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)",
+                    "java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)",
+                    "java.lang.Thread.run(Thread.java:745)"
+                  ],
+                  "suppressedExceptions": [
+                    [],
+                    []
+                  ],
+                  "uuid": "9259c9f6-b9cf-40f1-a071-cf56be71328e"
+                },
+                "parametrisedStep": "Then the list should be filled with at least ｟Zoon｠ and ｟Dochter｠",
+                "durationInMillis": 1267
+              }
+            ]
+          },
+          "afterSteps": {
+            "matches": []
+          }
+        }
+      ],
+      "status": "FAILED"
+    }
+  ]
+}}

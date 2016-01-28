@@ -49,7 +49,16 @@ public class JUnitParser {
 
             for (int i = 0; i < testcaseNodeList.size(); i++) {
                 Testcase testcase = testcaseNodeList.get(i);
-                rootElement.appendChild(getTestcaseNode(doc, testcase.storyTime, testcase.storyClassname, testcase.storyName));
+                Node testcaseNode = getTestcaseNode(doc, testcase.storyTime, testcase.storyClassname, testcase.storyName);
+
+                rootElement.appendChild(testcaseNode);
+
+                if (!testcase.failureMessage .equals("")) {
+                    Element failure = doc.createElement("failure");
+                    failure.setAttribute("message",testcase.failureMessage);
+                    testcaseNode.appendChild(failure);
+                }
+
             }
 
             //write to xml
@@ -84,55 +93,68 @@ public class JUnitParser {
     }
 
     private void readHtmlSource(Document doc, File fin) throws IOException {
-        FileInputStream fis = new FileInputStream(fin);
 
-        //Construct BufferedReader from InputStreamReader
+        //get story durations file
+        FileInputStream fis = new FileInputStream(fin);
         BufferedReader br = new BufferedReader(new InputStreamReader(fis));
 
+        //read story durations file
         String line = null;
-        while ((line = br.readLine()) != null) {
-            //System.out.println(line);
+        while ((line = br.readLine()) != null) { //read results for each story
 
             String storyName;
             String storyTime;
             String storyClassname;
+            String errorMessage = "";
             if (line.contains("com/test/jbehave/stories/")) {
                 int seperatorIndex = line.indexOf("=");
                 storyTime = Integer.toString((Integer.parseInt(line.substring(seperatorIndex+1))) / 1000);
                 storyName = line.substring(33, seperatorIndex);
                 storyClassname = line.substring(0, seperatorIndex);
 
-                testcaseNodeList.add(new Testcase(storyTime, storyName, storyClassname));
-                //System.out.println(storyName + " " + storyTime + " " + storyClassname);
+                //check for failures
+                String testcaseOutputPath = storyClassname.replace(".story", ".html");
+                testcaseOutputPath = testcaseOutputPath.replaceAll("/", ".");
+                boolean readingError = false;
+                FileInputStream fis2 = new FileInputStream(outputDirectory + "jbehave/" + testcaseOutputPath);
+                BufferedReader br2 = new BufferedReader(new InputStreamReader(fis2));
+
+                String line2 = null;
+                while ((line2 = br2.readLine()) != null) {
+                    if (line2.contains("class=\"failure\"")) {
+                        readingError = true;
+                        seperatorIndex = line2.indexOf(">");
+                        errorMessage += "          " + line2.substring(seperatorIndex+1);
+                    }
+                    else if (readingError) {
+                        if (line2.contains("</pre>")) { //check for end of error message
+                            seperatorIndex = line2.indexOf("<");
+                            line2 = line2.substring(0, seperatorIndex);
+                            readingError = false;
+                            System.out.println(errorMessage);
+                        }
+                        errorMessage += "          " + line2;
+                    }
+                }
+                br2.close();
+
+                testcaseNodeList.add(new Testcase(storyTime, storyName, storyClassname, errorMessage));
             }
-
-
         }
         br.close();
-
-
-        //check for failures
-        File folder = new File(outputDirectory + "/jbehave");
-        File[] listOfFiles = folder.listFiles();
-
-        for (int i = 0; i < listOfFiles.length; i++) {
-            if (listOfFiles[i].isFile()) {
-                System.out.println("File " + listOfFiles[i].getName());
-            } else if (listOfFiles[i].isDirectory()) {
-                System.out.println("Directory " + listOfFiles[i].getName());
-            }
-        }
     }
 
     private class Testcase {
         public String storyName;
         public String storyClassname;
         public String storyTime;
+        public String failureMessage;
 
-        public Testcase(String storyTime, String storyName, String storyClassname) {
+        public Testcase(String storyTime, String storyName, String storyClassname, String failureMessage) {
             this.storyName = storyName;
             this.storyTime = storyTime;
             this.storyClassname = storyClassname;
+            this.failureMessage = failureMessage;
         }
     }
 }
