@@ -123,6 +123,11 @@ public class AnamnesePage {
     //Click hamburger to display menu items
     private void clickMobileDropdown() {
         try { Thread.sleep(1000); } catch (InterruptedException e) { e.printStackTrace(); }
+        try {
+            driver.findElement(By.xpath("//*[contains(@class, 'btn btn-navbar')]")).click();
+        }
+        catch (Exception e) {
+        }
 //        System.out.println("searching menu items");
 //        List<WebElement> menuItem = driver.findElements(By.partialLinkText("Nieuw"));
 //        System.out.println("finished searching menu items");
@@ -134,13 +139,6 @@ public class AnamnesePage {
 //                hamburger.get(0).click();
 //            }
 //        }
-
-        try {
-            driver.findElement(By.xpath("//*[contains(@class, 'btn btn-navbar')]")).click();
-        }
-        catch (Exception e) {
-
-        }
     }
 
 

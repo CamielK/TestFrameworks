@@ -191,23 +191,10 @@ public class AanmeldingClientPage {
     //clicks the hamburger icon if its visible
     private void clickMobileDropdown() {
         try { Thread.sleep(1000); } catch (InterruptedException e) { e.printStackTrace(); }
-//        System.out.println("searching menu items");
-//        List<WebElement> menuItem = driver.findElements(By.partialLinkText("Nieuw"));
-//        System.out.println("finished searching menu items");
-//        if (menuItem.size() == 0) {
-//            System.out.println("searching hamburger items");
-//            List<WebElement> hamburger = driver.findElements(By.xpath("//*[contains(@class, 'btn btn-navbar')]"));
-//            System.out.println("finished searching hamburger items");
-//            if (hamburger.size() == 1) {
-//                hamburger.get(0).click();
-//            }
-//        }
-
         try {
             driver.findElement(By.xpath("//*[contains(@class, 'btn btn-navbar')]")).click();
         }
         catch (Exception e) {
-
         }
     }
 }

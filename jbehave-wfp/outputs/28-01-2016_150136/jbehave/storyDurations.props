@@ -1,6 +1,0 @@
-#org.jbehave.core.embedder.StoryManager
-#Thu Jan 28 15:02:01 CET 2016
-com/test/jbehave/stories/frontend/inladenKeuzemogelijkheden.story=23000
-threads=1
-total=23000
-threadAverage=23000

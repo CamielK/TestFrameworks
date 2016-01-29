@@ -26,10 +26,14 @@ public class MakeUserSteps {
         userPage.openUserPage(driver);
     }
 
-    @When("I make a new user")
+    @When("I make a new test user")
     public void addUser() {
+        int randomInt = 1 + (int)(Math.random() * 10000);
+        String testUsername = "testUserJBehave" + Integer.toString(randomInt);
+
+        //add new user
         userPage.openNewUserForm();
-        userPage.enterUsername("testUser123");
+        userPage.enterUsername(testUsername);
         userPage.enterUserRealName("test user");
         userPage.enterPassword("test123");
         userPage.enterEmail("testuser@gmail.com");

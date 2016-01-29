@@ -106,15 +106,14 @@ public class UserPage {
 
     //deletes the new user by clicking the first table entry's remove button
     private void deleteNewUser (WebElement table, String userId) {
+        //TODO fix for user is not deleted on first test run after wfp is started. works fine after first run
         WebDriverWait wait = new WebDriverWait(driver, 10);
         WebElement delete = table.findElement(By.xpath("//span[@onclick=\"dialog.deleteDialog('"+userId+"','person',{ refresh : 'null'}, null)\"]"));
         delete.click();
-        //try { Thread.sleep(10000); } catch (InterruptedException e) { e.printStackTrace(); }
 
         WebElement elementConfirm = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[text()='Delete']")));
         WebElement confirm = table.findElement(By.xpath("//span[text()='Delete']"));
         confirm.click();
-        //try { Thread.sleep(10000); } catch (InterruptedException e) { e.printStackTrace(); }
 
         WebElement elementButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@onclick=\"dialog.formDialog(null,'person', { refresh : 'detailTable_person'}, {})\"]")));
     }
@@ -146,21 +145,8 @@ public class UserPage {
     }
 
     //click hamburger icon to display menu items
-    //TODO decrease time spend checking for hamburger
     private void clickMobileDropdown() {
-        try { Thread.sleep(500); } catch (InterruptedException e) { e.printStackTrace(); }
-//        System.out.println("searching menu items");
-//        List<WebElement> menuItem = driver.findElements(By.partialLinkText("Nieuw"));
-//        System.out.println("finished searching menu items");
-//        if (menuItem.size() == 0) {
-//            System.out.println("searching hamburger items");
-//            List<WebElement> hamburger = driver.findElements(By.xpath("//*[contains(@class, 'btn btn-navbar')]"));
-//            System.out.println("finished searching hamburger items");
-//            if (hamburger.size() == 1) {
-//                hamburger.get(0).click();
-//            }
-//        }
-
+        try { Thread.sleep(1000); } catch (InterruptedException e) { e.printStackTrace(); }
         try {
             driver.findElement(By.xpath("//*[contains(@class, 'btn btn-navbar')]")).click();
         }

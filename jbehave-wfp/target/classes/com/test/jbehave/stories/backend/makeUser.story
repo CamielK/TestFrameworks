@@ -7,5 +7,5 @@ So that I can allow new users to use the platform
 
 Scenario: scenario description
 Given the person list is opened
-When I make a new user
+When I make a new test user
 Then the user should be added
