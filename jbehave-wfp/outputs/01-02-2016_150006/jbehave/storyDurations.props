@@ -1,0 +1,14 @@
+#org.jbehave.core.embedder.StoryManager
+#Mon Feb 01 15:02:59 CET 2016
+com/test/jbehave/stories/frontend/ophalenClientgegevens.story=32000
+com/test/jbehave/stories/frontend/bsnValidation.story=43000
+com/test/jbehave/stories/frontend/aanmakenZiektenbeeld.story=28000
+com/test/jbehave/stories/frontend/OverigeTests.story=18000
+com/test/jbehave/stories/frontend/inladenKeuzemogelijkheden.story=2000
+com/test/jbehave/stories/frontend/frontendLogin.story=10000
+total=166000
+com/test/jbehave/stories/frontend/adresgegevensOphalen.story=1000
+threadAverage=166000
+com/test/jbehave/stories/backend/backendLogin.story=19000
+com/test/jbehave/stories/backend/makeUser.story=13000
+threads=1
