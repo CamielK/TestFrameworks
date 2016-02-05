@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3321d5a7-2c2e-4858-ac92-9a064dfe0a9d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../jbehave-wfp/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../jbehave-wfp/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../jbehave-wfp/pom.xml" afterPath="$PROJECT_DIR$/../jbehave-wfp/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../jbehave-wfp/src/main/java/com/test/jbehave/MyStories.java" afterPath="$PROJECT_DIR$/../jbehave-wfp/src/main/java/com/test/jbehave/MyStories.java" />
-    </list>
+    <list default="true" id="3321d5a7-2c2e-4858-ac92-9a064dfe0a9d" name="Default" comment="" />
     <ignored path="TestNG.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -897,7 +892,7 @@
       <workItem from="1452781802269" duration="242000" />
       <workItem from="1453467749170" duration="4540000" />
       <workItem from="1453716138362" duration="23000" />
-      <workItem from="1454666130942" duration="492000" />
+      <workItem from="1454666130942" duration="621000" />
     </task>
     <servers />
   </component>
@@ -934,7 +929,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60407000" />
+    <option name="totallyTimeSpent" value="60536000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1431" y="24" width="1855" height="1056" extended-state="6" />
