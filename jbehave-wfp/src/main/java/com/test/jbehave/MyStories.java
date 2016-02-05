@@ -7,7 +7,7 @@ import com.test.jbehave.steps.backend.MakeUserSteps;
 import com.test.jbehave.steps.frontend.AanmeldingClientSteps;
 import com.test.jbehave.steps.frontend.AnamneseFormSteps;
 import com.test.jbehave.steps.frontend.FrontendLoginSteps;
-import com.test.jbehave.steps.frontend.JavascriptTestSteps;
+import com.test.jbehave.steps.javascript.JavascriptTestSteps;
 import org.jbehave.core.Embeddable;
 import org.jbehave.core.configuration.Configuration;
 import org.jbehave.core.configuration.MostUsefulConfiguration;
@@ -107,8 +107,10 @@ public class MyStories extends JUnitStories {
     @Override
     protected List<String> storyPaths() {
         //switch comments to run a single story only
-        return new StoryFinder().findPaths(codeLocationFromClass(this.getClass()), "**/javascriptTest.story", "");
-        //return new StoryFinder().findPaths(codeLocationFromClass(this.getClass()), "**/*.story", "**/excluded*.story");
+        //return new StoryFinder().findPaths(codeLocationFromClass(this.getClass()), "**/javascriptGetAdress.story", "");
+        //return new StoryFinder().findPaths(codeLocationFromClass(this.getClass()), "**/adresgegevensOphalen.story", "");
+        //return new StoryFinder().findPaths(codeLocationFromClass(this.getClass()), "**/makeUser.story", "");
+        return new StoryFinder().findPaths(codeLocationFromClass(this.getClass()), "**/*.story", "**/excluded*.story");
 
     }
         

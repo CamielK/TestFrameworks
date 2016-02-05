@@ -1,0 +1,6 @@
+#org.jbehave.core.embedder.StoryManager
+#Thu Feb 04 09:42:16 CET 2016
+com/test/jbehave/stories/Javascript/javascriptTest.story=9000
+threads=1
+total=9000
+threadAverage=9000

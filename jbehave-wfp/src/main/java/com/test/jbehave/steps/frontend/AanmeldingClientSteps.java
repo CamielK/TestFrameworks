@@ -62,8 +62,11 @@ public class AanmeldingClientSteps {
 
     @When("I enter a valid postcode and huisnummer")
     public void enterValidAdress() {
-        formPage.enterPostcode("6261NX");
-        formPage.enterHuisnr("15");
+        formPage.javascriptTest("6261NX", "15");
+
+        //formPage.enterPostcode("6261NX");
+        //formPage.enterHuisnr("15");
+        //try { Thread.sleep(10000); } catch (InterruptedException e) { e.printStackTrace(); }
     }
 
     @Then("the BSN should be rejected")

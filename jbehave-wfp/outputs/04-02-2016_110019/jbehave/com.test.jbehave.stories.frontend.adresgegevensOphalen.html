@@ -1,0 +1,17 @@
+<div class="story">
+<h1></h1>
+<div class="path">com/test/jbehave/stories/frontend/adresgegevensOphalen.story</div>
+<div class="scenario">
+<h2>Scenario: when the zipcode and housenumber are entered the street and city should be automaticly filled in</h2>
+<div class="step successful">Given the aanmelding client form is opened</div>
+<div class="step successful">When I enter a valid postcode and huisnummer</div>
+<div class="step failed">Then the straat and plaats should correctly be generated <span class="keyword failed">(FAILED)</span><br/><span class="message failed">java.lang.NullPointerException</span></div>
+<pre class="failure">java.lang.NullPointerException
+	at com.test.jbehave.pages.AanmeldingClientPage.getStreet(AanmeldingClientPage.java:170)
+	at com.test.jbehave.steps.frontend.AanmeldingClientSteps.checkGeneratedAdress(AanmeldingClientSteps.java:94)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:333)
+...</pre>
+</div>
+</div>

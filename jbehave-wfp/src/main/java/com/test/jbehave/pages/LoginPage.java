@@ -1,6 +1,7 @@
 package com.test.jbehave.pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -63,6 +64,9 @@ public class LoginPage {
         else { loggedIn = true; }
         return loggedIn;
     }
+
+
+
 
     //enters the given value into the correct field
     private void enterValue(String value, String fieldName) {

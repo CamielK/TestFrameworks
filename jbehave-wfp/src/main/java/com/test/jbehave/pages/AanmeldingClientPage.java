@@ -1,6 +1,7 @@
 package com.test.jbehave.pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -126,6 +127,46 @@ public class AanmeldingClientPage {
         huisnrFld.sendKeys(huisnr);
     }
 
+    //use the source script to get the street and city name from the api
+    public void javascriptTest(String zipcode, String number) {
+        openAdresgegevensTab();
+        ((JavascriptExecutor) driver)
+                .executeScript(
+                        "$.ajax({"+
+                        "url: \"http://api.postcodedata.nl/v1/postcode/?postcode="+zipcode.replace(" ", "")+"&streetnumber="+number.replace(" ", "")+"&ref=nlcom.nl&type=xml\"," +
+                        "type: \"GET\"," +
+                        "error: function(jqxhr, status, error) {" +
+                        "    console.error(status);"+
+                        "    console.error(error);"+
+                        "    $(\"#update-document\\\\.aanmeldingClient\\\\.adresgegevens\\\\.street\").val(\"\");"+
+                        "    $(\"#update-document\\\\.aanmeldingClient\\\\.adresgegevens\\\\.city\").val(\"\");"+
+                        "    $(\"#update-document\\\\.aanmeldingClient\\\\.adresgegevens\\\\.street\").prop('readonly', false);"+
+                        "    $(\"#update-document\\\\.aanmeldingClient\\\\.adresgegevens\\\\.city\").prop('readonly', false);"+
+                        "},"+
+                        "beforeSend: function(x) {"+
+                        "    $(\"#update-document\\\\.aanmeldingClient\\\\.adresgegevens\\\\.street\").val(\"\");"+
+                        "    $(\"#update-document\\\\.aanmeldingClient\\\\.adresgegevens\\\\.city\").val(\"\");"+
+                        "    $(\"#update-document\\\\.aanmeldingClient\\\\.adresgegevens\\\\.street\").prop('readonly', true);"+
+                        "    $(\"#update-document\\\\.aanmeldingClient\\\\.adresgegevens\\\\.city\").prop('readonly', true);"+
+                        "},"+
+                        "success: function(data) {"+
+                        "    $(\"#update-document\\\\.aanmeldingClient\\\\.adresgegevens\\\\.street\").val($(data).find(\"detail\").find(\"street\").text());"+
+                        "    $(\"#update-document\\\\.aanmeldingClient\\\\.adresgegevens\\\\.city\").val($(data).find(\"detail\").find(\"city\").text());"+
+                        "    if (!$(data).find(\"detail\").find(\"street\").text()){"+
+                        "        $(\"#update-document\\\\.aanmeldingClient\\\\.adresgegevens\\\\.street\").prop('readonly', false);"+
+                        "        $(\"#update-document\\\\.aanmeldingClient\\\\.adresgegevens\\\\.city\").prop('readonly', false);"+
+                        "    } else {"+
+                        "        $(\"#update-document\\\\.aanmeldingClient\\\\.adresgegevens\\\\.country\").select2(\"val\", \"Nederland\");"+
+                        "        $(\"#update-document\\\\.aanmeldingClient\\\\.adresgegevens\\\\.street\").prop('readonly', false);"+
+                        "        $(\"#update-document\\\\.aanmeldingClient\\\\.adresgegevens\\\\.city\").prop('readonly', false);"+
+                        "    }"+
+                        "},"+
+                        "timeout: 10000"+
+                        "});");
+        try { Thread.sleep(5000); } catch (InterruptedException e) { e.printStackTrace(); }
+    }
+
+
     //returns the streetname
     public String getStreet() {
         int timeoutCounter = 10000;
@@ -140,6 +181,7 @@ public class AanmeldingClientPage {
     public String getPlaats() {
         return plaatsFld.getAttribute("value");
     }
+
 
     private void initiateTabs() {
         adresgegevensTab = driver.findElement(By.id("tabhead-3-aa"));
@@ -162,7 +204,11 @@ public class AanmeldingClientPage {
     //opens the adresgegevens tab if its not already open
     private void openAdresgegevensTab() {
         if (!adresgegevensTabIsOpen) {
-            adresgegevensTab.click();
+
+            //adresgegevensTab.click();
+            ((JavascriptExecutor) driver).executeScript("$(document.getElementById(\"tabhead-3-aa\")).click()");
+            //try { Thread.sleep(10000); } catch (Exception e) { e.printStackTrace(); }
+
             persoonsgegevensTabIsOpen = false;
             adresgegevensTabIsOpen = true;
             initAdresgegevensElements();
