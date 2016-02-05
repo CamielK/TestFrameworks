@@ -1,6 +1,0 @@
-#org.jbehave.core.embedder.StoryManager
-#Thu Feb 04 11:02:17 CET 2016
-com/test/jbehave/stories/frontend/adresgegevensOphalen.story=17000
-threads=1
-total=17000
-threadAverage=17000
