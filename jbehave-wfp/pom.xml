@@ -99,7 +99,7 @@
               </includes>
               <excludes />
               <ignoreFailureInStories>true</ignoreFailureInStories>
-              <ignoreFailureInView>false</ignoreFailureInView>
+              <ignoreFailureInView>true</ignoreFailureInView>
               <threads>1</threads>
               <metaFilters>
                 <metaFilter></metaFilter>

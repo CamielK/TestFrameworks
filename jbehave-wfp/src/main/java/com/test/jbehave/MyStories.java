@@ -109,7 +109,7 @@ public class MyStories extends JUnitStories {
         //switch comments to run a single story only
         //return new StoryFinder().findPaths(codeLocationFromClass(this.getClass()), "**/javascriptGetAdress.story", "");
         //return new StoryFinder().findPaths(codeLocationFromClass(this.getClass()), "**/adresgegevensOphalen.story", "");
-        //return new StoryFinder().findPaths(codeLocationFromClass(this.getClass()), "**/makeUser.story", "");
+        //return new StoryFinder().findPaths(codeLocationFromClass(this.getClass()), "**/inladenKeuzemogelijkheden.story", "");
         return new StoryFinder().findPaths(codeLocationFromClass(this.getClass()), "**/*.story", "**/excluded*.story");
 
     }
