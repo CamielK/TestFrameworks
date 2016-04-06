@@ -36,17 +36,17 @@ public class AanmeldingClientSteps {
 
     @When("I enter a valid BSN")
     public void enterValidBSN() {
-        formPage.enterBSN(123412341); //voldoet aan 11 check
+        formPage.enterBSN(13261246); //voldoet aan 11 check
     }
 
     @When("I enter an invalid BSN")
     public void enterInvalidBSN() {
-        formPage.enterBSN(123728341); //voldoet niet aan 11 check
+        formPage.enterBSN(13261246); //voldoet niet aan 11 check
     }
 
     @When("I enter a used BSN")
     public void enterUsedBSN() {
-        formPage.enterBSN(128663649); //is al in gebruik
+        formPage.enterBSN(13261246); //is al in gebruik
     }
 
     @When("I expand the <list> list")
@@ -62,11 +62,7 @@ public class AanmeldingClientSteps {
 
     @When("I enter a valid postcode and huisnummer")
     public void enterValidAdress() {
-        formPage.javascriptTest("6261NX", "15");
-
-        //formPage.enterPostcode("6261NX");
-        //formPage.enterHuisnr("15");
-        //try { Thread.sleep(10000); } catch (InterruptedException e) { e.printStackTrace(); }
+        formPage.javascriptTest("5132GS", "135");
     }
 
     @Then("the BSN should be rejected")

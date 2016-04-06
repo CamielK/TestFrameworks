@@ -48,7 +48,7 @@ public class BackendLoginTest {
     @Test(description="wfp frontend invalid username login", priority = 2)
     public void frontendInvalidUserLogin() {
         login.enterUsername("piet");
-        login.enterPassword("dUfKB2yacJ");
+        login.enterPassword("admin");
         login.submitForm("Login");
     }
 
@@ -69,7 +69,7 @@ public class BackendLoginTest {
     @Test(description="5. wfp frontend valid login", priority = 3)
     public void frontendValidLogin() {
         login.enterUsername("admin");
-        login.enterPassword("dUfKB2yacJ");
+        login.enterPassword("admin");
         login.submitForm("Workflow Definition List");
     }
 

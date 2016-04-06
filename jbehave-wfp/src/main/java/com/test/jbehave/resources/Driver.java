@@ -35,7 +35,7 @@ public class Driver {
         driver.manage().timeouts().implicitlyWait(11, TimeUnit.SECONDS);
         loginPage.openLoginPage(driver, "backend");
         loginPage.enterUsername("admin");
-        loginPage.enterPassword("dUfKB2yacJ");//dUfKB2yacJ
+        loginPage.enterPassword("admin");
         loginPage.submitForm();
         driverList.add(driver);
         return driver;

@@ -44,14 +44,14 @@ public class AnamneseFormSteps {
     public void searchClient (@Named("searchtype") String searchType) {
         //try { Thread.sleep(5000); } catch (InterruptedException e) { e.printStackTrace(); }
 
-        if (searchType.equals("Achternaam")) { formPage.enterFamilyName("Robbescheuten - Issum, van"); }
+        if (searchType.equals("Achternaam")) { formPage.enterFamilyName(""); }
         else if (searchType.equals("Geboortedatum")) {
-            formPage.enterBirthdate("07021939");
+            formPage.enterBirthdate("07021900");
             formPage.clickSearchButton();
-            formPage.selectClient("154390");
+            formPage.selectClient("216632");
         }
-        else if (searchType.equals("BSN")) { formPage.enterBSN("165736070"); }
-        else if (searchType.equals("Clientnummer")) { formPage.enterClientnummer("154390"); }
+        else if (searchType.equals("BSN")) { formPage.enterBSN("13261246"); }
+        else if (searchType.equals("Clientnummer")) { formPage.enterClientnummer("216632"); }
         formPage.clickSearchButton();
     }
 

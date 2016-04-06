@@ -36,7 +36,7 @@ public class BackendLoginSteps {
     @When("I enter valid backend credentials")
     public void enterValidCredentials() {
         loginPage.enterUsername("admin");
-        loginPage.enterPassword("dUfKB2yacJ");
+        loginPage.enterPassword("admin");
     }
 
     @When("I enter invalid backend credentials")

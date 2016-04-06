@@ -28,7 +28,7 @@ public class SuiteSetup {
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.id("j_username")));
         backendLogin.setDriver(driver);
         backendLogin.enterUsername("admin");
-        backendLogin.enterPassword("dUfKB2yacJ");
+        backendLogin.enterPassword("admin");
         backendLogin.submitForm("Workflow Definition List");
         return driver;
     }

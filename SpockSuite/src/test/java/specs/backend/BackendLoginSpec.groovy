@@ -31,7 +31,7 @@ class BackendLoginSpec extends GebSpec {
     def "Enter valid credentials"() {
         when:
         usernameField.value("admin")
-        passwordField.value("dUfKB2yacJ")
+        passwordField.value("admin")
         and:
         submitBtn.click()
         then:

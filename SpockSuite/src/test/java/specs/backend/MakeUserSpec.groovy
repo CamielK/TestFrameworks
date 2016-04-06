@@ -18,7 +18,7 @@ class MakeUserSpec extends GebSpec{
     def setupSpec() {
         to BackendLoginPage
         usernameField.value("admin")
-        passwordField.value("dUfKB2yacJ")
+        passwordField.value("admin")
         submitBtn.click()
         assert title == "Workflow Definition List"
     }
